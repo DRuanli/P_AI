@@ -25,7 +25,7 @@ class Visualizer:
         pygame.display.set_caption('Pacman A* Search')
         self.font = pygame.font.SysFont('Arial', 16)
 
-    def draw_maze(self, pacman_pos, remaining_food, remaining_magical_pies, wall_pass_steps):
+    def draw_maze(self, pacman_pos, remaining_food, remaining_magical_pies, walls_vanished_steps):
         """Draw the current state of the maze"""
         # Fill the screen with black
         self.screen.fill(BLACK)
@@ -40,9 +40,16 @@ class Visualizer:
                     self.cell_size
                 )
 
-                # Draw walls
-                if self.maze.is_wall(x, y):
+                # Draw walls if they're not vanished
+                if self.maze.is_wall(x, y) and walls_vanished_steps == 0:
                     pygame.draw.rect(self.screen, BLUE, rect)
+                # Draw faded walls if they're vanished
+                elif self.maze.is_wall(x, y) and walls_vanished_steps > 0:
+                    # Use a semi-transparent color for vanished walls
+                    s = pygame.Surface((self.cell_size, self.cell_size))
+                    s.set_alpha(80)  # Alpha level (transparency)
+                    s.fill((100, 100, 255))  # Light blue color
+                    self.screen.blit(s, rect)
 
                 # Draw corner markers (for visualization purposes)
                 if self.maze.is_corner(x, y):
@@ -71,11 +78,11 @@ class Visualizer:
             pacman_y * self.cell_size + self.cell_size // 2
         )
 
-        # Draw Pacman with different color if it has wall-passing ability
-        if wall_pass_steps > 0:
+        # Draw Pacman with different color if walls are vanished
+        if walls_vanished_steps > 0:
             pygame.draw.circle(self.screen, RED, center, self.cell_size // 2 - 2)
-            # Display remaining wall pass steps
-            text = self.font.render(str(wall_pass_steps), True, WHITE)
+            # Display remaining wall vanish steps
+            text = self.font.render(str(walls_vanished_steps), True, WHITE)
             text_rect = text.get_rect(center=center)
             self.screen.blit(text, text_rect)
         else:
@@ -94,10 +101,10 @@ class Visualizer:
         pacman_pos = self.maze.pacman_start
         remaining_food = set(self.maze.food_points)
         remaining_magical_pies = set(self.maze.magical_pies)
-        wall_pass_steps = 0
+        walls_vanished_steps = 0
 
         # Draw the initial state
-        self.draw_maze(pacman_pos, remaining_food, remaining_magical_pies, wall_pass_steps)
+        self.draw_maze(pacman_pos, remaining_food, remaining_magical_pies, walls_vanished_steps)
 
         # Display instructions
         print("Press any key to start animation. Press ESC to quit.")
@@ -138,14 +145,14 @@ class Visualizer:
             # Update position (if it changed)
             if new_pos != pacman_pos:
                 pacman_pos = new_pos
-                # Decrease wall pass steps when moving
-                if wall_pass_steps > 0:
-                    wall_pass_steps -= 1
+                # Decrease wall vanish steps when moving
+                if walls_vanished_steps > 0:
+                    walls_vanished_steps -= 1
 
-                    # Check if Pacman is now stuck in a wall
-                    if wall_pass_steps == 0 and self.maze.is_wall(*pacman_pos):
+                    # Check if Pacman is now stuck in a wall after walls reappear
+                    if walls_vanished_steps == 0 and self.maze.is_wall(*pacman_pos):
                         game_over = True
-                        print("GAME OVER: Pacman got stuck in a wall after wall-pass ability expired!")
+                        print("GAME OVER: Pacman got stuck in a wall when walls reappeared!")
                         break
 
             # Check for teleportation
@@ -161,15 +168,15 @@ class Visualizer:
             # Check if Pacman ate a magical pie
             if pacman_pos in remaining_magical_pies:
                 remaining_magical_pies.remove(pacman_pos)
-                wall_pass_steps = 5  # Reset wall pass counter
+                walls_vanished_steps = 5  # Walls vanish for 5 steps
 
             # Draw the updated state
-            self.draw_maze(pacman_pos, remaining_food, remaining_magical_pies, wall_pass_steps)
+            self.draw_maze(pacman_pos, remaining_food, remaining_magical_pies, walls_vanished_steps)
 
             # Display step information
             caption = f'Pacman A* Search - Step {step}/{len(actions)} - Action: {action}'
-            if wall_pass_steps > 0:
-                caption += f' - Wall Pass: {wall_pass_steps} steps left'
+            if walls_vanished_steps > 0:
+                caption += f' - Walls Vanished: {walls_vanished_steps} steps left'
             pygame.display.set_caption(caption)
 
             # Process events
@@ -186,7 +193,7 @@ class Visualizer:
 
         # Display completion message
         if game_over:
-            print("Game Over - Pacman got stuck in a wall!")
+            print("Game Over - Pacman got stuck in a wall when walls reappeared!")
         else:
             print(f"Solution completed successfully in {step} steps!")
             if remaining_food:

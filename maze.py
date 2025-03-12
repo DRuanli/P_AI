@@ -104,7 +104,7 @@ class Maze:
 
         return None
 
-    def get_valid_moves(self, x, y, can_pass_walls):
+    def get_valid_moves(self, x, y, walls_vanished):
         """Get valid moves from the current position"""
         valid_moves = []
 
@@ -114,10 +114,10 @@ class Maze:
 
             # Check if position is within bounds
             if 0 <= nx < self.width and 0 <= ny < self.height:
-                # Always add the move if we can pass walls
-                if can_pass_walls:
+                # If walls are vanished, we can go anywhere (except maze boundaries)
+                if walls_vanished:
                     valid_moves.append((direction, (nx, ny)))
-                # Only add the move if it's not a wall and we can't pass walls
+                # If walls are not vanished, we can only move to non-wall cells
                 elif not self.is_wall(nx, ny):
                     valid_moves.append((direction, (nx, ny)))
 
