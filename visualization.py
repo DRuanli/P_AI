@@ -12,12 +12,13 @@ PURPLE = (128, 0, 128)
 
 
 class Visualizer:
-    def __init__(self, maze, cell_size=20):
+    def __init__(self, maze, cell_size=20, step_delay=0.3):
         """Initialize the visualizer with the maze and cell size"""
         self.maze = maze
         self.cell_size = cell_size
         self.width = maze.width * cell_size
         self.height = maze.height * cell_size
+        self.step_delay = step_delay
 
         # Initialize pygame
         pygame.init()
@@ -188,8 +189,8 @@ class Visualizer:
                     pygame.quit()
                     return
 
-            # Add a short delay between steps
-            time.sleep(0.3)
+            # Add a delay between steps (configurable)
+            time.sleep(self.step_delay)
 
         # Display completion message
         if game_over:
