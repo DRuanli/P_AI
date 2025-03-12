@@ -110,13 +110,14 @@ def mst_heuristic(position, food_points):
     return mst_cost
 
 
-def a_star_search(maze, heuristic_func=min_food_distance_heuristic):
+def a_star_search(maze, heuristic_func=min_food_distance_heuristic, logger=None):
     """
     A* search algorithm to find the optimal path for Pacman to collect all food.
 
     Args:
         maze: The maze object containing the layout information
         heuristic_func: The heuristic function to use for A* search
+        logger: Optional logger for tracking search progress
 
     Returns:
         tuple: (actions, cost) where actions is a list of directions and cost is the total path cost
@@ -143,14 +144,28 @@ def a_star_search(maze, heuristic_func=min_food_distance_heuristic):
 
     # Debug info
     states_explored = 0
+    max_frontier_size = 1
+
+    if logger:
+        logger.info(f"A* search started from position {maze.pacman_start}")
+        logger.info(f"Number of food points: {len(initial_food)}")
+        logger.info(f"Number of magical pies: {len(initial_magical_pies)}")
 
     while not frontier.is_empty():
         # Get the state with the lowest f-value from the frontier
         current_state = frontier.pop()
         states_explored += 1
 
+        # Log progress periodically
+        if logger and states_explored % 1000 == 0:
+            logger.info(f"States explored: {states_explored}, current position: {current_state.position}, " +
+                        f"remaining food: {len(current_state.remaining_food)}")
+
         # If we've reached a goal state, return the solution
         if current_state.is_goal():
+            if logger:
+                logger.info(f"Solution found after exploring {states_explored} states")
+                logger.info(f"Max frontier size: {max_frontier_size}")
             print(f"Solution found after exploring {states_explored} states!")
             return current_state.actions, current_state.cost
 
@@ -181,6 +196,13 @@ def a_star_search(maze, heuristic_func=min_food_distance_heuristic):
                 # Add to frontier with f-value as priority
                 frontier.push(successor, f_value)
 
+                # Update max frontier size
+                frontier_size = len(frontier.heap)
+                if frontier_size > max_frontier_size:
+                    max_frontier_size = frontier_size
+
     # If we exhausted the frontier without finding a solution
+    if logger:
+        logger.warning(f"No solution found after exploring {states_explored} states")
     print(f"No solution found after exploring {states_explored} states.")
     return None, 0

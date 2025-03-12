@@ -1,15 +1,19 @@
 class Maze:
-    def __init__(self, file_path):
+    def __init__(self, file_path, logger=None):
         self.grid = []
         self.width = 0
         self.height = 0
         self.pacman_start = None
         self.food_points = []
         self.magical_pies = []
+        self.logger = logger
         self.load_maze(file_path)
 
     def load_maze(self, file_path):
         """Load maze from a file and parse its contents"""
+        if self.logger:
+            self.logger.info(f"Loading maze from file: {file_path}")
+
         with open(file_path, 'r') as file:
             lines = file.readlines()
 
@@ -19,14 +23,25 @@ class Maze:
                 row.append(cell)
                 if cell == 'P':
                     self.pacman_start = (x, y)
+                    if self.logger:
+                        self.logger.info(f"Pacman start position found at ({x}, {y})")
                 elif cell == '.':
                     self.food_points.append((x, y))
+                    if self.logger:
+                        self.logger.debug(f"Food point found at ({x}, {y})")
                 elif cell == 'O':
                     self.magical_pies.append((x, y))
+                    if self.logger:
+                        self.logger.debug(f"Magical pie found at ({x}, {y})")
             self.grid.append(row)
 
         self.height = len(self.grid)
         self.width = len(self.grid[0]) if self.height > 0 else 0
+
+        if self.logger:
+            self.logger.info(f"Maze loaded, dimensions: {self.width}x{self.height}")
+            self.logger.info(f"Total food points: {len(self.food_points)}")
+            self.logger.info(f"Total magical pies: {len(self.magical_pies)}")
 
     def is_wall(self, x, y):
         """Check if the given position is a wall"""
@@ -41,68 +56,55 @@ class Maze:
         if self.is_wall(x, y):
             return False
 
-        # Define corners as the four extreme points of the maze
-        # For simplicity, we'll consider the four corners of the playable area
-        non_wall_positions = []
-        for j in range(self.height):
-            for i in range(self.width):
-                if not self.is_wall(i, j):
-                    non_wall_positions.append((i, j))
+        # Cache computation of corners for efficiency
+        if not hasattr(self, '_corner_positions'):
+            # Compute the corners once and cache them
+            non_wall_positions = []
+            for j in range(self.height):
+                for i in range(self.width):
+                    if not self.is_wall(i, j):
+                        non_wall_positions.append((i, j))
 
-        if not non_wall_positions:
-            return False
+            if not non_wall_positions:
+                self._corner_positions = []
+                return False
 
-        min_x = min(pos[0] for pos in non_wall_positions)
-        max_x = max(pos[0] for pos in non_wall_positions)
-        min_y = min(pos[1] for pos in non_wall_positions)
-        max_y = max(pos[1] for pos in non_wall_positions)
+            min_x = min(pos[0] for pos in non_wall_positions)
+            max_x = max(pos[0] for pos in non_wall_positions)
+            min_y = min(pos[1] for pos in non_wall_positions)
+            max_y = max(pos[1] for pos in non_wall_positions)
+
+            # Store the four corner positions
+            self._corner_positions = [
+                (min_x, min_y),  # Top-left
+                (min_x, max_y),  # Bottom-left
+                (max_x, min_y),  # Top-right
+                (max_x, max_y)  # Bottom-right
+            ]
 
         # A corner is one of the four extreme points
-        return (x == min_x and y == min_y) or \
-            (x == min_x and y == max_y) or \
-            (x == max_x and y == min_y) or \
-            (x == max_x and y == max_y)
+        return (x, y) in self._corner_positions
 
     def get_opposite_corner(self, x, y):
         """Get the opposite corner of the maze"""
         if not self.is_corner(x, y):
             return None
 
-        # Find all corners in the maze
-        corners = []
-        non_wall_positions = []
+        # Make sure corners are cached
+        if not hasattr(self, '_corner_positions'):
+            # This call will populate the _corner_positions cache
+            self.is_corner(x, y)
 
-        # First get all non-wall positions to find the extremes
-        for j in range(self.height):
-            for i in range(self.width):
-                if not self.is_wall(i, j):
-                    non_wall_positions.append((i, j))
-
-        if not non_wall_positions:
+        # Get index of the current corner
+        try:
+            idx = self._corner_positions.index((x, y))
+        except ValueError:
             return None
 
-        min_x = min(pos[0] for pos in non_wall_positions)
-        max_x = max(pos[0] for pos in non_wall_positions)
-        min_y = min(pos[1] for pos in non_wall_positions)
-        max_y = max(pos[1] for pos in non_wall_positions)
-
-        # Define the four corners
-        top_left = (min_x, min_y)
-        top_right = (max_x, min_y)
-        bottom_left = (min_x, max_y)
-        bottom_right = (max_x, max_y)
-
-        # Get the diagonally opposite corner
-        if (x, y) == top_left:
-            return bottom_right
-        elif (x, y) == top_right:
-            return bottom_left
-        elif (x, y) == bottom_left:
-            return top_right
-        elif (x, y) == bottom_right:
-            return top_left
-
-        return None
+        # Return the diagonally opposite corner
+        # 0->3, 1->2, 2->1, 3->0
+        opposite_idx = 3 - idx
+        return self._corner_positions[opposite_idx]
 
     def get_valid_moves(self, x, y, walls_vanished):
         """Get valid moves from the current position"""

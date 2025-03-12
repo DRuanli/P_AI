@@ -12,13 +12,14 @@ PURPLE = (128, 0, 128)
 
 
 class Visualizer:
-    def __init__(self, maze, cell_size=20, step_delay=0.3):
+    def __init__(self, maze, cell_size=20, step_delay=0.3, logger=None):
         """Initialize the visualizer with the maze and cell size"""
         self.maze = maze
         self.cell_size = cell_size
         self.width = maze.width * cell_size
         self.height = maze.height * cell_size
         self.step_delay = step_delay
+        self.logger = logger
 
         # Initialize pygame
         pygame.init()
@@ -96,6 +97,8 @@ class Visualizer:
         """Visualize the solution by showing Pacman's movements"""
         if not actions:
             print("No solution to visualize")
+            if self.logger:
+                self.logger.warning("No solution to visualize")
             return
 
         # Initialize the state
@@ -109,6 +112,8 @@ class Visualizer:
 
         # Display instructions
         print("Press any key to start animation. Press ESC to quit.")
+        if self.logger:
+            self.logger.info("Visualization ready, waiting for key press to start")
 
         # Wait for a key press to start
         waiting = True
@@ -116,12 +121,19 @@ class Visualizer:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
+                    if self.logger:
+                        self.logger.info("Visualization cancelled before start")
                     return
                 if event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_ESCAPE:
                         pygame.quit()
+                        if self.logger:
+                            self.logger.info("Visualization cancelled before start")
                         return
                     waiting = False
+
+        if self.logger:
+            self.logger.info("Visualization started")
 
         # Execute the actions
         step = 0
@@ -129,6 +141,9 @@ class Visualizer:
 
         for action in actions:
             step += 1
+            if self.logger and step % 20 == 0:  # Log every 20 steps to avoid excessive logging
+                self.logger.info(f"Visualization step {step}/{len(actions)}, Action: {action}")
+
             # Update Pacman's position based on the action
             x, y = pacman_pos
             new_pos = pacman_pos
@@ -153,21 +168,30 @@ class Visualizer:
                     # Check if Pacman is now stuck in a wall after walls reappear
                     if walls_vanished_steps == 0 and self.maze.is_wall(*pacman_pos):
                         game_over = True
-                        print("GAME OVER: Pacman got stuck in a wall when walls reappeared!")
+                        msg = "GAME OVER: Pacman got stuck in a wall when walls reappeared!"
+                        print(msg)
+                        if self.logger:
+                            self.logger.warning(msg)
                         break
 
             # Check for teleportation
             if self.maze.is_corner(*pacman_pos):
                 teleport_pos = self.maze.get_opposite_corner(*pacman_pos)
                 if teleport_pos:
+                    if self.logger:
+                        self.logger.info(f"Teleportation from {pacman_pos} to {teleport_pos}")
                     pacman_pos = teleport_pos
 
             # Check if Pacman ate food
             if pacman_pos in remaining_food:
+                if self.logger:
+                    self.logger.info(f"Food eaten at {pacman_pos}, {len(remaining_food) - 1} remaining")
                 remaining_food.remove(pacman_pos)
 
             # Check if Pacman ate a magical pie
             if pacman_pos in remaining_magical_pies:
+                if self.logger:
+                    self.logger.info(f"Magical pie eaten at {pacman_pos}, walls vanished for 5 steps")
                 remaining_magical_pies.remove(pacman_pos)
                 walls_vanished_steps = 5  # Walls vanish for 5 steps
 
@@ -184,9 +208,13 @@ class Visualizer:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
+                    if self.logger:
+                        self.logger.info(f"Visualization interrupted at step {step}/{len(actions)}")
                     return
                 if event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
                     pygame.quit()
+                    if self.logger:
+                        self.logger.info(f"Visualization interrupted at step {step}/{len(actions)}")
                     return
 
             # Add a delay between steps (configurable)
@@ -194,13 +222,26 @@ class Visualizer:
 
         # Display completion message
         if game_over:
-            print("Game Over - Pacman got stuck in a wall when walls reappeared!")
+            msg = "Game Over - Pacman got stuck in a wall when walls reappeared!"
+            print(msg)
+            if self.logger:
+                self.logger.warning(msg)
         else:
-            print(f"Solution completed successfully in {step} steps!")
+            msg = f"Solution completed successfully in {step} steps!"
+            print(msg)
+            if self.logger:
+                self.logger.info(msg)
+
             if remaining_food:
-                print(f"Warning: {len(remaining_food)} food dots remain uneaten.")
+                food_msg = f"Warning: {len(remaining_food)} food dots remain uneaten."
+                print(food_msg)
+                if self.logger:
+                    self.logger.warning(food_msg)
 
         # Wait for a key press to exit
+        if self.logger:
+            self.logger.info("Visualization complete, waiting for key press to exit")
+
         waiting = True
         while waiting:
             for event in pygame.event.get():
@@ -208,3 +249,5 @@ class Visualizer:
                     waiting = False
 
         pygame.quit()
+        if self.logger:
+            self.logger.info("Visualization closed")

@@ -1,9 +1,37 @@
 import sys
 import time
 import argparse
+import logging
+from datetime import datetime
 from maze import Maze
 from search import a_star_search, min_food_distance_heuristic, mst_heuristic
 from visualization import Visualizer
+
+
+def setup_logger():
+    """Set up the logger to track execution history."""
+    # Create logger
+    logger = logging.getLogger('pacman_a_star')
+    logger.setLevel(logging.INFO)
+
+    # Create file handler
+    file_handler = logging.FileHandler('history.txt')
+    file_handler.setLevel(logging.INFO)
+
+    # Create console handler
+    console_handler = logging.StreamHandler()
+    console_handler.setLevel(logging.WARNING)  # Only warnings and errors to console
+
+    # Create formatter and add it to the handlers
+    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+    file_handler.setFormatter(formatter)
+    console_handler.setFormatter(formatter)
+
+    # Add the handlers to the logger
+    logger.addHandler(file_handler)
+    logger.addHandler(console_handler)
+
+    return logger
 
 
 def parse_args():
@@ -34,15 +62,27 @@ def parse_args():
 
 def main():
     """Main entry point for the Pacman A* search program"""
+    # Set up logger
+    logger = setup_logger()
+    logger.info("------------------------------------")
+    logger.info("------------------------------------")
+    logger.info("----- New Pacman A* Search Run -----")
+    logger.info(f"Start time: {datetime.now()}")
+
     # Parse command line arguments
     args = parse_args()
+    logger.info(f"Arguments: {args}")
 
     # Load the maze
     print(f"Loading maze from {args.layout_file}...")
+    logger.info(f"Loading maze from {args.layout_file}")
     try:
-        maze = Maze(args.layout_file)
+        maze = Maze(args.layout_file, logger)
+        logger.info(f"Maze loaded successfully")
     except Exception as e:
-        print(f"Error loading maze: {e}")
+        error_msg = f"Error loading maze: {e}"
+        print(error_msg)
+        logger.error(error_msg)
         sys.exit(1)
 
     # Display maze information
@@ -56,20 +96,32 @@ def main():
     if args.heuristic == 'mfd':
         heuristic = min_food_distance_heuristic
         print("\nRunning A* search with Minimum Food Distance heuristic...")
+        logger.info("Using Minimum Food Distance heuristic")
     else:
         heuristic = mst_heuristic
         print("\nRunning A* search with Minimum Spanning Tree heuristic...")
+        logger.info("Using Minimum Spanning Tree heuristic")
 
     # Run A* search
+    logger.info("Starting A* search")
     start_time = time.time()
-    actions, cost = a_star_search(maze, heuristic)
+    actions, cost = a_star_search(maze, heuristic, logger)
     end_time = time.time()
+    search_time = end_time - start_time
+    logger.info(f"A* search completed in {search_time:.2f} seconds")
 
     if actions:
         print(f"Solution found!")
         print(f"Number of actions: {len(actions)}")
         print(f"Total cost: {cost}")
-        print(f"Search time: {end_time - start_time:.2f} seconds")
+        print(f"Search time: {search_time:.2f} seconds")
+
+        logger.info(f"Solution found with {len(actions)} actions and cost {cost}")
+
+        # Log the solution
+        logger.info("Solution actions:")
+        for i, action in enumerate(actions):
+            logger.info(f"  {i + 1}: {action}")
 
         # Print or save the solution
         print("\nList of actions:")
@@ -85,18 +137,30 @@ def main():
                     for action in actions:
                         f.write(f"{action}\n")
                 print(f"\nSolution saved to {args.output}")
+                logger.info(f"Solution saved to {args.output}")
             except Exception as e:
-                print(f"Error saving solution: {e}")
+                error_msg = f"Error saving solution: {e}"
+                print(error_msg)
+                logger.error(error_msg)
 
         # Visualize the solution if not disabled
         if not args.no_visual:
             print("\nStarting visualization...")
-            visualizer = Visualizer(maze, cell_size=args.cell_size, step_delay=args.delay)
+            logger.info("Starting visualization")
+            visualizer = Visualizer(maze, cell_size=args.cell_size, step_delay=args.delay, logger=logger)
             visualizer.visualize_solution(actions)
+            logger.info("Visualization completed")
         else:
             print("\nVisualization skipped.")
+            logger.info("Visualization skipped")
     else:
         print("No solution found!")
+        logger.warning("No solution found!")
+
+    logger.info(f"Run completed at {datetime.now()}")
+    logger.info("----- End of Run -----\n")
+    logger.info("----------------------")
+    logger.info("----------------------")
 
 
 if __name__ == "__main__":
