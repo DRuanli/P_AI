@@ -117,6 +117,8 @@ class Visualizer:
 
         # Execute the actions
         step = 0
+        game_over = False
+
         for action in actions:
             step += 1
             # Update Pacman's position based on the action
@@ -140,6 +142,12 @@ class Visualizer:
                 if wall_pass_steps > 0:
                     wall_pass_steps -= 1
 
+                    # Check if Pacman is now stuck in a wall
+                    if wall_pass_steps == 0 and self.maze.is_wall(*pacman_pos):
+                        game_over = True
+                        print("GAME OVER: Pacman got stuck in a wall after wall-pass ability expired!")
+                        break
+
             # Check for teleportation
             if self.maze.is_corner(*pacman_pos):
                 teleport_pos = self.maze.get_opposite_corner(*pacman_pos)
@@ -159,7 +167,10 @@ class Visualizer:
             self.draw_maze(pacman_pos, remaining_food, remaining_magical_pies, wall_pass_steps)
 
             # Display step information
-            pygame.display.set_caption(f'Pacman A* Search - Step {step}/{len(actions)} - Action: {action}')
+            caption = f'Pacman A* Search - Step {step}/{len(actions)} - Action: {action}'
+            if wall_pass_steps > 0:
+                caption += f' - Wall Pass: {wall_pass_steps} steps left'
+            pygame.display.set_caption(caption)
 
             # Process events
             for event in pygame.event.get():
@@ -174,7 +185,12 @@ class Visualizer:
             time.sleep(0.3)
 
         # Display completion message
-        print(f"Solution completed in {step} steps!")
+        if game_over:
+            print("Game Over - Pacman got stuck in a wall!")
+        else:
+            print(f"Solution completed successfully in {step} steps!")
+            if remaining_food:
+                print(f"Warning: {len(remaining_food)} food dots remain uneaten.")
 
         # Wait for a key press to exit
         waiting = True

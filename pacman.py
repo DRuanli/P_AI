@@ -44,12 +44,20 @@ class PacmanState:
             if maze.is_wall(new_x, new_y) and not self.can_pass_walls():
                 continue
 
+            # Calculate new wall pass steps after this move
+            new_wall_pass_steps = max(0, self.wall_pass_steps - 1) if action != 'Stop' else self.wall_pass_steps
+
+            # Check if this move would leave Pacman stuck in a wall after wall-pass expires
+            # If moving to a wall and this is the last wall-pass step, don't generate this state
+            if maze.is_wall(new_x, new_y) and new_wall_pass_steps == 0:
+                continue
+
             # Create a new state for each valid move
             new_state = PacmanState(
                 position=(new_x, new_y),
                 remaining_food=self.remaining_food.copy(),
                 remaining_magical_pies=self.remaining_magical_pies.copy(),
-                wall_pass_steps=max(0, self.wall_pass_steps - 1) if action != 'Stop' else self.wall_pass_steps,
+                wall_pass_steps=new_wall_pass_steps,
                 actions=self.actions + [action],
                 cost=self.cost + 1 if action != 'Stop' else self.cost
             )

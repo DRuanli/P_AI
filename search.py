@@ -66,8 +66,13 @@ def mst_heuristic(position, food_points):
     if not food_points:
         return 0
 
+    # Convert to a list if it's a set to avoid iteration issues
+    food_list = list(food_points)
+    if not food_list:
+        return 0
+
     # Include pacman's position and all food points
-    all_points = [position] + list(food_points)
+    all_points = [position] + food_list
     num_points = len(all_points)
 
     if num_points == 1:  # Only Pacman, no food
