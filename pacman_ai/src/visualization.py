@@ -1,6 +1,7 @@
 import pygame
 import time
 import math
+import random
 from typing import Tuple, Set, List, Optional
 
 # Enhanced colors with better contrast and visual appeal
@@ -15,6 +16,8 @@ FOOD_GLOW = (200, 200, 255)  # Light blue glow for food
 GREEN = (50, 255, 50)  # Brighter green for magical pies
 PURPLE = (180, 100, 255)  # Brighter purple for teleport corners
 GRID_LINE = (40, 40, 60)  # Subtle grid lines
+GOLD = (255, 215, 0)  # Gold for score particles
+CYAN = (0, 255, 255)  # Cyan for wall phasing effects
 
 
 class Visualizer:
@@ -46,6 +49,7 @@ class Visualizer:
             self.eat_sound = pygame.mixer.Sound('eat.wav')
             self.power_sound = pygame.mixer.Sound('power.wav')
             self.teleport_sound = pygame.mixer.Sound('teleport.wav')
+            self.wall_phase_sound = pygame.mixer.Sound('phase.wav')
             self.sounds_loaded = True
         except:
             self.sounds_loaded = False
@@ -59,6 +63,13 @@ class Visualizer:
         self.transition_start = None
         self.transition_target = None
         self.transition_time = 0
+
+        # Effect particles
+        self.particles = []  # List of active particles
+        self.wall_phase_effects = []  # List of wall phasing effects
+        self.eat_effects = []  # List of food eating effects
+        self.teleport_effects = []  # List of teleport effects
+        self.power_wave = None  # Power wave effect
 
     def cell_to_pixel(self, x: int, y: int) -> Tuple[int, int]:
         """Convert maze coordinates to screen pixels"""
@@ -286,9 +297,311 @@ class Visualizer:
         status_info = self.info_font.render(status, True, color)
         self.screen.blit(status_info, (450, self.height - 30))
 
+    def create_food_particles(self, x, y, count=12):
+        """Create particles for food eating effect"""
+        center = self.cell_to_pixel(x, y)
+        for _ in range(count):
+            angle = random.uniform(0, 2 * math.pi)
+            speed = random.uniform(1, 3)
+            size = random.uniform(1, 3)
+            lifetime = random.uniform(0.5, 1.0)
+            self.particles.append({
+                'x': center[0],
+                'y': center[1],
+                'vx': math.cos(angle) * speed,
+                'vy': math.sin(angle) * speed,
+                'size': size,
+                'color': WHITE,
+                'fade': 255,
+                'lifetime': lifetime,
+                'elapsed': 0
+            })
+        # Add score pop-up
+        self.eat_effects.append({
+            'x': center[0],
+            'y': center[1],
+            'text': '+10',
+            'color': GOLD,
+            'size': 16,
+            'vy': -1.5,
+            'lifetime': 1.0,
+            'elapsed': 0
+        })
+
+    def create_power_particles(self, x, y, count=30):
+        """Create particles for power pill eating effect"""
+        center = self.cell_to_pixel(x, y)
+        for _ in range(count):
+            angle = random.uniform(0, 2 * math.pi)
+            speed = random.uniform(2, 5)
+            size = random.uniform(2, 4)
+            lifetime = random.uniform(1.0, 2.0)
+            self.particles.append({
+                'x': center[0],
+                'y': center[1],
+                'vx': math.cos(angle) * speed,
+                'vy': math.sin(angle) * speed,
+                'size': size,
+                'color': GREEN,
+                'fade': 255,
+                'lifetime': lifetime,
+                'elapsed': 0
+            })
+        # Add power wave effect
+        self.power_wave = {
+            'x': center[0],
+            'y': center[1],
+            'radius': 0,
+            'max_radius': self.cell_size * 8,
+            'color': (GREEN[0], GREEN[1], GREEN[2], 180),
+            'lifetime': 1.0,
+            'elapsed': 0
+        }
+        # Add score pop-up
+        self.eat_effects.append({
+            'x': center[0],
+            'y': center[1],
+            'text': 'POWER!',
+            'color': GREEN,
+            'size': 20,
+            'vy': -2,
+            'lifetime': 1.5,
+            'elapsed': 0
+        })
+
+    def create_wall_phase_effect(self, x, y, direction):
+        """Create effect for passing through a wall"""
+        center = self.cell_to_pixel(x, y)
+        dx, dy = 0, 0
+        if direction == 'North':
+            dy = self.cell_size // 2
+        elif direction == 'South':
+            dy = -self.cell_size // 2
+        elif direction == 'East':
+            dx = -self.cell_size // 2
+        elif direction == 'West':
+            dx = self.cell_size // 2
+
+        # Create ripple effect at wall intersection
+        self.wall_phase_effects.append({
+            'x': center[0] + dx,
+            'y': center[1] + dy,
+            'radius': 2,
+            'max_radius': self.cell_size * 0.8,
+            'color': CYAN,
+            'lifetime': 0.8,
+            'elapsed': 0
+        })
+
+        # Create ghost trail particles
+        for i in range(6):
+            offset = i * 0.15
+            self.particles.append({
+                'x': center[0] - dx * offset * 2,
+                'y': center[1] - dy * offset * 2,
+                'vx': -dx * 0.05,
+                'vy': -dy * 0.05,
+                'size': self.cell_size // 3,
+                'color': YELLOW if self.walls_vanished == 0 else POWER_RED,
+                'fade': 100,
+                'lifetime': 0.5 - i * 0.05,
+                'elapsed': 0,
+                'is_ghost': True
+            })
+
+    def create_teleport_effect(self, from_pos, to_pos):
+        """Create teleportation effect between two points"""
+        from_pixel = self.cell_to_pixel(*from_pos)
+        to_pixel = self.cell_to_pixel(*to_pos)
+
+        # Create disappearing effect at source
+        for _ in range(20):
+            angle = random.uniform(0, 2 * math.pi)
+            speed = random.uniform(3, 6)
+            size = random.uniform(2, 4)
+            lifetime = random.uniform(0.3, 0.7)
+            self.particles.append({
+                'x': from_pixel[0],
+                'y': from_pixel[1],
+                'vx': math.cos(angle) * speed,
+                'vy': math.sin(angle) * speed,
+                'size': size,
+                'color': PURPLE,
+                'fade': 255,
+                'lifetime': lifetime,
+                'elapsed': 0
+            })
+
+        # Create appearing effect at destination
+        for _ in range(20):
+            angle = random.uniform(0, 2 * math.pi)
+            speed = random.uniform(1, 3)
+            size = random.uniform(3, 5)
+            lifetime = random.uniform(0.5, 1.0)
+            # Particles converge toward center
+            self.particles.append({
+                'x': to_pixel[0] + math.cos(angle) * self.cell_size,
+                'y': to_pixel[1] + math.sin(angle) * self.cell_size,
+                'vx': -math.cos(angle) * speed,
+                'vy': -math.sin(angle) * speed,
+                'size': size,
+                'color': PURPLE,
+                'fade': 255,
+                'lifetime': lifetime,
+                'elapsed': 0
+            })
+
+        # Create teleport beam effect
+        self.teleport_effects.append({
+            'from': from_pixel,
+            'to': to_pixel,
+            'width': 8,
+            'color': PURPLE,
+            'lifetime': 0.8,
+            'elapsed': 0
+        })
+
+        # Add teleport text
+        self.eat_effects.append({
+            'x': to_pixel[0],
+            'y': to_pixel[1] - self.cell_size // 2,
+            'text': 'TELEPORT!',
+            'color': PURPLE,
+            'size': 18,
+            'vy': -1.5,
+            'lifetime': 1.0,
+            'elapsed': 0
+        })
+
+    def update_particles(self, delta_time):
+        """Update and draw all particle effects"""
+        # Update regular particles
+        for particle in self.particles[:]:
+            particle['elapsed'] += delta_time
+            if particle['elapsed'] >= particle['lifetime']:
+                self.particles.remove(particle)
+                continue
+
+            # Update position
+            particle['x'] += particle['vx']
+            particle['y'] += particle['vy']
+
+            # Update fade
+            progress = particle['elapsed'] / particle['lifetime']
+            particle['fade'] = int(255 * (1 - progress))
+
+            # Draw particle
+            if particle.get('is_ghost', False):
+                # Ghost trail (semi-transparent circle)
+                size = particle['size'] * (1 - progress * 0.5)
+                s = pygame.Surface((size * 2, size * 2), pygame.SRCALPHA)
+                pygame.draw.circle(s, (*particle['color'], particle['fade']),
+                                   (size, size), size)
+                self.screen.blit(s, (particle['x'] - size, particle['y'] - size))
+            else:
+                # Regular particle (small circle)
+                size = particle['size'] * (1 - progress * 0.3)
+                s = pygame.Surface((max(1, int(size * 2)), max(1, int(size * 2))), pygame.SRCALPHA)
+                pygame.draw.circle(s, (*particle['color'], particle['fade']),
+                                   (max(1, int(size)), max(1, int(size))), max(1, int(size)))
+                self.screen.blit(s, (particle['x'] - size, particle['y'] - size))
+
+        # Update wall phase effects
+        for effect in self.wall_phase_effects[:]:
+            effect['elapsed'] += delta_time
+            if effect['elapsed'] >= effect['lifetime']:
+                self.wall_phase_effects.remove(effect)
+                continue
+
+            # Update radius
+            progress = effect['elapsed'] / effect['lifetime']
+            radius = effect['max_radius'] * progress
+            alpha = int(180 * (1 - progress))
+
+            # Draw ripple effect
+            s = pygame.Surface((int(radius * 2), int(radius * 2)), pygame.SRCALPHA)
+            pygame.draw.circle(s, (*effect['color'], alpha), (int(radius), int(radius)), int(radius), 2)
+            self.screen.blit(s, (effect['x'] - radius, effect['y'] - radius))
+
+        # Update eat effects (score popups)
+        for effect in self.eat_effects[:]:
+            effect['elapsed'] += delta_time
+            if effect['elapsed'] >= effect['lifetime']:
+                self.eat_effects.remove(effect)
+                continue
+
+            # Update position
+            effect['y'] += effect['vy']
+
+            # Update fade
+            progress = effect['elapsed'] / effect['lifetime']
+            alpha = int(255 * (1 - progress))
+
+            # Draw text
+            font = pygame.font.SysFont('Arial', effect['size'], bold=True)
+            text = font.render(effect['text'], True, effect['color'])
+            text.set_alpha(alpha)
+            text_rect = text.get_rect(center=(effect['x'], effect['y']))
+            self.screen.blit(text, text_rect)
+
+        # Update teleport beam effects
+        for effect in self.teleport_effects[:]:
+            effect['elapsed'] += delta_time
+            if effect['elapsed'] >= effect['lifetime']:
+                self.teleport_effects.remove(effect)
+                continue
+
+            # Calculate progress
+            progress = effect['elapsed'] / effect['lifetime']
+            alpha = int(200 * (1 - progress))
+            width = max(1, int(effect['width'] * (1 - progress * 0.7)))
+
+            # Draw beam
+            s = pygame.Surface((self.width, self.height), pygame.SRCALPHA)
+            pygame.draw.line(s, (*effect['color'], alpha),
+                             effect['from'], effect['to'], width)
+
+            # Add sparkles along the beam
+            beam_length = math.sqrt((effect['to'][0] - effect['from'][0]) ** 2 +
+                                    (effect['to'][1] - effect['from'][1]) ** 2)
+            num_sparkles = max(2, int(beam_length / 20))
+
+            for i in range(num_sparkles):
+                t = random.uniform(0, 1)
+                sparkle_x = effect['from'][0] + t * (effect['to'][0] - effect['from'][0])
+                sparkle_y = effect['from'][1] + t * (effect['to'][1] - effect['from'][1])
+                sparkle_size = random.uniform(2, 4) * (1 - progress)
+                pygame.draw.circle(s, (*effect['color'], alpha),
+                                   (int(sparkle_x), int(sparkle_y)),
+                                   int(sparkle_size))
+
+            self.screen.blit(s, (0, 0))
+
+        # Update power wave effect
+        if self.power_wave:
+            self.power_wave['elapsed'] += delta_time
+            if self.power_wave['elapsed'] >= self.power_wave['lifetime']:
+                self.power_wave = None
+            else:
+                # Update radius
+                progress = self.power_wave['elapsed'] / self.power_wave['lifetime']
+                radius = self.power_wave['max_radius'] * progress
+                alpha = int(180 * (1 - progress))
+
+                # Draw wave effect
+                s = pygame.Surface((int(radius * 2), int(radius * 2)), pygame.SRCALPHA)
+                color = (self.power_wave['color'][0], self.power_wave['color'][1],
+                         self.power_wave['color'][2], alpha)
+                pygame.draw.circle(s, color, (int(radius), int(radius)), int(radius),
+                                   max(1, int(5 * (1 - progress))))
+                self.screen.blit(s, (self.power_wave['x'] - radius, self.power_wave['y'] - radius))
+
     def draw_maze(self, pacman_pos, remaining_food, remaining_magical_pies,
                   walls_vanished_steps, action=None, step=0, total_steps=0):
         """Draw the current state of the maze with enhanced visuals"""
+        # Store current walls_vanished state for effects
+        self.walls_vanished = walls_vanished_steps
+
         # Fill the screen with background
         self.screen.fill(BLACK)
 
@@ -327,6 +640,9 @@ class Visualizer:
         # Draw Pacman with animation
         pacman_x, pacman_y = pacman_pos
         self.draw_pacman(pacman_x, pacman_y, walls_vanished_steps, action)
+
+        # Draw all particle effects
+        self.update_particles(min(0.05, self.step_delay / 3))
 
         # Draw info panel
         self.draw_info_panel(step, total_steps, action, walls_vanished_steps, len(remaining_food))
@@ -435,6 +751,14 @@ class Visualizer:
                 self.start_transition(pacman_pos, new_pos)
                 self.last_action = action
 
+            # Check if passing through a wall before updating position
+            wall_phased = False
+            if self.maze.is_wall(*new_pos) and walls_vanished_steps > 0 and new_pos != pacman_pos:
+                wall_phased = True
+                self.create_wall_phase_effect(*pacman_pos, action)
+                if self.sounds_loaded:
+                    self.wall_phase_sound.play()
+
             # Update position and check wall vanishing
             if new_pos != pacman_pos:
                 pacman_pos = new_pos
@@ -452,11 +776,13 @@ class Visualizer:
             teleported = False
             if self.maze.is_corner(*pacman_pos):
                 teleport_pos = self.maze.get_opposite_corner(*pacman_pos)
-                if teleport_pos:
+                if teleport_pos and teleport_pos != pacman_pos:  # Make sure it's actually teleporting
                     if self.logger: self.logger.info(f"Teleportation from {pacman_pos} to {teleport_pos}")
                     # Play teleport effect
                     if self.sounds_loaded:
                         self.teleport_sound.play()
+                    # Create teleport effect
+                    self.create_teleport_effect(pacman_pos, teleport_pos)
                     # Keep track of positions for teleport effect
                     from_pos = pacman_pos
                     pacman_pos = teleport_pos
@@ -466,6 +792,7 @@ class Visualizer:
             food_eaten = False
             if pacman_pos in remaining_food:
                 if self.logger: self.logger.info(f"Food eaten at {pacman_pos}, {len(remaining_food) - 1} remaining")
+                self.create_food_particles(*pacman_pos)
                 remaining_food.remove(pacman_pos)
                 food_eaten = True
                 if self.sounds_loaded:
@@ -475,6 +802,7 @@ class Visualizer:
             power_eaten = False
             if pacman_pos in remaining_magical_pies:
                 if self.logger: self.logger.info(f"Magical pie eaten at {pacman_pos}, walls vanished for 5 steps")
+                self.create_power_particles(*pacman_pos)
                 remaining_magical_pies.remove(pacman_pos)
                 walls_vanished_steps = 5
                 power_eaten = True
