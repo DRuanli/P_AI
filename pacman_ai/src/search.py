@@ -25,18 +25,6 @@ def manhattan_distance(pos1: Tuple[int, int], pos2: Tuple[int, int]) -> int:
     """Calculate Manhattan distance between two grid positions."""
     return abs(pos1[0] - pos2[0]) + abs(pos1[1] - pos2[1])
 
-
-def min_food_distance_heuristic(position: Tuple[int, int], food_points: Set[Tuple[int, int]]) -> int:
-    """
-    Minimum Manhattan distance to any food point.
-
-    Admissible because Manhattan distance never overestimates the steps
-    needed to reach food in a grid world. Consistent as distance changes
-    by at most the action cost between adjacent states.
-    """
-    return 0 if not food_points else min(manhattan_distance(position, food) for food in food_points)
-
-
 def mst_heuristic(position: Tuple[int, int], food_points: Set[Tuple[int, int]]) -> int:
     """
     Minimum Spanning Tree heuristic for multi-point collection.
@@ -76,8 +64,7 @@ def mst_heuristic(position: Tuple[int, int], food_points: Set[Tuple[int, int]]) 
     return mst_cost
 
 
-def a_star_search(maze, heuristic_func: Callable = min_food_distance_heuristic, logger=None) -> Tuple[
-    Optional[List[str]], int]:
+def a_star_search(maze, heuristic_func: Callable = mst_heuristic, logger=None) -> Tuple[Optional[List[str]], int]:
     """
     A* search for optimal path to collect all food in maze.
 

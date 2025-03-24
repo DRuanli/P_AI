@@ -4,7 +4,7 @@ import argparse
 import logging
 from datetime import datetime
 from maze import Maze
-from search import a_star_search, min_food_distance_heuristic, mst_heuristic
+from search import a_star_search, mst_heuristic
 from visualization import Visualizer
 
 
@@ -40,10 +40,6 @@ def parse_args():
 
     # Required argument: layout file
     parser.add_argument('layout_file', type=str, help='Path to the layout file')
-
-    # Optional arguments
-    parser.add_argument('--heuristic', type=str, choices=['mfd', 'mst'], default='mst',
-                        help='Heuristic to use: min_food_distance (mfd) or minimum_spanning_tree (mst)')
 
     parser.add_argument('--no-visual', action='store_true', default=False,
                         help='Skip visualization and only print the solution')
@@ -92,15 +88,9 @@ def main():
     print(f"Food points: {len(maze.food_points)}")
     print(f"Magical pies: {len(maze.magical_pies)}")
 
-    # Select heuristic
-    if args.heuristic == 'mfd':
-        heuristic = min_food_distance_heuristic
-        print("\nRunning A* search with Minimum Food Distance heuristic...")
-        logger.info("Using Minimum Food Distance heuristic")
-    else:
-        heuristic = mst_heuristic
-        print("\nRunning A* search with Minimum Spanning Tree heuristic...")
-        logger.info("Using Minimum Spanning Tree heuristic")
+    heuristic = mst_heuristic
+    print("\nRunning A* search with Minimum Spanning Tree heuristic...")
+    logger.info("Using Minimum Spanning Tree heuristic")
 
     # Run A* search
     logger.info("Starting A* search")
