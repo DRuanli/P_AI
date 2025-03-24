@@ -32,7 +32,7 @@ This project implements an A* search algorithm to find optimal paths for Pacman 
 
 3. Install required packages:
    ```
-   pip install pygame
+   pip install -r requirements.txt
    ```
 
 ## Project Structure
