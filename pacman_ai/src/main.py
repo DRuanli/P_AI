@@ -15,7 +15,7 @@ def setup_logger():
     logger.setLevel(logging.INFO)
 
     # Create file handler
-    file_handler = logging.FileHandler('logs/history.txt')
+    file_handler = logging.FileHandler('pacman_ai/logs/history.txt')
     file_handler.setLevel(logging.INFO)
 
     # Create console handler
