@@ -21,7 +21,7 @@ This project implements an A* search algorithm to find optimal paths for Pacman 
 1. Clone the repository:
    ```
    git clone https://github.com/DRuanli/P_AI.git
-   cd Pacman_AI
+   cd P_AI
    ```
 
 2. Create a virtual environment (optional but recommended):
