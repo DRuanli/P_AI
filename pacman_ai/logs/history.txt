@@ -337,3 +337,2012 @@
 
 2025-03-24 11:21:14,820 - INFO - ----------------------
 2025-03-24 11:21:14,820 - INFO - ----------------------
+2025-03-24 11:28:15,058 - INFO - ------------------------------------
+2025-03-24 11:28:15,058 - INFO - ------------------------------------
+2025-03-24 11:28:15,058 - INFO - ----- New Pacman A* Search Run -----
+2025-03-24 11:28:15,058 - INFO - Start time: 2025-03-24 11:28:15.058326
+2025-03-24 11:28:15,058 - INFO - Arguments: Namespace(layout_file='layouts/example_layout.txt', heuristic='mfd', no_visual=False, cell_size=20, delay=0.1, output=None)
+2025-03-24 11:28:15,058 - INFO - Loading maze from layouts/example_layout.txt
+2025-03-24 11:28:15,059 - INFO - Loading maze from file: layouts/example_layout.txt
+2025-03-24 11:28:15,059 - INFO - Pacman start position found at (17, 1)
+2025-03-24 11:28:15,059 - INFO - Maze loaded, dimensions: 36x18
+2025-03-24 11:28:15,059 - INFO - Total food points: 8
+2025-03-24 11:28:15,059 - INFO - Total magical pies: 4
+2025-03-24 11:28:15,059 - INFO - Maze loaded successfully
+2025-03-24 11:28:15,059 - INFO - Using Minimum Food Distance heuristic
+2025-03-24 11:28:15,059 - INFO - Starting A* search
+2025-03-24 11:28:15,059 - INFO - A* search started from position (17, 1)
+2025-03-24 11:28:15,059 - INFO - Number of food points: 8
+2025-03-24 11:28:15,059 - INFO - Number of magical pies: 4
+2025-03-24 11:28:15,086 - INFO - States explored: 1000, current position: (24, 6), remaining food: 5
+2025-03-24 11:28:15,113 - INFO - States explored: 2000, current position: (14, 6), remaining food: 6
+2025-03-24 11:28:15,141 - INFO - States explored: 3000, current position: (6, 11), remaining food: 5
+2025-03-24 11:28:15,169 - INFO - States explored: 4000, current position: (4, 11), remaining food: 6
+2025-03-24 11:28:15,198 - INFO - States explored: 5000, current position: (10, 2), remaining food: 7
+2025-03-24 11:28:15,225 - INFO - States explored: 6000, current position: (17, 7), remaining food: 6
+2025-03-24 11:28:15,254 - INFO - States explored: 7000, current position: (29, 16), remaining food: 7
+2025-03-24 11:28:15,283 - INFO - States explored: 8000, current position: (24, 10), remaining food: 7
+2025-03-24 11:28:15,324 - INFO - States explored: 9000, current position: (11, 7), remaining food: 6
+2025-03-24 11:28:15,353 - INFO - States explored: 10000, current position: (6, 8), remaining food: 7
+2025-03-24 11:28:15,382 - INFO - States explored: 11000, current position: (17, 8), remaining food: 5
+2025-03-24 11:28:15,410 - INFO - States explored: 12000, current position: (6, 5), remaining food: 7
+2025-03-24 11:28:15,440 - INFO - States explored: 13000, current position: (6, 9), remaining food: 6
+2025-03-24 11:28:15,470 - INFO - States explored: 14000, current position: (6, 9), remaining food: 6
+2025-03-24 11:28:15,499 - INFO - States explored: 15000, current position: (5, 12), remaining food: 4
+2025-03-24 11:28:15,528 - INFO - States explored: 16000, current position: (1, 5), remaining food: 5
+2025-03-24 11:28:15,557 - INFO - States explored: 17000, current position: (5, 7), remaining food: 6
+2025-03-24 11:28:15,587 - INFO - States explored: 18000, current position: (7, 4), remaining food: 6
+2025-03-24 11:28:15,615 - INFO - States explored: 19000, current position: (2, 11), remaining food: 7
+2025-03-24 11:28:15,645 - INFO - States explored: 20000, current position: (12, 6), remaining food: 5
+2025-03-24 11:28:15,676 - INFO - States explored: 21000, current position: (3, 11), remaining food: 5
+2025-03-24 11:28:15,705 - INFO - States explored: 22000, current position: (24, 8), remaining food: 4
+2025-03-24 11:28:15,734 - INFO - States explored: 23000, current position: (16, 13), remaining food: 6
+2025-03-24 11:28:15,797 - INFO - States explored: 24000, current position: (6, 3), remaining food: 6
+2025-03-24 11:28:15,826 - INFO - States explored: 25000, current position: (7, 2), remaining food: 6
+2025-03-24 11:28:15,856 - INFO - States explored: 26000, current position: (23, 5), remaining food: 5
+2025-03-24 11:28:15,885 - INFO - States explored: 27000, current position: (1, 6), remaining food: 6
+2025-03-24 11:28:15,914 - INFO - States explored: 28000, current position: (11, 9), remaining food: 5
+2025-03-24 11:28:15,944 - INFO - States explored: 29000, current position: (27, 10), remaining food: 3
+2025-03-24 11:28:15,974 - INFO - States explored: 30000, current position: (9, 13), remaining food: 3
+2025-03-24 11:28:16,004 - INFO - States explored: 31000, current position: (22, 12), remaining food: 5
+2025-03-24 11:28:16,034 - INFO - States explored: 32000, current position: (10, 2), remaining food: 6
+2025-03-24 11:28:16,064 - INFO - States explored: 33000, current position: (18, 11), remaining food: 6
+2025-03-24 11:28:16,095 - INFO - States explored: 34000, current position: (1, 10), remaining food: 4
+2025-03-24 11:28:16,125 - INFO - States explored: 35000, current position: (3, 16), remaining food: 4
+2025-03-24 11:28:16,155 - INFO - States explored: 36000, current position: (8, 4), remaining food: 6
+2025-03-24 11:28:16,185 - INFO - States explored: 37000, current position: (14, 7), remaining food: 4
+2025-03-24 11:28:16,265 - INFO - States explored: 38000, current position: (23, 15), remaining food: 6
+2025-03-24 11:28:16,296 - INFO - States explored: 39000, current position: (26, 8), remaining food: 3
+2025-03-24 11:28:16,325 - INFO - States explored: 40000, current position: (6, 9), remaining food: 6
+2025-03-24 11:28:16,356 - INFO - States explored: 41000, current position: (21, 8), remaining food: 4
+2025-03-24 11:28:16,386 - INFO - States explored: 42000, current position: (14, 7), remaining food: 5
+2025-03-24 11:28:16,417 - INFO - States explored: 43000, current position: (1, 3), remaining food: 5
+2025-03-24 11:28:16,446 - INFO - States explored: 44000, current position: (16, 1), remaining food: 3
+2025-03-24 11:28:16,476 - INFO - States explored: 45000, current position: (6, 9), remaining food: 7
+2025-03-24 11:28:16,508 - INFO - States explored: 46000, current position: (4, 12), remaining food: 4
+2025-03-24 11:28:16,537 - INFO - States explored: 47000, current position: (6, 5), remaining food: 5
+2025-03-24 11:28:16,566 - INFO - States explored: 48000, current position: (7, 11), remaining food: 3
+2025-03-24 11:28:16,597 - INFO - States explored: 49000, current position: (27, 3), remaining food: 4
+2025-03-24 11:28:16,627 - INFO - States explored: 50000, current position: (32, 10), remaining food: 6
+2025-03-24 11:28:16,659 - INFO - States explored: 51000, current position: (9, 7), remaining food: 6
+2025-03-24 11:28:16,688 - INFO - States explored: 52000, current position: (24, 10), remaining food: 4
+2025-03-24 11:28:16,787 - INFO - States explored: 53000, current position: (32, 13), remaining food: 6
+2025-03-24 11:28:16,818 - INFO - States explored: 54000, current position: (7, 5), remaining food: 6
+2025-03-24 11:28:16,848 - INFO - States explored: 55000, current position: (1, 8), remaining food: 7
+2025-03-24 11:28:16,877 - INFO - States explored: 56000, current position: (1, 13), remaining food: 6
+2025-03-24 11:28:16,908 - INFO - States explored: 57000, current position: (9, 7), remaining food: 6
+2025-03-24 11:28:16,939 - INFO - States explored: 58000, current position: (4, 6), remaining food: 5
+2025-03-24 11:28:16,971 - INFO - States explored: 59000, current position: (16, 1), remaining food: 6
+2025-03-24 11:28:17,001 - INFO - States explored: 60000, current position: (22, 8), remaining food: 3
+2025-03-24 11:28:17,031 - INFO - States explored: 61000, current position: (6, 1), remaining food: 5
+2025-03-24 11:28:17,061 - INFO - States explored: 62000, current position: (30, 14), remaining food: 5
+2025-03-24 11:28:17,091 - INFO - States explored: 63000, current position: (19, 15), remaining food: 5
+2025-03-24 11:28:17,122 - INFO - States explored: 64000, current position: (10, 4), remaining food: 5
+2025-03-24 11:28:17,153 - INFO - States explored: 65000, current position: (1, 5), remaining food: 6
+2025-03-24 11:28:17,183 - INFO - States explored: 66000, current position: (32, 13), remaining food: 7
+2025-03-24 11:28:17,302 - INFO - States explored: 67000, current position: (2, 9), remaining food: 6
+2025-03-24 11:28:17,333 - INFO - States explored: 68000, current position: (12, 4), remaining food: 3
+2025-03-24 11:28:17,362 - INFO - States explored: 69000, current position: (27, 15), remaining food: 6
+2025-03-24 11:28:17,393 - INFO - States explored: 70000, current position: (6, 9), remaining food: 6
+2025-03-24 11:28:17,424 - INFO - States explored: 71000, current position: (8, 6), remaining food: 4
+2025-03-24 11:28:17,454 - INFO - States explored: 72000, current position: (11, 13), remaining food: 4
+2025-03-24 11:28:17,484 - INFO - States explored: 73000, current position: (32, 3), remaining food: 4
+2025-03-24 11:28:17,514 - INFO - States explored: 74000, current position: (8, 9), remaining food: 5
+2025-03-24 11:28:17,547 - INFO - States explored: 75000, current position: (2, 15), remaining food: 4
+2025-03-24 11:28:17,576 - INFO - States explored: 76000, current position: (19, 6), remaining food: 4
+2025-03-24 11:28:17,605 - INFO - States explored: 77000, current position: (4, 4), remaining food: 5
+2025-03-24 11:28:17,637 - INFO - States explored: 78000, current position: (19, 15), remaining food: 4
+2025-03-24 11:28:17,671 - INFO - States explored: 79000, current position: (10, 13), remaining food: 4
+2025-03-24 11:28:17,700 - INFO - States explored: 80000, current position: (17, 15), remaining food: 6
+2025-03-24 11:28:17,731 - INFO - States explored: 81000, current position: (11, 15), remaining food: 5
+2025-03-24 11:28:17,761 - INFO - States explored: 82000, current position: (26, 8), remaining food: 5
+2025-03-24 11:28:17,904 - INFO - States explored: 83000, current position: (2, 16), remaining food: 4
+2025-03-24 11:28:17,933 - INFO - States explored: 84000, current position: (4, 9), remaining food: 4
+2025-03-24 11:28:17,962 - INFO - States explored: 85000, current position: (16, 3), remaining food: 4
+2025-03-24 11:28:17,994 - INFO - States explored: 86000, current position: (28, 13), remaining food: 4
+2025-03-24 11:28:18,025 - INFO - States explored: 87000, current position: (5, 14), remaining food: 3
+2025-03-24 11:28:18,054 - INFO - States explored: 88000, current position: (22, 1), remaining food: 4
+2025-03-24 11:28:18,084 - INFO - States explored: 89000, current position: (11, 15), remaining food: 5
+2025-03-24 11:28:18,113 - INFO - States explored: 90000, current position: (11, 15), remaining food: 5
+2025-03-24 11:28:18,145 - INFO - States explored: 91000, current position: (13, 3), remaining food: 4
+2025-03-24 11:28:18,176 - INFO - States explored: 92000, current position: (1, 4), remaining food: 5
+2025-03-24 11:28:18,206 - INFO - States explored: 93000, current position: (33, 9), remaining food: 5
+2025-03-24 11:28:18,237 - INFO - States explored: 94000, current position: (17, 3), remaining food: 4
+2025-03-24 11:28:18,267 - INFO - States explored: 95000, current position: (9, 3), remaining food: 5
+2025-03-24 11:28:18,298 - INFO - States explored: 96000, current position: (25, 2), remaining food: 5
+2025-03-24 11:28:18,328 - INFO - States explored: 97000, current position: (12, 15), remaining food: 4
+2025-03-24 11:28:18,359 - INFO - States explored: 98000, current position: (8, 5), remaining food: 6
+2025-03-24 11:28:18,388 - INFO - States explored: 99000, current position: (1, 12), remaining food: 3
+2025-03-24 11:28:18,421 - INFO - States explored: 100000, current position: (3, 1), remaining food: 4
+2025-03-24 11:28:18,450 - INFO - States explored: 101000, current position: (5, 1), remaining food: 4
+2025-03-24 11:28:18,480 - INFO - States explored: 102000, current position: (14, 9), remaining food: 3
+2025-03-24 11:28:18,512 - INFO - States explored: 103000, current position: (21, 8), remaining food: 3
+2025-03-24 11:28:18,680 - INFO - States explored: 104000, current position: (23, 8), remaining food: 5
+2025-03-24 11:28:18,710 - INFO - States explored: 105000, current position: (15, 15), remaining food: 4
+2025-03-24 11:28:18,742 - INFO - States explored: 106000, current position: (23, 15), remaining food: 4
+2025-03-24 11:28:18,775 - INFO - States explored: 107000, current position: (12, 7), remaining food: 5
+2025-03-24 11:28:18,812 - INFO - States explored: 108000, current position: (8, 5), remaining food: 6
+2025-03-24 11:28:18,848 - INFO - States explored: 109000, current position: (8, 1), remaining food: 6
+2025-03-24 11:28:18,883 - INFO - States explored: 110000, current position: (5, 1), remaining food: 5
+2025-03-24 11:28:18,912 - INFO - States explored: 111000, current position: (30, 13), remaining food: 4
+2025-03-24 11:28:18,945 - INFO - States explored: 112000, current position: (19, 5), remaining food: 3
+2025-03-24 11:28:18,977 - INFO - States explored: 113000, current position: (6, 10), remaining food: 4
+2025-03-24 11:28:19,007 - INFO - States explored: 114000, current position: (8, 6), remaining food: 5
+2025-03-24 11:28:19,038 - INFO - States explored: 115000, current position: (23, 5), remaining food: 5
+2025-03-24 11:28:19,068 - INFO - States explored: 116000, current position: (22, 8), remaining food: 4
+2025-03-24 11:28:19,099 - INFO - States explored: 117000, current position: (19, 1), remaining food: 4
+2025-03-24 11:28:19,131 - INFO - States explored: 118000, current position: (10, 6), remaining food: 3
+2025-03-24 11:28:19,162 - INFO - States explored: 119000, current position: (1, 7), remaining food: 5
+2025-03-24 11:28:19,191 - INFO - States explored: 120000, current position: (5, 1), remaining food: 6
+2025-03-24 11:28:19,222 - INFO - States explored: 121000, current position: (20, 8), remaining food: 2
+2025-03-24 11:28:19,255 - INFO - States explored: 122000, current position: (8, 16), remaining food: 4
+2025-03-24 11:28:19,286 - INFO - States explored: 123000, current position: (30, 7), remaining food: 3
+2025-03-24 11:28:19,316 - INFO - States explored: 124000, current position: (33, 1), remaining food: 4
+2025-03-24 11:28:19,346 - INFO - States explored: 125000, current position: (21, 12), remaining food: 5
+2025-03-24 11:28:19,375 - INFO - States explored: 126000, current position: (10, 15), remaining food: 5
+2025-03-24 11:28:19,409 - INFO - States explored: 127000, current position: (29, 8), remaining food: 5
+2025-03-24 11:28:19,606 - INFO - States explored: 128000, current position: (6, 4), remaining food: 4
+2025-03-24 11:28:19,638 - INFO - States explored: 129000, current position: (8, 13), remaining food: 2
+2025-03-24 11:28:19,669 - INFO - States explored: 130000, current position: (18, 13), remaining food: 4
+2025-03-24 11:28:19,697 - INFO - States explored: 131000, current position: (11, 10), remaining food: 3
+2025-03-24 11:28:19,730 - INFO - States explored: 132000, current position: (14, 7), remaining food: 6
+2025-03-24 11:28:19,762 - INFO - States explored: 133000, current position: (5, 12), remaining food: 5
+2025-03-24 11:28:19,793 - INFO - States explored: 134000, current position: (12, 6), remaining food: 3
+2025-03-24 11:28:19,823 - INFO - States explored: 135000, current position: (15, 13), remaining food: 3
+2025-03-24 11:28:19,853 - INFO - States explored: 136000, current position: (21, 5), remaining food: 2
+2025-03-24 11:28:19,883 - INFO - States explored: 137000, current position: (12, 9), remaining food: 4
+2025-03-24 11:28:19,914 - INFO - States explored: 138000, current position: (4, 7), remaining food: 4
+2025-03-24 11:28:19,945 - INFO - States explored: 139000, current position: (6, 16), remaining food: 5
+2025-03-24 11:28:19,977 - INFO - States explored: 140000, current position: (24, 8), remaining food: 5
+2025-03-24 11:28:20,007 - INFO - States explored: 141000, current position: (19, 15), remaining food: 3
+2025-03-24 11:28:20,037 - INFO - States explored: 142000, current position: (10, 6), remaining food: 3
+2025-03-24 11:28:20,067 - INFO - States explored: 143000, current position: (17, 3), remaining food: 4
+2025-03-24 11:28:20,100 - INFO - States explored: 144000, current position: (7, 9), remaining food: 5
+2025-03-24 11:28:20,132 - INFO - States explored: 145000, current position: (34, 2), remaining food: 4
+2025-03-24 11:28:20,161 - INFO - States explored: 146000, current position: (5, 13), remaining food: 4
+2025-03-24 11:28:20,192 - INFO - States explored: 147000, current position: (7, 3), remaining food: 4
+2025-03-24 11:28:20,223 - INFO - States explored: 148000, current position: (11, 9), remaining food: 4
+2025-03-24 11:28:20,253 - INFO - States explored: 149000, current position: (14, 9), remaining food: 5
+2025-03-24 11:28:20,266 - INFO - Solution found after exploring 149404 states
+2025-03-24 11:28:20,266 - INFO - Max frontier size: 7042
+2025-03-24 11:28:20,380 - INFO - A* search completed in 5.32 seconds
+2025-03-24 11:28:20,380 - INFO - Solution found with 137 actions and cost 136
+2025-03-24 11:28:20,380 - INFO - Solution actions:
+2025-03-24 11:28:20,380 - INFO -   1: West
+2025-03-24 11:28:20,380 - INFO -   2: West
+2025-03-24 11:28:20,380 - INFO -   3: West
+2025-03-24 11:28:20,380 - INFO -   4: West
+2025-03-24 11:28:20,380 - INFO -   5: West
+2025-03-24 11:28:20,381 - INFO -   6: West
+2025-03-24 11:28:20,381 - INFO -   7: West
+2025-03-24 11:28:20,381 - INFO -   8: West
+2025-03-24 11:28:20,381 - INFO -   9: West
+2025-03-24 11:28:20,381 - INFO -   10: West
+2025-03-24 11:28:20,381 - INFO -   11: West
+2025-03-24 11:28:20,381 - INFO -   12: West
+2025-03-24 11:28:20,381 - INFO -   13: West
+2025-03-24 11:28:20,381 - INFO -   14: West
+2025-03-24 11:28:20,381 - INFO -   15: West
+2025-03-24 11:28:20,381 - INFO -   16: West
+2025-03-24 11:28:20,381 - INFO -   17: North
+2025-03-24 11:28:20,381 - INFO -   18: North
+2025-03-24 11:28:20,381 - INFO -   19: North
+2025-03-24 11:28:20,381 - INFO -   20: West
+2025-03-24 11:28:20,381 - INFO -   21: West
+2025-03-24 11:28:20,381 - INFO -   22: West
+2025-03-24 11:28:20,381 - INFO -   23: West
+2025-03-24 11:28:20,381 - INFO -   24: North
+2025-03-24 11:28:20,381 - INFO -   25: North
+2025-03-24 11:28:20,381 - INFO -   26: West
+2025-03-24 11:28:20,381 - INFO -   27: North
+2025-03-24 11:28:20,381 - INFO -   28: North
+2025-03-24 11:28:20,381 - INFO -   29: North
+2025-03-24 11:28:20,381 - INFO -   30: West
+2025-03-24 11:28:20,381 - INFO -   31: West
+2025-03-24 11:28:20,381 - INFO -   32: West
+2025-03-24 11:28:20,381 - INFO -   33: West
+2025-03-24 11:28:20,381 - INFO -   34: West
+2025-03-24 11:28:20,381 - INFO -   35: West
+2025-03-24 11:28:20,381 - INFO -   36: West
+2025-03-24 11:28:20,381 - INFO -   37: West
+2025-03-24 11:28:20,381 - INFO -   38: West
+2025-03-24 11:28:20,381 - INFO -   39: North
+2025-03-24 11:28:20,381 - INFO -   40: North
+2025-03-24 11:28:20,381 - INFO -   41: North
+2025-03-24 11:28:20,381 - INFO -   42: East
+2025-03-24 11:28:20,381 - INFO -   43: East
+2025-03-24 11:28:20,381 - INFO -   44: East
+2025-03-24 11:28:20,381 - INFO -   45: East
+2025-03-24 11:28:20,381 - INFO -   46: South
+2025-03-24 11:28:20,381 - INFO -   47: East
+2025-03-24 11:28:20,381 - INFO -   48: East
+2025-03-24 11:28:20,381 - INFO -   49: West
+2025-03-24 11:28:20,381 - INFO -   50: West
+2025-03-24 11:28:20,381 - INFO -   51: North
+2025-03-24 11:28:20,381 - INFO -   52: West
+2025-03-24 11:28:20,381 - INFO -   53: West
+2025-03-24 11:28:20,381 - INFO -   54: West
+2025-03-24 11:28:20,381 - INFO -   55: West
+2025-03-24 11:28:20,381 - INFO -   56: West
+2025-03-24 11:28:20,382 - INFO -   57: West
+2025-03-24 11:28:20,382 - INFO -   58: West
+2025-03-24 11:28:20,382 - INFO -   59: West
+2025-03-24 11:28:20,382 - INFO -   60: West
+2025-03-24 11:28:20,382 - INFO -   61: West
+2025-03-24 11:28:20,382 - INFO -   62: West
+2025-03-24 11:28:20,382 - INFO -   63: East
+2025-03-24 11:28:20,382 - INFO -   64: South
+2025-03-24 11:28:20,382 - INFO -   65: South
+2025-03-24 11:28:20,382 - INFO -   66: East
+2025-03-24 11:28:20,382 - INFO -   67: East
+2025-03-24 11:28:20,382 - INFO -   68: East
+2025-03-24 11:28:20,382 - INFO -   69: South
+2025-03-24 11:28:20,382 - INFO -   70: South
+2025-03-24 11:28:20,382 - INFO -   71: West
+2025-03-24 11:28:20,382 - INFO -   72: West
+2025-03-24 11:28:20,382 - INFO -   73: West
+2025-03-24 11:28:20,382 - INFO -   74: West
+2025-03-24 11:28:20,382 - INFO -   75: West
+2025-03-24 11:28:20,382 - INFO -   76: West
+2025-03-24 11:28:20,382 - INFO -   77: South
+2025-03-24 11:28:20,382 - INFO -   78: South
+2025-03-24 11:28:20,382 - INFO -   79: West
+2025-03-24 11:28:20,382 - INFO -   80: West
+2025-03-24 11:28:20,382 - INFO -   81: West
+2025-03-24 11:28:20,382 - INFO -   82: West
+2025-03-24 11:28:20,382 - INFO -   83: West
+2025-03-24 11:28:20,382 - INFO -   84: South
+2025-03-24 11:28:20,382 - INFO -   85: West
+2025-03-24 11:28:20,382 - INFO -   86: West
+2025-03-24 11:28:20,382 - INFO -   87: West
+2025-03-24 11:28:20,382 - INFO -   88: South
+2025-03-24 11:28:20,382 - INFO -   89: South
+2025-03-24 11:28:20,382 - INFO -   90: South
+2025-03-24 11:28:20,382 - INFO -   91: South
+2025-03-24 11:28:20,382 - INFO -   92: West
+2025-03-24 11:28:20,382 - INFO -   93: West
+2025-03-24 11:28:20,382 - INFO -   94: Stop
+2025-03-24 11:28:20,382 - INFO -   95: East
+2025-03-24 11:28:20,382 - INFO -   96: East
+2025-03-24 11:28:20,382 - INFO -   97: East
+2025-03-24 11:28:20,382 - INFO -   98: East
+2025-03-24 11:28:20,382 - INFO -   99: East
+2025-03-24 11:28:20,382 - INFO -   100: East
+2025-03-24 11:28:20,382 - INFO -   101: East
+2025-03-24 11:28:20,382 - INFO -   102: East
+2025-03-24 11:28:20,382 - INFO -   103: East
+2025-03-24 11:28:20,382 - INFO -   104: North
+2025-03-24 11:28:20,382 - INFO -   105: East
+2025-03-24 11:28:20,382 - INFO -   106: East
+2025-03-24 11:28:20,382 - INFO -   107: East
+2025-03-24 11:28:20,383 - INFO -   108: East
+2025-03-24 11:28:20,383 - INFO -   109: East
+2025-03-24 11:28:20,383 - INFO -   110: North
+2025-03-24 11:28:20,383 - INFO -   111: North
+2025-03-24 11:28:20,383 - INFO -   112: East
+2025-03-24 11:28:20,383 - INFO -   113: East
+2025-03-24 11:28:20,383 - INFO -   114: East
+2025-03-24 11:28:20,383 - INFO -   115: East
+2025-03-24 11:28:20,383 - INFO -   116: North
+2025-03-24 11:28:20,383 - INFO -   117: North
+2025-03-24 11:28:20,383 - INFO -   118: North
+2025-03-24 11:28:20,383 - INFO -   119: East
+2025-03-24 11:28:20,383 - INFO -   120: East
+2025-03-24 11:28:20,383 - INFO -   121: East
+2025-03-24 11:28:20,383 - INFO -   122: West
+2025-03-24 11:28:20,383 - INFO -   123: West
+2025-03-24 11:28:20,383 - INFO -   124: West
+2025-03-24 11:28:20,383 - INFO -   125: South
+2025-03-24 11:28:20,383 - INFO -   126: West
+2025-03-24 11:28:20,383 - INFO -   127: West
+2025-03-24 11:28:20,383 - INFO -   128: West
+2025-03-24 11:28:20,383 - INFO -   129: West
+2025-03-24 11:28:20,383 - INFO -   130: West
+2025-03-24 11:28:20,383 - INFO -   131: West
+2025-03-24 11:28:20,383 - INFO -   132: South
+2025-03-24 11:28:20,383 - INFO -   133: South
+2025-03-24 11:28:20,383 - INFO -   134: West
+2025-03-24 11:28:20,383 - INFO -   135: West
+2025-03-24 11:28:20,383 - INFO -   136: West
+2025-03-24 11:28:20,383 - INFO -   137: West
+2025-03-24 11:28:20,384 - INFO - Starting visualization
+2025-03-24 11:28:21,405 - INFO - Visualization ready, waiting for key press to start
+2025-03-24 11:28:22,808 - INFO - Visualization started
+2025-03-24 11:28:23,669 - INFO - Food eaten at (8, 1), 7 remaining
+2025-03-24 11:28:24,429 - INFO - Teleportation from (1, 1) to (34, 16)
+2025-03-24 11:28:24,860 - INFO - Visualization step 20/137, Action: West
+2025-03-24 11:28:25,509 - INFO - Magical pie eaten at (29, 11), walls vanished for 5 steps
+2025-03-24 11:28:26,391 - INFO - Food eaten at (24, 8), 6 remaining
+2025-03-24 11:28:27,037 - INFO - Visualization step 40/137, Action: North
+2025-03-24 11:28:27,900 - INFO - Food eaten at (26, 6), 5 remaining
+2025-03-24 11:28:29,226 - INFO - Visualization step 60/137, Action: West
+2025-03-24 11:28:29,436 - INFO - Food eaten at (13, 5), 4 remaining
+2025-03-24 11:28:30,297 - INFO - Food eaten at (17, 9), 3 remaining
+2025-03-24 11:28:31,438 - INFO - Visualization step 80/137, Action: West
+2025-03-24 11:28:32,221 - INFO - Magical pie eaten at (3, 12), walls vanished for 5 steps
+2025-03-24 11:28:32,886 - INFO - Teleportation from (1, 16) to (34, 1)
+2025-03-24 11:28:32,996 - INFO - Teleportation from (34, 1) to (1, 16)
+2025-03-24 11:28:32,996 - INFO - Food eaten at (1, 16), 2 remaining
+2025-03-24 11:28:33,642 - INFO - Visualization step 100/137, Action: East
+2025-03-24 11:28:35,828 - INFO - Visualization step 120/137, Action: East
+2025-03-24 11:28:36,087 - INFO - Visualization interrupted at step 120/137
+2025-03-24 11:28:36,087 - INFO - Visualization completed
+2025-03-24 11:28:36,087 - INFO - Run completed at 2025-03-24 11:28:36.087346
+2025-03-24 11:28:36,087 - INFO - ----- End of Run -----
+
+2025-03-24 11:28:36,087 - INFO - ----------------------
+2025-03-24 11:28:36,087 - INFO - ----------------------
+2025-03-24 11:29:40,850 - INFO - ------------------------------------
+2025-03-24 11:29:40,851 - INFO - ------------------------------------
+2025-03-24 11:29:40,851 - INFO - ----- New Pacman A* Search Run -----
+2025-03-24 11:29:40,851 - INFO - Start time: 2025-03-24 11:29:40.851149
+2025-03-24 11:29:40,851 - INFO - Arguments: Namespace(layout_file='layouts/example_layout.txt', heuristic='mfd', no_visual=False, cell_size=20, delay=0.3, output=None)
+2025-03-24 11:29:40,851 - INFO - Loading maze from layouts/example_layout.txt
+2025-03-24 11:29:40,851 - INFO - Loading maze from file: layouts/example_layout.txt
+2025-03-24 11:29:40,852 - INFO - Pacman start position found at (17, 1)
+2025-03-24 11:29:40,852 - INFO - Maze loaded, dimensions: 36x18
+2025-03-24 11:29:40,852 - INFO - Total food points: 8
+2025-03-24 11:29:40,852 - INFO - Total magical pies: 4
+2025-03-24 11:29:40,852 - INFO - Maze loaded successfully
+2025-03-24 11:29:40,852 - INFO - Using Minimum Food Distance heuristic
+2025-03-24 11:29:40,852 - INFO - Starting A* search
+2025-03-24 11:29:40,852 - INFO - A* search started from position (17, 1)
+2025-03-24 11:29:40,852 - INFO - Number of food points: 8
+2025-03-24 11:29:40,852 - INFO - Number of magical pies: 4
+2025-03-24 11:29:40,879 - INFO - States explored: 1000, current position: (24, 6), remaining food: 5
+2025-03-24 11:29:40,906 - INFO - States explored: 2000, current position: (14, 6), remaining food: 6
+2025-03-24 11:29:40,935 - INFO - States explored: 3000, current position: (6, 11), remaining food: 5
+2025-03-24 11:29:40,963 - INFO - States explored: 4000, current position: (4, 11), remaining food: 6
+2025-03-24 11:29:40,992 - INFO - States explored: 5000, current position: (10, 2), remaining food: 7
+2025-03-24 11:29:41,019 - INFO - States explored: 6000, current position: (17, 7), remaining food: 6
+2025-03-24 11:29:41,049 - INFO - States explored: 7000, current position: (29, 16), remaining food: 7
+2025-03-24 11:29:41,079 - INFO - States explored: 8000, current position: (24, 10), remaining food: 7
+2025-03-24 11:29:41,121 - INFO - States explored: 9000, current position: (11, 7), remaining food: 6
+2025-03-24 11:29:41,150 - INFO - States explored: 10000, current position: (6, 8), remaining food: 7
+2025-03-24 11:29:41,179 - INFO - States explored: 11000, current position: (17, 8), remaining food: 5
+2025-03-24 11:29:41,208 - INFO - States explored: 12000, current position: (6, 5), remaining food: 7
+2025-03-24 11:29:41,238 - INFO - States explored: 13000, current position: (6, 9), remaining food: 6
+2025-03-24 11:29:41,268 - INFO - States explored: 14000, current position: (6, 9), remaining food: 6
+2025-03-24 11:29:41,297 - INFO - States explored: 15000, current position: (5, 12), remaining food: 4
+2025-03-24 11:29:41,327 - INFO - States explored: 16000, current position: (1, 5), remaining food: 5
+2025-03-24 11:29:41,356 - INFO - States explored: 17000, current position: (5, 7), remaining food: 6
+2025-03-24 11:29:41,386 - INFO - States explored: 18000, current position: (7, 4), remaining food: 6
+2025-03-24 11:29:41,415 - INFO - States explored: 19000, current position: (2, 11), remaining food: 7
+2025-03-24 11:29:41,444 - INFO - States explored: 20000, current position: (12, 6), remaining food: 5
+2025-03-24 11:29:41,475 - INFO - States explored: 21000, current position: (3, 11), remaining food: 5
+2025-03-24 11:29:41,505 - INFO - States explored: 22000, current position: (24, 8), remaining food: 4
+2025-03-24 11:29:41,534 - INFO - States explored: 23000, current position: (16, 13), remaining food: 6
+2025-03-24 11:29:41,599 - INFO - States explored: 24000, current position: (6, 3), remaining food: 6
+2025-03-24 11:29:41,628 - INFO - States explored: 25000, current position: (7, 2), remaining food: 6
+2025-03-24 11:29:41,660 - INFO - States explored: 26000, current position: (23, 5), remaining food: 5
+2025-03-24 11:29:41,689 - INFO - States explored: 27000, current position: (1, 6), remaining food: 6
+2025-03-24 11:29:41,721 - INFO - States explored: 28000, current position: (11, 9), remaining food: 5
+2025-03-24 11:29:41,751 - INFO - States explored: 29000, current position: (27, 10), remaining food: 3
+2025-03-24 11:29:41,781 - INFO - States explored: 30000, current position: (9, 13), remaining food: 3
+2025-03-24 11:29:41,811 - INFO - States explored: 31000, current position: (22, 12), remaining food: 5
+2025-03-24 11:29:41,840 - INFO - States explored: 32000, current position: (10, 2), remaining food: 6
+2025-03-24 11:29:41,870 - INFO - States explored: 33000, current position: (18, 11), remaining food: 6
+2025-03-24 11:29:41,901 - INFO - States explored: 34000, current position: (1, 10), remaining food: 4
+2025-03-24 11:29:41,931 - INFO - States explored: 35000, current position: (3, 16), remaining food: 4
+2025-03-24 11:29:41,961 - INFO - States explored: 36000, current position: (8, 4), remaining food: 6
+2025-03-24 11:29:41,991 - INFO - States explored: 37000, current position: (14, 7), remaining food: 4
+2025-03-24 11:29:42,072 - INFO - States explored: 38000, current position: (23, 15), remaining food: 6
+2025-03-24 11:29:42,104 - INFO - States explored: 39000, current position: (26, 8), remaining food: 3
+2025-03-24 11:29:42,132 - INFO - States explored: 40000, current position: (6, 9), remaining food: 6
+2025-03-24 11:29:42,163 - INFO - States explored: 41000, current position: (21, 8), remaining food: 4
+2025-03-24 11:29:42,193 - INFO - States explored: 42000, current position: (14, 7), remaining food: 5
+2025-03-24 11:29:42,225 - INFO - States explored: 43000, current position: (1, 3), remaining food: 5
+2025-03-24 11:29:42,254 - INFO - States explored: 44000, current position: (16, 1), remaining food: 3
+2025-03-24 11:29:42,285 - INFO - States explored: 45000, current position: (6, 9), remaining food: 7
+2025-03-24 11:29:42,317 - INFO - States explored: 46000, current position: (4, 12), remaining food: 4
+2025-03-24 11:29:42,346 - INFO - States explored: 47000, current position: (6, 5), remaining food: 5
+2025-03-24 11:29:42,375 - INFO - States explored: 48000, current position: (7, 11), remaining food: 3
+2025-03-24 11:29:42,407 - INFO - States explored: 49000, current position: (27, 3), remaining food: 4
+2025-03-24 11:29:42,437 - INFO - States explored: 50000, current position: (32, 10), remaining food: 6
+2025-03-24 11:29:42,469 - INFO - States explored: 51000, current position: (9, 7), remaining food: 6
+2025-03-24 11:29:42,498 - INFO - States explored: 52000, current position: (24, 10), remaining food: 4
+2025-03-24 11:29:42,598 - INFO - States explored: 53000, current position: (32, 13), remaining food: 6
+2025-03-24 11:29:42,628 - INFO - States explored: 54000, current position: (7, 5), remaining food: 6
+2025-03-24 11:29:42,658 - INFO - States explored: 55000, current position: (1, 8), remaining food: 7
+2025-03-24 11:29:42,688 - INFO - States explored: 56000, current position: (1, 13), remaining food: 6
+2025-03-24 11:29:42,720 - INFO - States explored: 57000, current position: (9, 7), remaining food: 6
+2025-03-24 11:29:42,750 - INFO - States explored: 58000, current position: (4, 6), remaining food: 5
+2025-03-24 11:29:42,780 - INFO - States explored: 59000, current position: (16, 1), remaining food: 6
+2025-03-24 11:29:42,811 - INFO - States explored: 60000, current position: (22, 8), remaining food: 3
+2025-03-24 11:29:42,841 - INFO - States explored: 61000, current position: (6, 1), remaining food: 5
+2025-03-24 11:29:42,871 - INFO - States explored: 62000, current position: (30, 14), remaining food: 5
+2025-03-24 11:29:42,903 - INFO - States explored: 63000, current position: (19, 15), remaining food: 5
+2025-03-24 11:29:42,934 - INFO - States explored: 64000, current position: (10, 4), remaining food: 5
+2025-03-24 11:29:42,965 - INFO - States explored: 65000, current position: (1, 5), remaining food: 6
+2025-03-24 11:29:42,995 - INFO - States explored: 66000, current position: (32, 13), remaining food: 7
+2025-03-24 11:29:43,114 - INFO - States explored: 67000, current position: (2, 9), remaining food: 6
+2025-03-24 11:29:43,146 - INFO - States explored: 68000, current position: (12, 4), remaining food: 3
+2025-03-24 11:29:43,174 - INFO - States explored: 69000, current position: (27, 15), remaining food: 6
+2025-03-24 11:29:43,205 - INFO - States explored: 70000, current position: (6, 9), remaining food: 6
+2025-03-24 11:29:43,237 - INFO - States explored: 71000, current position: (8, 6), remaining food: 4
+2025-03-24 11:29:43,267 - INFO - States explored: 72000, current position: (11, 13), remaining food: 4
+2025-03-24 11:29:43,297 - INFO - States explored: 73000, current position: (32, 3), remaining food: 4
+2025-03-24 11:29:43,328 - INFO - States explored: 74000, current position: (8, 9), remaining food: 5
+2025-03-24 11:29:43,360 - INFO - States explored: 75000, current position: (2, 15), remaining food: 4
+2025-03-24 11:29:43,389 - INFO - States explored: 76000, current position: (19, 6), remaining food: 4
+2025-03-24 11:29:43,418 - INFO - States explored: 77000, current position: (4, 4), remaining food: 5
+2025-03-24 11:29:43,450 - INFO - States explored: 78000, current position: (19, 15), remaining food: 4
+2025-03-24 11:29:43,483 - INFO - States explored: 79000, current position: (10, 13), remaining food: 4
+2025-03-24 11:29:43,511 - INFO - States explored: 80000, current position: (17, 15), remaining food: 6
+2025-03-24 11:29:43,541 - INFO - States explored: 81000, current position: (11, 15), remaining food: 5
+2025-03-24 11:29:43,571 - INFO - States explored: 82000, current position: (26, 8), remaining food: 5
+2025-03-24 11:29:43,714 - INFO - States explored: 83000, current position: (2, 16), remaining food: 4
+2025-03-24 11:29:43,744 - INFO - States explored: 84000, current position: (4, 9), remaining food: 4
+2025-03-24 11:29:43,774 - INFO - States explored: 85000, current position: (16, 3), remaining food: 4
+2025-03-24 11:29:43,809 - INFO - States explored: 86000, current position: (28, 13), remaining food: 4
+2025-03-24 11:29:43,841 - INFO - States explored: 87000, current position: (5, 14), remaining food: 3
+2025-03-24 11:29:43,871 - INFO - States explored: 88000, current position: (22, 1), remaining food: 4
+2025-03-24 11:29:43,901 - INFO - States explored: 89000, current position: (11, 15), remaining food: 5
+2025-03-24 11:29:43,931 - INFO - States explored: 90000, current position: (11, 15), remaining food: 5
+2025-03-24 11:29:43,962 - INFO - States explored: 91000, current position: (13, 3), remaining food: 4
+2025-03-24 11:29:43,993 - INFO - States explored: 92000, current position: (1, 4), remaining food: 5
+2025-03-24 11:29:44,023 - INFO - States explored: 93000, current position: (33, 9), remaining food: 5
+2025-03-24 11:29:44,054 - INFO - States explored: 94000, current position: (17, 3), remaining food: 4
+2025-03-24 11:29:44,084 - INFO - States explored: 95000, current position: (9, 3), remaining food: 5
+2025-03-24 11:29:44,115 - INFO - States explored: 96000, current position: (25, 2), remaining food: 5
+2025-03-24 11:29:44,146 - INFO - States explored: 97000, current position: (12, 15), remaining food: 4
+2025-03-24 11:29:44,176 - INFO - States explored: 98000, current position: (8, 5), remaining food: 6
+2025-03-24 11:29:44,206 - INFO - States explored: 99000, current position: (1, 12), remaining food: 3
+2025-03-24 11:29:44,239 - INFO - States explored: 100000, current position: (3, 1), remaining food: 4
+2025-03-24 11:29:44,268 - INFO - States explored: 101000, current position: (5, 1), remaining food: 4
+2025-03-24 11:29:44,298 - INFO - States explored: 102000, current position: (14, 9), remaining food: 3
+2025-03-24 11:29:44,329 - INFO - States explored: 103000, current position: (21, 8), remaining food: 3
+2025-03-24 11:29:44,500 - INFO - States explored: 104000, current position: (23, 8), remaining food: 5
+2025-03-24 11:29:44,530 - INFO - States explored: 105000, current position: (15, 15), remaining food: 4
+2025-03-24 11:29:44,560 - INFO - States explored: 106000, current position: (23, 15), remaining food: 4
+2025-03-24 11:29:44,589 - INFO - States explored: 107000, current position: (12, 7), remaining food: 5
+2025-03-24 11:29:44,622 - INFO - States explored: 108000, current position: (8, 5), remaining food: 6
+2025-03-24 11:29:44,654 - INFO - States explored: 109000, current position: (8, 1), remaining food: 6
+2025-03-24 11:29:44,684 - INFO - States explored: 110000, current position: (5, 1), remaining food: 5
+2025-03-24 11:29:44,713 - INFO - States explored: 111000, current position: (30, 13), remaining food: 4
+2025-03-24 11:29:44,745 - INFO - States explored: 112000, current position: (19, 5), remaining food: 3
+2025-03-24 11:29:44,778 - INFO - States explored: 113000, current position: (6, 10), remaining food: 4
+2025-03-24 11:29:44,808 - INFO - States explored: 114000, current position: (8, 6), remaining food: 5
+2025-03-24 11:29:44,838 - INFO - States explored: 115000, current position: (23, 5), remaining food: 5
+2025-03-24 11:29:44,869 - INFO - States explored: 116000, current position: (22, 8), remaining food: 4
+2025-03-24 11:29:44,900 - INFO - States explored: 117000, current position: (19, 1), remaining food: 4
+2025-03-24 11:29:44,932 - INFO - States explored: 118000, current position: (10, 6), remaining food: 3
+2025-03-24 11:29:44,963 - INFO - States explored: 119000, current position: (1, 7), remaining food: 5
+2025-03-24 11:29:44,992 - INFO - States explored: 120000, current position: (5, 1), remaining food: 6
+2025-03-24 11:29:45,024 - INFO - States explored: 121000, current position: (20, 8), remaining food: 2
+2025-03-24 11:29:45,056 - INFO - States explored: 122000, current position: (8, 16), remaining food: 4
+2025-03-24 11:29:45,087 - INFO - States explored: 123000, current position: (30, 7), remaining food: 3
+2025-03-24 11:29:45,118 - INFO - States explored: 124000, current position: (33, 1), remaining food: 4
+2025-03-24 11:29:45,148 - INFO - States explored: 125000, current position: (21, 12), remaining food: 5
+2025-03-24 11:29:45,176 - INFO - States explored: 126000, current position: (10, 15), remaining food: 5
+2025-03-24 11:29:45,210 - INFO - States explored: 127000, current position: (29, 8), remaining food: 5
+2025-03-24 11:29:45,413 - INFO - States explored: 128000, current position: (6, 4), remaining food: 4
+2025-03-24 11:29:45,446 - INFO - States explored: 129000, current position: (8, 13), remaining food: 2
+2025-03-24 11:29:45,476 - INFO - States explored: 130000, current position: (18, 13), remaining food: 4
+2025-03-24 11:29:45,505 - INFO - States explored: 131000, current position: (11, 10), remaining food: 3
+2025-03-24 11:29:45,537 - INFO - States explored: 132000, current position: (14, 7), remaining food: 6
+2025-03-24 11:29:45,569 - INFO - States explored: 133000, current position: (5, 12), remaining food: 5
+2025-03-24 11:29:45,600 - INFO - States explored: 134000, current position: (12, 6), remaining food: 3
+2025-03-24 11:29:45,631 - INFO - States explored: 135000, current position: (15, 13), remaining food: 3
+2025-03-24 11:29:45,661 - INFO - States explored: 136000, current position: (21, 5), remaining food: 2
+2025-03-24 11:29:45,691 - INFO - States explored: 137000, current position: (12, 9), remaining food: 4
+2025-03-24 11:29:45,721 - INFO - States explored: 138000, current position: (4, 7), remaining food: 4
+2025-03-24 11:29:45,753 - INFO - States explored: 139000, current position: (6, 16), remaining food: 5
+2025-03-24 11:29:45,785 - INFO - States explored: 140000, current position: (24, 8), remaining food: 5
+2025-03-24 11:29:45,814 - INFO - States explored: 141000, current position: (19, 15), remaining food: 3
+2025-03-24 11:29:45,845 - INFO - States explored: 142000, current position: (10, 6), remaining food: 3
+2025-03-24 11:29:45,875 - INFO - States explored: 143000, current position: (17, 3), remaining food: 4
+2025-03-24 11:29:45,907 - INFO - States explored: 144000, current position: (7, 9), remaining food: 5
+2025-03-24 11:29:45,940 - INFO - States explored: 145000, current position: (34, 2), remaining food: 4
+2025-03-24 11:29:45,969 - INFO - States explored: 146000, current position: (5, 13), remaining food: 4
+2025-03-24 11:29:46,000 - INFO - States explored: 147000, current position: (7, 3), remaining food: 4
+2025-03-24 11:29:46,030 - INFO - States explored: 148000, current position: (11, 9), remaining food: 4
+2025-03-24 11:29:46,061 - INFO - States explored: 149000, current position: (14, 9), remaining food: 5
+2025-03-24 11:29:46,073 - INFO - Solution found after exploring 149404 states
+2025-03-24 11:29:46,073 - INFO - Max frontier size: 7042
+2025-03-24 11:29:46,184 - INFO - A* search completed in 5.33 seconds
+2025-03-24 11:29:46,184 - INFO - Solution found with 137 actions and cost 136
+2025-03-24 11:29:46,184 - INFO - Solution actions:
+2025-03-24 11:29:46,184 - INFO -   1: West
+2025-03-24 11:29:46,184 - INFO -   2: West
+2025-03-24 11:29:46,184 - INFO -   3: West
+2025-03-24 11:29:46,184 - INFO -   4: West
+2025-03-24 11:29:46,184 - INFO -   5: West
+2025-03-24 11:29:46,184 - INFO -   6: West
+2025-03-24 11:29:46,185 - INFO -   7: West
+2025-03-24 11:29:46,185 - INFO -   8: West
+2025-03-24 11:29:46,185 - INFO -   9: West
+2025-03-24 11:29:46,185 - INFO -   10: West
+2025-03-24 11:29:46,185 - INFO -   11: West
+2025-03-24 11:29:46,185 - INFO -   12: West
+2025-03-24 11:29:46,185 - INFO -   13: West
+2025-03-24 11:29:46,185 - INFO -   14: West
+2025-03-24 11:29:46,185 - INFO -   15: West
+2025-03-24 11:29:46,185 - INFO -   16: West
+2025-03-24 11:29:46,185 - INFO -   17: North
+2025-03-24 11:29:46,185 - INFO -   18: North
+2025-03-24 11:29:46,185 - INFO -   19: North
+2025-03-24 11:29:46,185 - INFO -   20: West
+2025-03-24 11:29:46,185 - INFO -   21: West
+2025-03-24 11:29:46,185 - INFO -   22: West
+2025-03-24 11:29:46,185 - INFO -   23: West
+2025-03-24 11:29:46,185 - INFO -   24: North
+2025-03-24 11:29:46,185 - INFO -   25: North
+2025-03-24 11:29:46,185 - INFO -   26: West
+2025-03-24 11:29:46,185 - INFO -   27: North
+2025-03-24 11:29:46,185 - INFO -   28: North
+2025-03-24 11:29:46,185 - INFO -   29: North
+2025-03-24 11:29:46,185 - INFO -   30: West
+2025-03-24 11:29:46,185 - INFO -   31: West
+2025-03-24 11:29:46,185 - INFO -   32: West
+2025-03-24 11:29:46,185 - INFO -   33: West
+2025-03-24 11:29:46,185 - INFO -   34: West
+2025-03-24 11:29:46,185 - INFO -   35: West
+2025-03-24 11:29:46,185 - INFO -   36: West
+2025-03-24 11:29:46,185 - INFO -   37: West
+2025-03-24 11:29:46,185 - INFO -   38: West
+2025-03-24 11:29:46,185 - INFO -   39: North
+2025-03-24 11:29:46,185 - INFO -   40: North
+2025-03-24 11:29:46,185 - INFO -   41: North
+2025-03-24 11:29:46,185 - INFO -   42: East
+2025-03-24 11:29:46,185 - INFO -   43: East
+2025-03-24 11:29:46,185 - INFO -   44: East
+2025-03-24 11:29:46,185 - INFO -   45: East
+2025-03-24 11:29:46,185 - INFO -   46: South
+2025-03-24 11:29:46,185 - INFO -   47: East
+2025-03-24 11:29:46,185 - INFO -   48: East
+2025-03-24 11:29:46,185 - INFO -   49: West
+2025-03-24 11:29:46,185 - INFO -   50: West
+2025-03-24 11:29:46,185 - INFO -   51: North
+2025-03-24 11:29:46,185 - INFO -   52: West
+2025-03-24 11:29:46,185 - INFO -   53: West
+2025-03-24 11:29:46,185 - INFO -   54: West
+2025-03-24 11:29:46,185 - INFO -   55: West
+2025-03-24 11:29:46,185 - INFO -   56: West
+2025-03-24 11:29:46,185 - INFO -   57: West
+2025-03-24 11:29:46,186 - INFO -   58: West
+2025-03-24 11:29:46,186 - INFO -   59: West
+2025-03-24 11:29:46,186 - INFO -   60: West
+2025-03-24 11:29:46,186 - INFO -   61: West
+2025-03-24 11:29:46,186 - INFO -   62: West
+2025-03-24 11:29:46,186 - INFO -   63: East
+2025-03-24 11:29:46,186 - INFO -   64: South
+2025-03-24 11:29:46,186 - INFO -   65: South
+2025-03-24 11:29:46,186 - INFO -   66: East
+2025-03-24 11:29:46,186 - INFO -   67: East
+2025-03-24 11:29:46,186 - INFO -   68: East
+2025-03-24 11:29:46,186 - INFO -   69: South
+2025-03-24 11:29:46,186 - INFO -   70: South
+2025-03-24 11:29:46,186 - INFO -   71: West
+2025-03-24 11:29:46,186 - INFO -   72: West
+2025-03-24 11:29:46,186 - INFO -   73: West
+2025-03-24 11:29:46,186 - INFO -   74: West
+2025-03-24 11:29:46,186 - INFO -   75: West
+2025-03-24 11:29:46,186 - INFO -   76: West
+2025-03-24 11:29:46,186 - INFO -   77: South
+2025-03-24 11:29:46,186 - INFO -   78: South
+2025-03-24 11:29:46,186 - INFO -   79: West
+2025-03-24 11:29:46,186 - INFO -   80: West
+2025-03-24 11:29:46,186 - INFO -   81: West
+2025-03-24 11:29:46,186 - INFO -   82: West
+2025-03-24 11:29:46,186 - INFO -   83: West
+2025-03-24 11:29:46,186 - INFO -   84: South
+2025-03-24 11:29:46,186 - INFO -   85: West
+2025-03-24 11:29:46,186 - INFO -   86: West
+2025-03-24 11:29:46,186 - INFO -   87: West
+2025-03-24 11:29:46,186 - INFO -   88: South
+2025-03-24 11:29:46,186 - INFO -   89: South
+2025-03-24 11:29:46,186 - INFO -   90: South
+2025-03-24 11:29:46,186 - INFO -   91: South
+2025-03-24 11:29:46,186 - INFO -   92: West
+2025-03-24 11:29:46,186 - INFO -   93: West
+2025-03-24 11:29:46,186 - INFO -   94: Stop
+2025-03-24 11:29:46,186 - INFO -   95: East
+2025-03-24 11:29:46,186 - INFO -   96: East
+2025-03-24 11:29:46,186 - INFO -   97: East
+2025-03-24 11:29:46,186 - INFO -   98: East
+2025-03-24 11:29:46,186 - INFO -   99: East
+2025-03-24 11:29:46,186 - INFO -   100: East
+2025-03-24 11:29:46,186 - INFO -   101: East
+2025-03-24 11:29:46,186 - INFO -   102: East
+2025-03-24 11:29:46,186 - INFO -   103: East
+2025-03-24 11:29:46,186 - INFO -   104: North
+2025-03-24 11:29:46,186 - INFO -   105: East
+2025-03-24 11:29:46,186 - INFO -   106: East
+2025-03-24 11:29:46,186 - INFO -   107: East
+2025-03-24 11:29:46,187 - INFO -   108: East
+2025-03-24 11:29:46,187 - INFO -   109: East
+2025-03-24 11:29:46,187 - INFO -   110: North
+2025-03-24 11:29:46,187 - INFO -   111: North
+2025-03-24 11:29:46,187 - INFO -   112: East
+2025-03-24 11:29:46,187 - INFO -   113: East
+2025-03-24 11:29:46,187 - INFO -   114: East
+2025-03-24 11:29:46,187 - INFO -   115: East
+2025-03-24 11:29:46,187 - INFO -   116: North
+2025-03-24 11:29:46,187 - INFO -   117: North
+2025-03-24 11:29:46,187 - INFO -   118: North
+2025-03-24 11:29:46,187 - INFO -   119: East
+2025-03-24 11:29:46,187 - INFO -   120: East
+2025-03-24 11:29:46,187 - INFO -   121: East
+2025-03-24 11:29:46,187 - INFO -   122: West
+2025-03-24 11:29:46,187 - INFO -   123: West
+2025-03-24 11:29:46,187 - INFO -   124: West
+2025-03-24 11:29:46,187 - INFO -   125: South
+2025-03-24 11:29:46,187 - INFO -   126: West
+2025-03-24 11:29:46,187 - INFO -   127: West
+2025-03-24 11:29:46,187 - INFO -   128: West
+2025-03-24 11:29:46,187 - INFO -   129: West
+2025-03-24 11:29:46,187 - INFO -   130: West
+2025-03-24 11:29:46,187 - INFO -   131: West
+2025-03-24 11:29:46,187 - INFO -   132: South
+2025-03-24 11:29:46,187 - INFO -   133: South
+2025-03-24 11:29:46,187 - INFO -   134: West
+2025-03-24 11:29:46,187 - INFO -   135: West
+2025-03-24 11:29:46,187 - INFO -   136: West
+2025-03-24 11:29:46,187 - INFO -   137: West
+2025-03-24 11:29:46,187 - INFO - Starting visualization
+2025-03-24 11:29:46,863 - INFO - Visualization ready, waiting for key press to start
+2025-03-24 11:29:48,107 - INFO - Visualization started
+2025-03-24 11:29:50,222 - INFO - Visualization interrupted at step 7/137
+2025-03-24 11:29:50,222 - INFO - Visualization completed
+2025-03-24 11:29:50,222 - INFO - Run completed at 2025-03-24 11:29:50.222338
+2025-03-24 11:29:50,222 - INFO - ----- End of Run -----
+
+2025-03-24 11:29:50,222 - INFO - ----------------------
+2025-03-24 11:29:50,222 - INFO - ----------------------
+2025-03-24 11:30:42,538 - INFO - ------------------------------------
+2025-03-24 11:30:42,539 - INFO - ------------------------------------
+2025-03-24 11:30:42,539 - INFO - ----- New Pacman A* Search Run -----
+2025-03-24 11:30:42,539 - INFO - Start time: 2025-03-24 11:30:42.539141
+2025-03-24 11:30:42,539 - INFO - Arguments: Namespace(layout_file='layouts/example_layout.txt', heuristic='mfd', no_visual=False, cell_size=20, delay=0.01, output=None)
+2025-03-24 11:30:42,539 - INFO - Loading maze from layouts/example_layout.txt
+2025-03-24 11:30:42,539 - INFO - Loading maze from file: layouts/example_layout.txt
+2025-03-24 11:30:42,540 - INFO - Pacman start position found at (17, 1)
+2025-03-24 11:30:42,540 - INFO - Maze loaded, dimensions: 36x18
+2025-03-24 11:30:42,540 - INFO - Total food points: 8
+2025-03-24 11:30:42,540 - INFO - Total magical pies: 4
+2025-03-24 11:30:42,540 - INFO - Maze loaded successfully
+2025-03-24 11:30:42,540 - INFO - Using Minimum Food Distance heuristic
+2025-03-24 11:30:42,540 - INFO - Starting A* search
+2025-03-24 11:30:42,540 - INFO - A* search started from position (17, 1)
+2025-03-24 11:30:42,540 - INFO - Number of food points: 8
+2025-03-24 11:30:42,540 - INFO - Number of magical pies: 4
+2025-03-24 11:30:42,567 - INFO - States explored: 1000, current position: (24, 6), remaining food: 5
+2025-03-24 11:30:42,594 - INFO - States explored: 2000, current position: (14, 6), remaining food: 6
+2025-03-24 11:30:42,622 - INFO - States explored: 3000, current position: (6, 11), remaining food: 5
+2025-03-24 11:30:42,651 - INFO - States explored: 4000, current position: (4, 11), remaining food: 6
+2025-03-24 11:30:42,680 - INFO - States explored: 5000, current position: (10, 2), remaining food: 7
+2025-03-24 11:30:42,708 - INFO - States explored: 6000, current position: (17, 7), remaining food: 6
+2025-03-24 11:30:42,736 - INFO - States explored: 7000, current position: (29, 16), remaining food: 7
+2025-03-24 11:30:42,766 - INFO - States explored: 8000, current position: (24, 10), remaining food: 7
+2025-03-24 11:30:42,808 - INFO - States explored: 9000, current position: (11, 7), remaining food: 6
+2025-03-24 11:30:42,836 - INFO - States explored: 10000, current position: (6, 8), remaining food: 7
+2025-03-24 11:30:42,866 - INFO - States explored: 11000, current position: (17, 8), remaining food: 5
+2025-03-24 11:30:42,896 - INFO - States explored: 12000, current position: (6, 5), remaining food: 7
+2025-03-24 11:30:42,927 - INFO - States explored: 13000, current position: (6, 9), remaining food: 6
+2025-03-24 11:30:42,957 - INFO - States explored: 14000, current position: (6, 9), remaining food: 6
+2025-03-24 11:30:42,987 - INFO - States explored: 15000, current position: (5, 12), remaining food: 4
+2025-03-24 11:30:43,016 - INFO - States explored: 16000, current position: (1, 5), remaining food: 5
+2025-03-24 11:30:43,046 - INFO - States explored: 17000, current position: (5, 7), remaining food: 6
+2025-03-24 11:30:43,076 - INFO - States explored: 18000, current position: (7, 4), remaining food: 6
+2025-03-24 11:30:43,105 - INFO - States explored: 19000, current position: (2, 11), remaining food: 7
+2025-03-24 11:30:43,136 - INFO - States explored: 20000, current position: (12, 6), remaining food: 5
+2025-03-24 11:30:43,167 - INFO - States explored: 21000, current position: (3, 11), remaining food: 5
+2025-03-24 11:30:43,198 - INFO - States explored: 22000, current position: (24, 8), remaining food: 4
+2025-03-24 11:30:43,227 - INFO - States explored: 23000, current position: (16, 13), remaining food: 6
+2025-03-24 11:30:43,291 - INFO - States explored: 24000, current position: (6, 3), remaining food: 6
+2025-03-24 11:30:43,322 - INFO - States explored: 25000, current position: (7, 2), remaining food: 6
+2025-03-24 11:30:43,352 - INFO - States explored: 26000, current position: (23, 5), remaining food: 5
+2025-03-24 11:30:43,382 - INFO - States explored: 27000, current position: (1, 6), remaining food: 6
+2025-03-24 11:30:43,412 - INFO - States explored: 28000, current position: (11, 9), remaining food: 5
+2025-03-24 11:30:43,442 - INFO - States explored: 29000, current position: (27, 10), remaining food: 3
+2025-03-24 11:30:43,472 - INFO - States explored: 30000, current position: (9, 13), remaining food: 3
+2025-03-24 11:30:43,502 - INFO - States explored: 31000, current position: (22, 12), remaining food: 5
+2025-03-24 11:30:43,531 - INFO - States explored: 32000, current position: (10, 2), remaining food: 6
+2025-03-24 11:30:43,561 - INFO - States explored: 33000, current position: (18, 11), remaining food: 6
+2025-03-24 11:30:43,592 - INFO - States explored: 34000, current position: (1, 10), remaining food: 4
+2025-03-24 11:30:43,622 - INFO - States explored: 35000, current position: (3, 16), remaining food: 4
+2025-03-24 11:30:43,652 - INFO - States explored: 36000, current position: (8, 4), remaining food: 6
+2025-03-24 11:30:43,682 - INFO - States explored: 37000, current position: (14, 7), remaining food: 4
+2025-03-24 11:30:43,762 - INFO - States explored: 38000, current position: (23, 15), remaining food: 6
+2025-03-24 11:30:43,793 - INFO - States explored: 39000, current position: (26, 8), remaining food: 3
+2025-03-24 11:30:43,822 - INFO - States explored: 40000, current position: (6, 9), remaining food: 6
+2025-03-24 11:30:43,853 - INFO - States explored: 41000, current position: (21, 8), remaining food: 4
+2025-03-24 11:30:43,883 - INFO - States explored: 42000, current position: (14, 7), remaining food: 5
+2025-03-24 11:30:43,914 - INFO - States explored: 43000, current position: (1, 3), remaining food: 5
+2025-03-24 11:30:43,943 - INFO - States explored: 44000, current position: (16, 1), remaining food: 3
+2025-03-24 11:30:43,974 - INFO - States explored: 45000, current position: (6, 9), remaining food: 7
+2025-03-24 11:30:44,007 - INFO - States explored: 46000, current position: (4, 12), remaining food: 4
+2025-03-24 11:30:44,038 - INFO - States explored: 47000, current position: (6, 5), remaining food: 5
+2025-03-24 11:30:44,070 - INFO - States explored: 48000, current position: (7, 11), remaining food: 3
+2025-03-24 11:30:44,101 - INFO - States explored: 49000, current position: (27, 3), remaining food: 4
+2025-03-24 11:30:44,133 - INFO - States explored: 50000, current position: (32, 10), remaining food: 6
+2025-03-24 11:30:44,166 - INFO - States explored: 51000, current position: (9, 7), remaining food: 6
+2025-03-24 11:30:44,195 - INFO - States explored: 52000, current position: (24, 10), remaining food: 4
+2025-03-24 11:30:44,294 - INFO - States explored: 53000, current position: (32, 13), remaining food: 6
+2025-03-24 11:30:44,326 - INFO - States explored: 54000, current position: (7, 5), remaining food: 6
+2025-03-24 11:30:44,357 - INFO - States explored: 55000, current position: (1, 8), remaining food: 7
+2025-03-24 11:30:44,387 - INFO - States explored: 56000, current position: (1, 13), remaining food: 6
+2025-03-24 11:30:44,420 - INFO - States explored: 57000, current position: (9, 7), remaining food: 6
+2025-03-24 11:30:44,451 - INFO - States explored: 58000, current position: (4, 6), remaining food: 5
+2025-03-24 11:30:44,482 - INFO - States explored: 59000, current position: (16, 1), remaining food: 6
+2025-03-24 11:30:44,513 - INFO - States explored: 60000, current position: (22, 8), remaining food: 3
+2025-03-24 11:30:44,545 - INFO - States explored: 61000, current position: (6, 1), remaining food: 5
+2025-03-24 11:30:44,575 - INFO - States explored: 62000, current position: (30, 14), remaining food: 5
+2025-03-24 11:30:44,607 - INFO - States explored: 63000, current position: (19, 15), remaining food: 5
+2025-03-24 11:30:44,638 - INFO - States explored: 64000, current position: (10, 4), remaining food: 5
+2025-03-24 11:30:44,669 - INFO - States explored: 65000, current position: (1, 5), remaining food: 6
+2025-03-24 11:30:44,700 - INFO - States explored: 66000, current position: (32, 13), remaining food: 7
+2025-03-24 11:30:44,818 - INFO - States explored: 67000, current position: (2, 9), remaining food: 6
+2025-03-24 11:30:44,852 - INFO - States explored: 68000, current position: (12, 4), remaining food: 3
+2025-03-24 11:30:44,881 - INFO - States explored: 69000, current position: (27, 15), remaining food: 6
+2025-03-24 11:30:44,913 - INFO - States explored: 70000, current position: (6, 9), remaining food: 6
+2025-03-24 11:30:44,945 - INFO - States explored: 71000, current position: (8, 6), remaining food: 4
+2025-03-24 11:30:44,974 - INFO - States explored: 72000, current position: (11, 13), remaining food: 4
+2025-03-24 11:30:45,006 - INFO - States explored: 73000, current position: (32, 3), remaining food: 4
+2025-03-24 11:30:45,038 - INFO - States explored: 74000, current position: (8, 9), remaining food: 5
+2025-03-24 11:30:45,071 - INFO - States explored: 75000, current position: (2, 15), remaining food: 4
+2025-03-24 11:30:45,101 - INFO - States explored: 76000, current position: (19, 6), remaining food: 4
+2025-03-24 11:30:45,130 - INFO - States explored: 77000, current position: (4, 4), remaining food: 5
+2025-03-24 11:30:45,167 - INFO - States explored: 78000, current position: (19, 15), remaining food: 4
+2025-03-24 11:30:45,204 - INFO - States explored: 79000, current position: (10, 13), remaining food: 4
+2025-03-24 11:30:45,234 - INFO - States explored: 80000, current position: (17, 15), remaining food: 6
+2025-03-24 11:30:45,266 - INFO - States explored: 81000, current position: (11, 15), remaining food: 5
+2025-03-24 11:30:45,296 - INFO - States explored: 82000, current position: (26, 8), remaining food: 5
+2025-03-24 11:30:45,439 - INFO - States explored: 83000, current position: (2, 16), remaining food: 4
+2025-03-24 11:30:45,493 - INFO - States explored: 84000, current position: (4, 9), remaining food: 4
+2025-03-24 11:30:45,553 - INFO - States explored: 85000, current position: (16, 3), remaining food: 4
+2025-03-24 11:30:45,593 - INFO - States explored: 86000, current position: (28, 13), remaining food: 4
+2025-03-24 11:30:45,633 - INFO - States explored: 87000, current position: (5, 14), remaining food: 3
+2025-03-24 11:30:45,673 - INFO - States explored: 88000, current position: (22, 1), remaining food: 4
+2025-03-24 11:30:45,714 - INFO - States explored: 89000, current position: (11, 15), remaining food: 5
+2025-03-24 11:30:45,754 - INFO - States explored: 90000, current position: (11, 15), remaining food: 5
+2025-03-24 11:30:45,794 - INFO - States explored: 91000, current position: (13, 3), remaining food: 4
+2025-03-24 11:30:45,833 - INFO - States explored: 92000, current position: (1, 4), remaining food: 5
+2025-03-24 11:30:45,867 - INFO - States explored: 93000, current position: (33, 9), remaining food: 5
+2025-03-24 11:30:45,903 - INFO - States explored: 94000, current position: (17, 3), remaining food: 4
+2025-03-24 11:30:45,937 - INFO - States explored: 95000, current position: (9, 3), remaining food: 5
+2025-03-24 11:30:45,973 - INFO - States explored: 96000, current position: (25, 2), remaining food: 5
+2025-03-24 11:30:46,016 - INFO - States explored: 97000, current position: (12, 15), remaining food: 4
+2025-03-24 11:30:46,073 - INFO - States explored: 98000, current position: (8, 5), remaining food: 6
+2025-03-24 11:30:46,113 - INFO - States explored: 99000, current position: (1, 12), remaining food: 3
+2025-03-24 11:30:46,156 - INFO - States explored: 100000, current position: (3, 1), remaining food: 4
+2025-03-24 11:30:46,195 - INFO - States explored: 101000, current position: (5, 1), remaining food: 4
+2025-03-24 11:30:46,234 - INFO - States explored: 102000, current position: (14, 9), remaining food: 3
+2025-03-24 11:30:46,271 - INFO - States explored: 103000, current position: (21, 8), remaining food: 3
+2025-03-24 11:30:46,457 - INFO - States explored: 104000, current position: (23, 8), remaining food: 5
+2025-03-24 11:30:46,490 - INFO - States explored: 105000, current position: (15, 15), remaining food: 4
+2025-03-24 11:30:46,522 - INFO - States explored: 106000, current position: (23, 15), remaining food: 4
+2025-03-24 11:30:46,552 - INFO - States explored: 107000, current position: (12, 7), remaining food: 5
+2025-03-24 11:30:46,585 - INFO - States explored: 108000, current position: (8, 5), remaining food: 6
+2025-03-24 11:30:46,617 - INFO - States explored: 109000, current position: (8, 1), remaining food: 6
+2025-03-24 11:30:46,648 - INFO - States explored: 110000, current position: (5, 1), remaining food: 5
+2025-03-24 11:30:46,677 - INFO - States explored: 111000, current position: (30, 13), remaining food: 4
+2025-03-24 11:30:46,710 - INFO - States explored: 112000, current position: (19, 5), remaining food: 3
+2025-03-24 11:30:46,743 - INFO - States explored: 113000, current position: (6, 10), remaining food: 4
+2025-03-24 11:30:46,774 - INFO - States explored: 114000, current position: (8, 6), remaining food: 5
+2025-03-24 11:30:46,803 - INFO - States explored: 115000, current position: (23, 5), remaining food: 5
+2025-03-24 11:30:46,834 - INFO - States explored: 116000, current position: (22, 8), remaining food: 4
+2025-03-24 11:30:46,865 - INFO - States explored: 117000, current position: (19, 1), remaining food: 4
+2025-03-24 11:30:46,897 - INFO - States explored: 118000, current position: (10, 6), remaining food: 3
+2025-03-24 11:30:46,929 - INFO - States explored: 119000, current position: (1, 7), remaining food: 5
+2025-03-24 11:30:46,958 - INFO - States explored: 120000, current position: (5, 1), remaining food: 6
+2025-03-24 11:30:46,989 - INFO - States explored: 121000, current position: (20, 8), remaining food: 2
+2025-03-24 11:30:47,022 - INFO - States explored: 122000, current position: (8, 16), remaining food: 4
+2025-03-24 11:30:47,053 - INFO - States explored: 123000, current position: (30, 7), remaining food: 3
+2025-03-24 11:30:47,083 - INFO - States explored: 124000, current position: (33, 1), remaining food: 4
+2025-03-24 11:30:47,114 - INFO - States explored: 125000, current position: (21, 12), remaining food: 5
+2025-03-24 11:30:47,143 - INFO - States explored: 126000, current position: (10, 15), remaining food: 5
+2025-03-24 11:30:47,355 - INFO - States explored: 127000, current position: (29, 8), remaining food: 5
+2025-03-24 11:30:47,386 - INFO - States explored: 128000, current position: (6, 4), remaining food: 4
+2025-03-24 11:30:47,419 - INFO - States explored: 129000, current position: (8, 13), remaining food: 2
+2025-03-24 11:30:47,450 - INFO - States explored: 130000, current position: (18, 13), remaining food: 4
+2025-03-24 11:30:47,479 - INFO - States explored: 131000, current position: (11, 10), remaining food: 3
+2025-03-24 11:30:47,512 - INFO - States explored: 132000, current position: (14, 7), remaining food: 6
+2025-03-24 11:30:47,545 - INFO - States explored: 133000, current position: (5, 12), remaining food: 5
+2025-03-24 11:30:47,577 - INFO - States explored: 134000, current position: (12, 6), remaining food: 3
+2025-03-24 11:30:47,608 - INFO - States explored: 135000, current position: (15, 13), remaining food: 3
+2025-03-24 11:30:47,640 - INFO - States explored: 136000, current position: (21, 5), remaining food: 2
+2025-03-24 11:30:47,671 - INFO - States explored: 137000, current position: (12, 9), remaining food: 4
+2025-03-24 11:30:47,703 - INFO - States explored: 138000, current position: (4, 7), remaining food: 4
+2025-03-24 11:30:47,735 - INFO - States explored: 139000, current position: (6, 16), remaining food: 5
+2025-03-24 11:30:47,768 - INFO - States explored: 140000, current position: (24, 8), remaining food: 5
+2025-03-24 11:30:47,835 - INFO - States explored: 141000, current position: (19, 15), remaining food: 3
+2025-03-24 11:30:47,890 - INFO - States explored: 142000, current position: (10, 6), remaining food: 3
+2025-03-24 11:30:47,925 - INFO - States explored: 143000, current position: (17, 3), remaining food: 4
+2025-03-24 11:30:47,959 - INFO - States explored: 144000, current position: (7, 9), remaining food: 5
+2025-03-24 11:30:47,992 - INFO - States explored: 145000, current position: (34, 2), remaining food: 4
+2025-03-24 11:30:48,022 - INFO - States explored: 146000, current position: (5, 13), remaining food: 4
+2025-03-24 11:30:48,053 - INFO - States explored: 147000, current position: (7, 3), remaining food: 4
+2025-03-24 11:30:48,085 - INFO - States explored: 148000, current position: (11, 9), remaining food: 4
+2025-03-24 11:30:48,118 - INFO - States explored: 149000, current position: (14, 9), remaining food: 5
+2025-03-24 11:30:48,131 - INFO - Solution found after exploring 149404 states
+2025-03-24 11:30:48,131 - INFO - Max frontier size: 7042
+2025-03-24 11:30:48,244 - INFO - A* search completed in 5.70 seconds
+2025-03-24 11:30:48,244 - INFO - Solution found with 137 actions and cost 136
+2025-03-24 11:30:48,244 - INFO - Solution actions:
+2025-03-24 11:30:48,244 - INFO -   1: West
+2025-03-24 11:30:48,244 - INFO -   2: West
+2025-03-24 11:30:48,244 - INFO -   3: West
+2025-03-24 11:30:48,244 - INFO -   4: West
+2025-03-24 11:30:48,244 - INFO -   5: West
+2025-03-24 11:30:48,244 - INFO -   6: West
+2025-03-24 11:30:48,244 - INFO -   7: West
+2025-03-24 11:30:48,244 - INFO -   8: West
+2025-03-24 11:30:48,244 - INFO -   9: West
+2025-03-24 11:30:48,244 - INFO -   10: West
+2025-03-24 11:30:48,244 - INFO -   11: West
+2025-03-24 11:30:48,244 - INFO -   12: West
+2025-03-24 11:30:48,244 - INFO -   13: West
+2025-03-24 11:30:48,244 - INFO -   14: West
+2025-03-24 11:30:48,244 - INFO -   15: West
+2025-03-24 11:30:48,244 - INFO -   16: West
+2025-03-24 11:30:48,244 - INFO -   17: North
+2025-03-24 11:30:48,244 - INFO -   18: North
+2025-03-24 11:30:48,244 - INFO -   19: North
+2025-03-24 11:30:48,245 - INFO -   20: West
+2025-03-24 11:30:48,245 - INFO -   21: West
+2025-03-24 11:30:48,245 - INFO -   22: West
+2025-03-24 11:30:48,245 - INFO -   23: West
+2025-03-24 11:30:48,245 - INFO -   24: North
+2025-03-24 11:30:48,245 - INFO -   25: North
+2025-03-24 11:30:48,245 - INFO -   26: West
+2025-03-24 11:30:48,245 - INFO -   27: North
+2025-03-24 11:30:48,245 - INFO -   28: North
+2025-03-24 11:30:48,245 - INFO -   29: North
+2025-03-24 11:30:48,245 - INFO -   30: West
+2025-03-24 11:30:48,245 - INFO -   31: West
+2025-03-24 11:30:48,245 - INFO -   32: West
+2025-03-24 11:30:48,245 - INFO -   33: West
+2025-03-24 11:30:48,245 - INFO -   34: West
+2025-03-24 11:30:48,245 - INFO -   35: West
+2025-03-24 11:30:48,245 - INFO -   36: West
+2025-03-24 11:30:48,245 - INFO -   37: West
+2025-03-24 11:30:48,245 - INFO -   38: West
+2025-03-24 11:30:48,245 - INFO -   39: North
+2025-03-24 11:30:48,245 - INFO -   40: North
+2025-03-24 11:30:48,245 - INFO -   41: North
+2025-03-24 11:30:48,245 - INFO -   42: East
+2025-03-24 11:30:48,245 - INFO -   43: East
+2025-03-24 11:30:48,245 - INFO -   44: East
+2025-03-24 11:30:48,245 - INFO -   45: East
+2025-03-24 11:30:48,245 - INFO -   46: South
+2025-03-24 11:30:48,245 - INFO -   47: East
+2025-03-24 11:30:48,245 - INFO -   48: East
+2025-03-24 11:30:48,245 - INFO -   49: West
+2025-03-24 11:30:48,245 - INFO -   50: West
+2025-03-24 11:30:48,245 - INFO -   51: North
+2025-03-24 11:30:48,245 - INFO -   52: West
+2025-03-24 11:30:48,245 - INFO -   53: West
+2025-03-24 11:30:48,245 - INFO -   54: West
+2025-03-24 11:30:48,245 - INFO -   55: West
+2025-03-24 11:30:48,245 - INFO -   56: West
+2025-03-24 11:30:48,245 - INFO -   57: West
+2025-03-24 11:30:48,245 - INFO -   58: West
+2025-03-24 11:30:48,245 - INFO -   59: West
+2025-03-24 11:30:48,245 - INFO -   60: West
+2025-03-24 11:30:48,245 - INFO -   61: West
+2025-03-24 11:30:48,245 - INFO -   62: West
+2025-03-24 11:30:48,245 - INFO -   63: East
+2025-03-24 11:30:48,245 - INFO -   64: South
+2025-03-24 11:30:48,245 - INFO -   65: South
+2025-03-24 11:30:48,245 - INFO -   66: East
+2025-03-24 11:30:48,246 - INFO -   67: East
+2025-03-24 11:30:48,246 - INFO -   68: East
+2025-03-24 11:30:48,246 - INFO -   69: South
+2025-03-24 11:30:48,246 - INFO -   70: South
+2025-03-24 11:30:48,246 - INFO -   71: West
+2025-03-24 11:30:48,246 - INFO -   72: West
+2025-03-24 11:30:48,246 - INFO -   73: West
+2025-03-24 11:30:48,246 - INFO -   74: West
+2025-03-24 11:30:48,246 - INFO -   75: West
+2025-03-24 11:30:48,246 - INFO -   76: West
+2025-03-24 11:30:48,246 - INFO -   77: South
+2025-03-24 11:30:48,246 - INFO -   78: South
+2025-03-24 11:30:48,246 - INFO -   79: West
+2025-03-24 11:30:48,246 - INFO -   80: West
+2025-03-24 11:30:48,246 - INFO -   81: West
+2025-03-24 11:30:48,246 - INFO -   82: West
+2025-03-24 11:30:48,246 - INFO -   83: West
+2025-03-24 11:30:48,246 - INFO -   84: South
+2025-03-24 11:30:48,246 - INFO -   85: West
+2025-03-24 11:30:48,246 - INFO -   86: West
+2025-03-24 11:30:48,246 - INFO -   87: West
+2025-03-24 11:30:48,246 - INFO -   88: South
+2025-03-24 11:30:48,246 - INFO -   89: South
+2025-03-24 11:30:48,246 - INFO -   90: South
+2025-03-24 11:30:48,246 - INFO -   91: South
+2025-03-24 11:30:48,246 - INFO -   92: West
+2025-03-24 11:30:48,246 - INFO -   93: West
+2025-03-24 11:30:48,246 - INFO -   94: Stop
+2025-03-24 11:30:48,246 - INFO -   95: East
+2025-03-24 11:30:48,246 - INFO -   96: East
+2025-03-24 11:30:48,246 - INFO -   97: East
+2025-03-24 11:30:48,246 - INFO -   98: East
+2025-03-24 11:30:48,246 - INFO -   99: East
+2025-03-24 11:30:48,246 - INFO -   100: East
+2025-03-24 11:30:48,246 - INFO -   101: East
+2025-03-24 11:30:48,246 - INFO -   102: East
+2025-03-24 11:30:48,246 - INFO -   103: East
+2025-03-24 11:30:48,246 - INFO -   104: North
+2025-03-24 11:30:48,246 - INFO -   105: East
+2025-03-24 11:30:48,246 - INFO -   106: East
+2025-03-24 11:30:48,246 - INFO -   107: East
+2025-03-24 11:30:48,246 - INFO -   108: East
+2025-03-24 11:30:48,246 - INFO -   109: East
+2025-03-24 11:30:48,246 - INFO -   110: North
+2025-03-24 11:30:48,246 - INFO -   111: North
+2025-03-24 11:30:48,246 - INFO -   112: East
+2025-03-24 11:30:48,246 - INFO -   113: East
+2025-03-24 11:30:48,246 - INFO -   114: East
+2025-03-24 11:30:48,247 - INFO -   115: East
+2025-03-24 11:30:48,247 - INFO -   116: North
+2025-03-24 11:30:48,247 - INFO -   117: North
+2025-03-24 11:30:48,247 - INFO -   118: North
+2025-03-24 11:30:48,247 - INFO -   119: East
+2025-03-24 11:30:48,247 - INFO -   120: East
+2025-03-24 11:30:48,247 - INFO -   121: East
+2025-03-24 11:30:48,247 - INFO -   122: West
+2025-03-24 11:30:48,247 - INFO -   123: West
+2025-03-24 11:30:48,247 - INFO -   124: West
+2025-03-24 11:30:48,247 - INFO -   125: South
+2025-03-24 11:30:48,247 - INFO -   126: West
+2025-03-24 11:30:48,247 - INFO -   127: West
+2025-03-24 11:30:48,247 - INFO -   128: West
+2025-03-24 11:30:48,247 - INFO -   129: West
+2025-03-24 11:30:48,247 - INFO -   130: West
+2025-03-24 11:30:48,247 - INFO -   131: West
+2025-03-24 11:30:48,247 - INFO -   132: South
+2025-03-24 11:30:48,247 - INFO -   133: South
+2025-03-24 11:30:48,247 - INFO -   134: West
+2025-03-24 11:30:48,247 - INFO -   135: West
+2025-03-24 11:30:48,247 - INFO -   136: West
+2025-03-24 11:30:48,247 - INFO -   137: West
+2025-03-24 11:30:48,247 - INFO - Starting visualization
+2025-03-24 11:30:48,956 - INFO - Visualization ready, waiting for key press to start
+2025-03-24 11:30:52,020 - INFO - Visualization started
+2025-03-24 11:30:52,174 - INFO - Food eaten at (8, 1), 7 remaining
+2025-03-24 11:30:52,281 - INFO - Teleportation from (1, 1) to (34, 16)
+2025-03-24 11:30:52,348 - INFO - Visualization step 20/137, Action: West
+2025-03-24 11:30:52,448 - INFO - Magical pie eaten at (29, 11), walls vanished for 5 steps
+2025-03-24 11:30:52,585 - INFO - Food eaten at (24, 8), 6 remaining
+2025-03-24 11:30:52,686 - INFO - Visualization step 40/137, Action: North
+2025-03-24 11:30:52,821 - INFO - Food eaten at (26, 6), 5 remaining
+2025-03-24 11:30:53,023 - INFO - Visualization step 60/137, Action: West
+2025-03-24 11:30:53,057 - INFO - Food eaten at (13, 5), 4 remaining
+2025-03-24 11:30:53,190 - INFO - Food eaten at (17, 9), 3 remaining
+2025-03-24 11:30:53,353 - INFO - Visualization step 80/137, Action: West
+2025-03-24 11:30:53,472 - INFO - Magical pie eaten at (3, 12), walls vanished for 5 steps
+2025-03-24 11:30:53,577 - INFO - Teleportation from (1, 16) to (34, 1)
+2025-03-24 11:30:53,593 - INFO - Teleportation from (34, 1) to (1, 16)
+2025-03-24 11:30:53,593 - INFO - Food eaten at (1, 16), 2 remaining
+2025-03-24 11:30:53,687 - INFO - Visualization step 100/137, Action: East
+2025-03-24 11:30:54,021 - INFO - Visualization step 120/137, Action: East
+2025-03-24 11:30:54,038 - INFO - Food eaten at (22, 10), 1 remaining
+2025-03-24 11:30:54,305 - INFO - Food eaten at (9, 13), 0 remaining
+2025-03-24 11:30:54,321 - INFO - Solution completed successfully in 137 steps!
+2025-03-24 11:30:54,321 - INFO - Visualization complete, waiting for key press to exit
+2025-03-24 11:30:55,918 - INFO - Visualization closed
+2025-03-24 11:30:55,918 - INFO - Visualization completed
+2025-03-24 11:30:55,918 - INFO - Run completed at 2025-03-24 11:30:55.918872
+2025-03-24 11:30:55,918 - INFO - ----- End of Run -----
+
+2025-03-24 11:30:55,918 - INFO - ----------------------
+2025-03-24 11:30:55,918 - INFO - ----------------------
+2025-03-24 11:32:30,170 - INFO - ------------------------------------
+2025-03-24 11:32:30,170 - INFO - ------------------------------------
+2025-03-24 11:32:30,170 - INFO - ----- New Pacman A* Search Run -----
+2025-03-24 11:32:30,170 - INFO - Start time: 2025-03-24 11:32:30.170953
+2025-03-24 11:32:30,171 - INFO - Arguments: Namespace(layout_file='layouts/example_layout.txt', heuristic='mfd', no_visual=False, cell_size=20, delay=0.01, output=None)
+2025-03-24 11:32:30,171 - INFO - Loading maze from layouts/example_layout.txt
+2025-03-24 11:32:30,171 - INFO - Loading maze from file: layouts/example_layout.txt
+2025-03-24 11:32:30,171 - INFO - Pacman start position found at (17, 1)
+2025-03-24 11:32:30,171 - INFO - Maze loaded, dimensions: 36x18
+2025-03-24 11:32:30,172 - INFO - Total food points: 8
+2025-03-24 11:32:30,172 - INFO - Total magical pies: 4
+2025-03-24 11:32:30,172 - INFO - Maze loaded successfully
+2025-03-24 11:32:30,172 - INFO - Using Minimum Food Distance heuristic
+2025-03-24 11:32:30,172 - INFO - Starting A* search
+2025-03-24 11:32:30,172 - INFO - A* search started from position (17, 1)
+2025-03-24 11:32:30,172 - INFO - Number of food points: 8
+2025-03-24 11:32:30,172 - INFO - Number of magical pies: 4
+2025-03-24 11:32:30,199 - INFO - States explored: 1000, current position: (24, 6), remaining food: 5
+2025-03-24 11:32:30,226 - INFO - States explored: 2000, current position: (14, 6), remaining food: 6
+2025-03-24 11:32:30,254 - INFO - States explored: 3000, current position: (6, 11), remaining food: 5
+2025-03-24 11:32:30,282 - INFO - States explored: 4000, current position: (4, 11), remaining food: 6
+2025-03-24 11:32:30,311 - INFO - States explored: 5000, current position: (10, 2), remaining food: 7
+2025-03-24 11:32:30,339 - INFO - States explored: 6000, current position: (17, 7), remaining food: 6
+2025-03-24 11:32:30,368 - INFO - States explored: 7000, current position: (29, 16), remaining food: 7
+2025-03-24 11:32:30,398 - INFO - States explored: 8000, current position: (24, 10), remaining food: 7
+2025-03-24 11:32:30,439 - INFO - States explored: 9000, current position: (11, 7), remaining food: 6
+2025-03-24 11:32:30,468 - INFO - States explored: 10000, current position: (6, 8), remaining food: 7
+2025-03-24 11:32:30,497 - INFO - States explored: 11000, current position: (17, 8), remaining food: 5
+2025-03-24 11:32:30,526 - INFO - States explored: 12000, current position: (6, 5), remaining food: 7
+2025-03-24 11:32:30,555 - INFO - States explored: 13000, current position: (6, 9), remaining food: 6
+2025-03-24 11:32:30,584 - INFO - States explored: 14000, current position: (6, 9), remaining food: 6
+2025-03-24 11:32:30,614 - INFO - States explored: 15000, current position: (5, 12), remaining food: 4
+2025-03-24 11:32:30,643 - INFO - States explored: 16000, current position: (1, 5), remaining food: 5
+2025-03-24 11:32:30,673 - INFO - States explored: 17000, current position: (5, 7), remaining food: 6
+2025-03-24 11:32:30,702 - INFO - States explored: 18000, current position: (7, 4), remaining food: 6
+2025-03-24 11:32:30,730 - INFO - States explored: 19000, current position: (2, 11), remaining food: 7
+2025-03-24 11:32:30,761 - INFO - States explored: 20000, current position: (12, 6), remaining food: 5
+2025-03-24 11:32:30,791 - INFO - States explored: 21000, current position: (3, 11), remaining food: 5
+2025-03-24 11:32:30,822 - INFO - States explored: 22000, current position: (24, 8), remaining food: 4
+2025-03-24 11:32:30,852 - INFO - States explored: 23000, current position: (16, 13), remaining food: 6
+2025-03-24 11:32:30,916 - INFO - States explored: 24000, current position: (6, 3), remaining food: 6
+2025-03-24 11:32:30,947 - INFO - States explored: 25000, current position: (7, 2), remaining food: 6
+2025-03-24 11:32:30,976 - INFO - States explored: 26000, current position: (23, 5), remaining food: 5
+2025-03-24 11:32:31,006 - INFO - States explored: 27000, current position: (1, 6), remaining food: 6
+2025-03-24 11:32:31,036 - INFO - States explored: 28000, current position: (11, 9), remaining food: 5
+2025-03-24 11:32:31,066 - INFO - States explored: 29000, current position: (27, 10), remaining food: 3
+2025-03-24 11:32:31,096 - INFO - States explored: 30000, current position: (9, 13), remaining food: 3
+2025-03-24 11:32:31,127 - INFO - States explored: 31000, current position: (22, 12), remaining food: 5
+2025-03-24 11:32:31,156 - INFO - States explored: 32000, current position: (10, 2), remaining food: 6
+2025-03-24 11:32:31,186 - INFO - States explored: 33000, current position: (18, 11), remaining food: 6
+2025-03-24 11:32:31,217 - INFO - States explored: 34000, current position: (1, 10), remaining food: 4
+2025-03-24 11:32:31,247 - INFO - States explored: 35000, current position: (3, 16), remaining food: 4
+2025-03-24 11:32:31,277 - INFO - States explored: 36000, current position: (8, 4), remaining food: 6
+2025-03-24 11:32:31,307 - INFO - States explored: 37000, current position: (14, 7), remaining food: 4
+2025-03-24 11:32:31,386 - INFO - States explored: 38000, current position: (23, 15), remaining food: 6
+2025-03-24 11:32:31,417 - INFO - States explored: 39000, current position: (26, 8), remaining food: 3
+2025-03-24 11:32:31,446 - INFO - States explored: 40000, current position: (6, 9), remaining food: 6
+2025-03-24 11:32:31,477 - INFO - States explored: 41000, current position: (21, 8), remaining food: 4
+2025-03-24 11:32:31,507 - INFO - States explored: 42000, current position: (14, 7), remaining food: 5
+2025-03-24 11:32:31,538 - INFO - States explored: 43000, current position: (1, 3), remaining food: 5
+2025-03-24 11:32:31,567 - INFO - States explored: 44000, current position: (16, 1), remaining food: 3
+2025-03-24 11:32:31,597 - INFO - States explored: 45000, current position: (6, 9), remaining food: 7
+2025-03-24 11:32:31,629 - INFO - States explored: 46000, current position: (4, 12), remaining food: 4
+2025-03-24 11:32:31,658 - INFO - States explored: 47000, current position: (6, 5), remaining food: 5
+2025-03-24 11:32:31,687 - INFO - States explored: 48000, current position: (7, 11), remaining food: 3
+2025-03-24 11:32:31,718 - INFO - States explored: 49000, current position: (27, 3), remaining food: 4
+2025-03-24 11:32:31,749 - INFO - States explored: 50000, current position: (32, 10), remaining food: 6
+2025-03-24 11:32:31,782 - INFO - States explored: 51000, current position: (9, 7), remaining food: 6
+2025-03-24 11:32:31,813 - INFO - States explored: 52000, current position: (24, 10), remaining food: 4
+2025-03-24 11:32:31,940 - INFO - States explored: 53000, current position: (32, 13), remaining food: 6
+2025-03-24 11:32:31,976 - INFO - States explored: 54000, current position: (7, 5), remaining food: 6
+2025-03-24 11:32:32,037 - INFO - States explored: 55000, current position: (1, 8), remaining food: 7
+2025-03-24 11:32:32,081 - INFO - States explored: 56000, current position: (1, 13), remaining food: 6
+2025-03-24 11:32:32,128 - INFO - States explored: 57000, current position: (9, 7), remaining food: 6
+2025-03-24 11:32:32,174 - INFO - States explored: 58000, current position: (4, 6), remaining food: 5
+2025-03-24 11:32:32,226 - INFO - States explored: 59000, current position: (16, 1), remaining food: 6
+2025-03-24 11:32:32,294 - INFO - States explored: 60000, current position: (22, 8), remaining food: 3
+2025-03-24 11:32:32,362 - INFO - States explored: 61000, current position: (6, 1), remaining food: 5
+2025-03-24 11:32:32,443 - INFO - States explored: 62000, current position: (30, 14), remaining food: 5
+2025-03-24 11:32:32,659 - INFO - States explored: 63000, current position: (19, 15), remaining food: 5
+2025-03-24 11:32:32,758 - INFO - States explored: 64000, current position: (10, 4), remaining food: 5
+2025-03-24 11:32:32,823 - INFO - States explored: 65000, current position: (1, 5), remaining food: 6
+2025-03-24 11:32:32,887 - INFO - States explored: 66000, current position: (32, 13), remaining food: 7
+2025-03-24 11:32:33,093 - INFO - States explored: 67000, current position: (2, 9), remaining food: 6
+2025-03-24 11:32:33,129 - INFO - States explored: 68000, current position: (12, 4), remaining food: 3
+2025-03-24 11:32:33,162 - INFO - States explored: 69000, current position: (27, 15), remaining food: 6
+2025-03-24 11:32:33,198 - INFO - States explored: 70000, current position: (6, 9), remaining food: 6
+2025-03-24 11:32:33,235 - INFO - States explored: 71000, current position: (8, 6), remaining food: 4
+2025-03-24 11:32:33,271 - INFO - States explored: 72000, current position: (11, 13), remaining food: 4
+2025-03-24 11:32:33,333 - INFO - States explored: 73000, current position: (32, 3), remaining food: 4
+2025-03-24 11:32:33,370 - INFO - States explored: 74000, current position: (8, 9), remaining food: 5
+2025-03-24 11:32:33,425 - INFO - States explored: 75000, current position: (2, 15), remaining food: 4
+2025-03-24 11:32:33,466 - INFO - States explored: 76000, current position: (19, 6), remaining food: 4
+2025-03-24 11:32:33,499 - INFO - States explored: 77000, current position: (4, 4), remaining food: 5
+2025-03-24 11:32:33,547 - INFO - States explored: 78000, current position: (19, 15), remaining food: 4
+2025-03-24 11:32:33,595 - INFO - States explored: 79000, current position: (10, 13), remaining food: 4
+2025-03-24 11:32:33,633 - INFO - States explored: 80000, current position: (17, 15), remaining food: 6
+2025-03-24 11:32:33,683 - INFO - States explored: 81000, current position: (11, 15), remaining food: 5
+2025-03-24 11:32:33,730 - INFO - States explored: 82000, current position: (26, 8), remaining food: 5
+2025-03-24 11:32:33,939 - INFO - States explored: 83000, current position: (2, 16), remaining food: 4
+2025-03-24 11:32:33,982 - INFO - States explored: 84000, current position: (4, 9), remaining food: 4
+2025-03-24 11:32:34,021 - INFO - States explored: 85000, current position: (16, 3), remaining food: 4
+2025-03-24 11:32:34,068 - INFO - States explored: 86000, current position: (28, 13), remaining food: 4
+2025-03-24 11:32:34,116 - INFO - States explored: 87000, current position: (5, 14), remaining food: 3
+2025-03-24 11:32:34,164 - INFO - States explored: 88000, current position: (22, 1), remaining food: 4
+2025-03-24 11:32:34,218 - INFO - States explored: 89000, current position: (11, 15), remaining food: 5
+2025-03-24 11:32:34,269 - INFO - States explored: 90000, current position: (11, 15), remaining food: 5
+2025-03-24 11:32:34,320 - INFO - States explored: 91000, current position: (13, 3), remaining food: 4
+2025-03-24 11:32:34,372 - INFO - States explored: 92000, current position: (1, 4), remaining food: 5
+2025-03-24 11:32:34,425 - INFO - States explored: 93000, current position: (33, 9), remaining food: 5
+2025-03-24 11:32:34,479 - INFO - States explored: 94000, current position: (17, 3), remaining food: 4
+2025-03-24 11:32:34,531 - INFO - States explored: 95000, current position: (9, 3), remaining food: 5
+2025-03-24 11:32:34,584 - INFO - States explored: 96000, current position: (25, 2), remaining food: 5
+2025-03-24 11:32:34,642 - INFO - States explored: 97000, current position: (12, 15), remaining food: 4
+2025-03-24 11:32:34,695 - INFO - States explored: 98000, current position: (8, 5), remaining food: 6
+2025-03-24 11:32:34,746 - INFO - States explored: 99000, current position: (1, 12), remaining food: 3
+2025-03-24 11:32:34,801 - INFO - States explored: 100000, current position: (3, 1), remaining food: 4
+2025-03-24 11:32:34,848 - INFO - States explored: 101000, current position: (5, 1), remaining food: 4
+2025-03-24 11:32:34,907 - INFO - States explored: 102000, current position: (14, 9), remaining food: 3
+2025-03-24 11:32:34,957 - INFO - States explored: 103000, current position: (21, 8), remaining food: 3
+2025-03-24 11:32:35,209 - INFO - States explored: 104000, current position: (23, 8), remaining food: 5
+2025-03-24 11:32:35,255 - INFO - States explored: 105000, current position: (15, 15), remaining food: 4
+2025-03-24 11:32:35,297 - INFO - States explored: 106000, current position: (23, 15), remaining food: 4
+2025-03-24 11:32:35,337 - INFO - States explored: 107000, current position: (12, 7), remaining food: 5
+2025-03-24 11:32:35,380 - INFO - States explored: 108000, current position: (8, 5), remaining food: 6
+2025-03-24 11:32:35,419 - INFO - States explored: 109000, current position: (8, 1), remaining food: 6
+2025-03-24 11:32:35,455 - INFO - States explored: 110000, current position: (5, 1), remaining food: 5
+2025-03-24 11:32:35,489 - INFO - States explored: 111000, current position: (30, 13), remaining food: 4
+2025-03-24 11:32:35,526 - INFO - States explored: 112000, current position: (19, 5), remaining food: 3
+2025-03-24 11:32:35,568 - INFO - States explored: 113000, current position: (6, 10), remaining food: 4
+2025-03-24 11:32:35,605 - INFO - States explored: 114000, current position: (8, 6), remaining food: 5
+2025-03-24 11:32:35,644 - INFO - States explored: 115000, current position: (23, 5), remaining food: 5
+2025-03-24 11:32:35,685 - INFO - States explored: 116000, current position: (22, 8), remaining food: 4
+2025-03-24 11:32:35,723 - INFO - States explored: 117000, current position: (19, 1), remaining food: 4
+2025-03-24 11:32:35,766 - INFO - States explored: 118000, current position: (10, 6), remaining food: 3
+2025-03-24 11:32:35,807 - INFO - States explored: 119000, current position: (1, 7), remaining food: 5
+2025-03-24 11:32:35,843 - INFO - States explored: 120000, current position: (5, 1), remaining food: 6
+2025-03-24 11:32:35,886 - INFO - States explored: 121000, current position: (20, 8), remaining food: 2
+2025-03-24 11:32:35,928 - INFO - States explored: 122000, current position: (8, 16), remaining food: 4
+2025-03-24 11:32:35,967 - INFO - States explored: 123000, current position: (30, 7), remaining food: 3
+2025-03-24 11:32:36,007 - INFO - States explored: 124000, current position: (33, 1), remaining food: 4
+2025-03-24 11:32:36,044 - INFO - States explored: 125000, current position: (21, 12), remaining food: 5
+2025-03-24 11:32:36,084 - INFO - States explored: 126000, current position: (10, 15), remaining food: 5
+2025-03-24 11:32:36,338 - INFO - States explored: 127000, current position: (29, 8), remaining food: 5
+2025-03-24 11:32:36,380 - INFO - States explored: 128000, current position: (6, 4), remaining food: 4
+2025-03-24 11:32:36,424 - INFO - States explored: 129000, current position: (8, 13), remaining food: 2
+2025-03-24 11:32:36,465 - INFO - States explored: 130000, current position: (18, 13), remaining food: 4
+2025-03-24 11:32:36,503 - INFO - States explored: 131000, current position: (11, 10), remaining food: 3
+2025-03-24 11:32:36,548 - INFO - States explored: 132000, current position: (14, 7), remaining food: 6
+2025-03-24 11:32:36,593 - INFO - States explored: 133000, current position: (5, 12), remaining food: 5
+2025-03-24 11:32:36,635 - INFO - States explored: 134000, current position: (12, 6), remaining food: 3
+2025-03-24 11:32:36,676 - INFO - States explored: 135000, current position: (15, 13), remaining food: 3
+2025-03-24 11:32:36,719 - INFO - States explored: 136000, current position: (21, 5), remaining food: 2
+2025-03-24 11:32:36,760 - INFO - States explored: 137000, current position: (12, 9), remaining food: 4
+2025-03-24 11:32:36,804 - INFO - States explored: 138000, current position: (4, 7), remaining food: 4
+2025-03-24 11:32:36,845 - INFO - States explored: 139000, current position: (6, 16), remaining food: 5
+2025-03-24 11:32:36,890 - INFO - States explored: 140000, current position: (24, 8), remaining food: 5
+2025-03-24 11:32:36,929 - INFO - States explored: 141000, current position: (19, 15), remaining food: 3
+2025-03-24 11:32:36,969 - INFO - States explored: 142000, current position: (10, 6), remaining food: 3
+2025-03-24 11:32:37,011 - INFO - States explored: 143000, current position: (17, 3), remaining food: 4
+2025-03-24 11:32:37,058 - INFO - States explored: 144000, current position: (7, 9), remaining food: 5
+2025-03-24 11:32:37,101 - INFO - States explored: 145000, current position: (34, 2), remaining food: 4
+2025-03-24 11:32:37,140 - INFO - States explored: 146000, current position: (5, 13), remaining food: 4
+2025-03-24 11:32:37,181 - INFO - States explored: 147000, current position: (7, 3), remaining food: 4
+2025-03-24 11:32:37,225 - INFO - States explored: 148000, current position: (11, 9), remaining food: 4
+2025-03-24 11:32:37,270 - INFO - States explored: 149000, current position: (14, 9), remaining food: 5
+2025-03-24 11:32:37,290 - INFO - Solution found after exploring 149404 states
+2025-03-24 11:32:37,290 - INFO - Max frontier size: 7042
+2025-03-24 11:32:37,457 - INFO - A* search completed in 7.29 seconds
+2025-03-24 11:32:37,457 - INFO - Solution found with 137 actions and cost 136
+2025-03-24 11:32:37,457 - INFO - Solution actions:
+2025-03-24 11:32:37,457 - INFO -   1: West
+2025-03-24 11:32:37,457 - INFO -   2: West
+2025-03-24 11:32:37,457 - INFO -   3: West
+2025-03-24 11:32:37,458 - INFO -   4: West
+2025-03-24 11:32:37,458 - INFO -   5: West
+2025-03-24 11:32:37,458 - INFO -   6: West
+2025-03-24 11:32:37,458 - INFO -   7: West
+2025-03-24 11:32:37,458 - INFO -   8: West
+2025-03-24 11:32:37,458 - INFO -   9: West
+2025-03-24 11:32:37,458 - INFO -   10: West
+2025-03-24 11:32:37,458 - INFO -   11: West
+2025-03-24 11:32:37,458 - INFO -   12: West
+2025-03-24 11:32:37,458 - INFO -   13: West
+2025-03-24 11:32:37,458 - INFO -   14: West
+2025-03-24 11:32:37,458 - INFO -   15: West
+2025-03-24 11:32:37,458 - INFO -   16: West
+2025-03-24 11:32:37,458 - INFO -   17: North
+2025-03-24 11:32:37,458 - INFO -   18: North
+2025-03-24 11:32:37,458 - INFO -   19: North
+2025-03-24 11:32:37,458 - INFO -   20: West
+2025-03-24 11:32:37,458 - INFO -   21: West
+2025-03-24 11:32:37,458 - INFO -   22: West
+2025-03-24 11:32:37,458 - INFO -   23: West
+2025-03-24 11:32:37,458 - INFO -   24: North
+2025-03-24 11:32:37,458 - INFO -   25: North
+2025-03-24 11:32:37,458 - INFO -   26: West
+2025-03-24 11:32:37,458 - INFO -   27: North
+2025-03-24 11:32:37,458 - INFO -   28: North
+2025-03-24 11:32:37,458 - INFO -   29: North
+2025-03-24 11:32:37,458 - INFO -   30: West
+2025-03-24 11:32:37,458 - INFO -   31: West
+2025-03-24 11:32:37,458 - INFO -   32: West
+2025-03-24 11:32:37,458 - INFO -   33: West
+2025-03-24 11:32:37,458 - INFO -   34: West
+2025-03-24 11:32:37,459 - INFO -   35: West
+2025-03-24 11:32:37,459 - INFO -   36: West
+2025-03-24 11:32:37,459 - INFO -   37: West
+2025-03-24 11:32:37,459 - INFO -   38: West
+2025-03-24 11:32:37,459 - INFO -   39: North
+2025-03-24 11:32:37,459 - INFO -   40: North
+2025-03-24 11:32:37,459 - INFO -   41: North
+2025-03-24 11:32:37,459 - INFO -   42: East
+2025-03-24 11:32:37,459 - INFO -   43: East
+2025-03-24 11:32:37,459 - INFO -   44: East
+2025-03-24 11:32:37,459 - INFO -   45: East
+2025-03-24 11:32:37,459 - INFO -   46: South
+2025-03-24 11:32:37,459 - INFO -   47: East
+2025-03-24 11:32:37,459 - INFO -   48: East
+2025-03-24 11:32:37,459 - INFO -   49: West
+2025-03-24 11:32:37,459 - INFO -   50: West
+2025-03-24 11:32:37,459 - INFO -   51: North
+2025-03-24 11:32:37,459 - INFO -   52: West
+2025-03-24 11:32:37,459 - INFO -   53: West
+2025-03-24 11:32:37,459 - INFO -   54: West
+2025-03-24 11:32:37,459 - INFO -   55: West
+2025-03-24 11:32:37,459 - INFO -   56: West
+2025-03-24 11:32:37,459 - INFO -   57: West
+2025-03-24 11:32:37,459 - INFO -   58: West
+2025-03-24 11:32:37,459 - INFO -   59: West
+2025-03-24 11:32:37,459 - INFO -   60: West
+2025-03-24 11:32:37,459 - INFO -   61: West
+2025-03-24 11:32:37,459 - INFO -   62: West
+2025-03-24 11:32:37,459 - INFO -   63: East
+2025-03-24 11:32:37,459 - INFO -   64: South
+2025-03-24 11:32:37,459 - INFO -   65: South
+2025-03-24 11:32:37,459 - INFO -   66: East
+2025-03-24 11:32:37,460 - INFO -   67: East
+2025-03-24 11:32:37,460 - INFO -   68: East
+2025-03-24 11:32:37,460 - INFO -   69: South
+2025-03-24 11:32:37,460 - INFO -   70: South
+2025-03-24 11:32:37,460 - INFO -   71: West
+2025-03-24 11:32:37,460 - INFO -   72: West
+2025-03-24 11:32:37,460 - INFO -   73: West
+2025-03-24 11:32:37,460 - INFO -   74: West
+2025-03-24 11:32:37,460 - INFO -   75: West
+2025-03-24 11:32:37,460 - INFO -   76: West
+2025-03-24 11:32:37,460 - INFO -   77: South
+2025-03-24 11:32:37,460 - INFO -   78: South
+2025-03-24 11:32:37,460 - INFO -   79: West
+2025-03-24 11:32:37,460 - INFO -   80: West
+2025-03-24 11:32:37,460 - INFO -   81: West
+2025-03-24 11:32:37,460 - INFO -   82: West
+2025-03-24 11:32:37,460 - INFO -   83: West
+2025-03-24 11:32:37,460 - INFO -   84: South
+2025-03-24 11:32:37,460 - INFO -   85: West
+2025-03-24 11:32:37,460 - INFO -   86: West
+2025-03-24 11:32:37,460 - INFO -   87: West
+2025-03-24 11:32:37,460 - INFO -   88: South
+2025-03-24 11:32:37,460 - INFO -   89: South
+2025-03-24 11:32:37,460 - INFO -   90: South
+2025-03-24 11:32:37,460 - INFO -   91: South
+2025-03-24 11:32:37,460 - INFO -   92: West
+2025-03-24 11:32:37,460 - INFO -   93: West
+2025-03-24 11:32:37,460 - INFO -   94: Stop
+2025-03-24 11:32:37,460 - INFO -   95: East
+2025-03-24 11:32:37,460 - INFO -   96: East
+2025-03-24 11:32:37,460 - INFO -   97: East
+2025-03-24 11:32:37,461 - INFO -   98: East
+2025-03-24 11:32:37,461 - INFO -   99: East
+2025-03-24 11:32:37,461 - INFO -   100: East
+2025-03-24 11:32:37,461 - INFO -   101: East
+2025-03-24 11:32:37,461 - INFO -   102: East
+2025-03-24 11:32:37,461 - INFO -   103: East
+2025-03-24 11:32:37,461 - INFO -   104: North
+2025-03-24 11:32:37,461 - INFO -   105: East
+2025-03-24 11:32:37,461 - INFO -   106: East
+2025-03-24 11:32:37,461 - INFO -   107: East
+2025-03-24 11:32:37,461 - INFO -   108: East
+2025-03-24 11:32:37,461 - INFO -   109: East
+2025-03-24 11:32:37,461 - INFO -   110: North
+2025-03-24 11:32:37,461 - INFO -   111: North
+2025-03-24 11:32:37,461 - INFO -   112: East
+2025-03-24 11:32:37,461 - INFO -   113: East
+2025-03-24 11:32:37,461 - INFO -   114: East
+2025-03-24 11:32:37,461 - INFO -   115: East
+2025-03-24 11:32:37,461 - INFO -   116: North
+2025-03-24 11:32:37,461 - INFO -   117: North
+2025-03-24 11:32:37,461 - INFO -   118: North
+2025-03-24 11:32:37,461 - INFO -   119: East
+2025-03-24 11:32:37,461 - INFO -   120: East
+2025-03-24 11:32:37,461 - INFO -   121: East
+2025-03-24 11:32:37,461 - INFO -   122: West
+2025-03-24 11:32:37,461 - INFO -   123: West
+2025-03-24 11:32:37,461 - INFO -   124: West
+2025-03-24 11:32:37,461 - INFO -   125: South
+2025-03-24 11:32:37,461 - INFO -   126: West
+2025-03-24 11:32:37,461 - INFO -   127: West
+2025-03-24 11:32:37,461 - INFO -   128: West
+2025-03-24 11:32:37,461 - INFO -   129: West
+2025-03-24 11:32:37,462 - INFO -   130: West
+2025-03-24 11:32:37,462 - INFO -   131: West
+2025-03-24 11:32:37,462 - INFO -   132: South
+2025-03-24 11:32:37,462 - INFO -   133: South
+2025-03-24 11:32:37,462 - INFO -   134: West
+2025-03-24 11:32:37,462 - INFO -   135: West
+2025-03-24 11:32:37,462 - INFO -   136: West
+2025-03-24 11:32:37,462 - INFO -   137: West
+2025-03-24 11:32:37,462 - INFO - Starting visualization
+2025-03-24 11:32:41,018 - INFO - Visualization ready, waiting for key press to start
+2025-03-24 11:32:42,021 - INFO - Visualization started
+2025-03-24 11:32:42,139 - INFO - Food eaten at (8, 1), 7 remaining
+2025-03-24 11:32:42,242 - INFO - Teleportation from (1, 1) to (34, 16)
+2025-03-24 11:32:42,352 - INFO - Visualization step 20/137, Action: West
+2025-03-24 11:32:42,442 - INFO - Magical pie eaten at (29, 11), walls vanished for 5 steps
+2025-03-24 11:32:42,566 - INFO - Food eaten at (24, 8), 6 remaining
+2025-03-24 11:32:42,657 - INFO - Visualization step 40/137, Action: North
+2025-03-24 11:32:42,783 - INFO - Food eaten at (26, 6), 5 remaining
+2025-03-24 11:32:42,977 - INFO - Visualization step 60/137, Action: West
+2025-03-24 11:32:43,009 - INFO - Food eaten at (13, 5), 4 remaining
+2025-03-24 11:32:43,133 - INFO - Food eaten at (17, 9), 3 remaining
+2025-03-24 11:32:43,291 - INFO - Visualization step 80/137, Action: West
+2025-03-24 11:32:43,406 - INFO - Magical pie eaten at (3, 12), walls vanished for 5 steps
+2025-03-24 11:32:43,507 - INFO - Teleportation from (1, 16) to (34, 1)
+2025-03-24 11:32:43,523 - INFO - Teleportation from (34, 1) to (1, 16)
+2025-03-24 11:32:43,523 - INFO - Food eaten at (1, 16), 2 remaining
+2025-03-24 11:32:43,618 - INFO - Visualization step 100/137, Action: East
+2025-03-24 11:32:43,937 - INFO - Visualization step 120/137, Action: East
+2025-03-24 11:32:43,952 - INFO - Food eaten at (22, 10), 1 remaining
+2025-03-24 11:32:44,209 - INFO - Food eaten at (9, 13), 0 remaining
+2025-03-24 11:32:44,225 - INFO - Solution completed successfully in 137 steps!
+2025-03-24 11:32:44,226 - INFO - Visualization complete, waiting for key press to exit
+2025-03-24 11:32:46,253 - INFO - Visualization closed
+2025-03-24 11:32:46,253 - INFO - Visualization completed
+2025-03-24 11:32:46,254 - INFO - Run completed at 2025-03-24 11:32:46.254092
+2025-03-24 11:32:46,254 - INFO - ----- End of Run -----
+
+2025-03-24 11:32:46,254 - INFO - ----------------------
+2025-03-24 11:32:46,254 - INFO - ----------------------
+2025-03-24 11:34:00,092 - INFO - ------------------------------------
+2025-03-24 11:34:00,092 - INFO - ------------------------------------
+2025-03-24 11:34:00,092 - INFO - ----- New Pacman A* Search Run -----
+2025-03-24 11:34:00,092 - INFO - Start time: 2025-03-24 11:34:00.092485
+2025-03-24 11:34:00,093 - INFO - Arguments: Namespace(layout_file='layouts/example_layout.txt', heuristic='mfd', no_visual=False, cell_size=20, delay=0.01, output=None)
+2025-03-24 11:34:00,093 - INFO - Loading maze from layouts/example_layout.txt
+2025-03-24 11:34:00,093 - INFO - Loading maze from file: layouts/example_layout.txt
+2025-03-24 11:34:00,093 - INFO - Pacman start position found at (17, 1)
+2025-03-24 11:34:00,093 - INFO - Maze loaded, dimensions: 36x18
+2025-03-24 11:34:00,093 - INFO - Total food points: 8
+2025-03-24 11:34:00,093 - INFO - Total magical pies: 4
+2025-03-24 11:34:00,093 - INFO - Maze loaded successfully
+2025-03-24 11:34:00,093 - INFO - Using Minimum Food Distance heuristic
+2025-03-24 11:34:00,093 - INFO - Starting A* search
+2025-03-24 11:34:00,093 - INFO - A* search started from position (17, 1)
+2025-03-24 11:34:00,093 - INFO - Number of food points: 8
+2025-03-24 11:34:00,093 - INFO - Number of magical pies: 4
+2025-03-24 11:34:00,120 - INFO - States explored: 1000, current position: (24, 6), remaining food: 5
+2025-03-24 11:34:00,148 - INFO - States explored: 2000, current position: (14, 6), remaining food: 6
+2025-03-24 11:34:00,176 - INFO - States explored: 3000, current position: (6, 11), remaining food: 5
+2025-03-24 11:34:00,204 - INFO - States explored: 4000, current position: (4, 11), remaining food: 6
+2025-03-24 11:34:00,233 - INFO - States explored: 5000, current position: (10, 2), remaining food: 7
+2025-03-24 11:34:00,261 - INFO - States explored: 6000, current position: (17, 7), remaining food: 6
+2025-03-24 11:34:00,291 - INFO - States explored: 7000, current position: (29, 16), remaining food: 7
+2025-03-24 11:34:00,321 - INFO - States explored: 8000, current position: (24, 10), remaining food: 7
+2025-03-24 11:34:00,363 - INFO - States explored: 9000, current position: (11, 7), remaining food: 6
+2025-03-24 11:34:00,392 - INFO - States explored: 10000, current position: (6, 8), remaining food: 7
+2025-03-24 11:34:00,421 - INFO - States explored: 11000, current position: (17, 8), remaining food: 5
+2025-03-24 11:34:00,450 - INFO - States explored: 12000, current position: (6, 5), remaining food: 7
+2025-03-24 11:34:00,480 - INFO - States explored: 13000, current position: (6, 9), remaining food: 6
+2025-03-24 11:34:00,509 - INFO - States explored: 14000, current position: (6, 9), remaining food: 6
+2025-03-24 11:34:00,538 - INFO - States explored: 15000, current position: (5, 12), remaining food: 4
+2025-03-24 11:34:00,568 - INFO - States explored: 16000, current position: (1, 5), remaining food: 5
+2025-03-24 11:34:00,598 - INFO - States explored: 17000, current position: (5, 7), remaining food: 6
+2025-03-24 11:34:00,627 - INFO - States explored: 18000, current position: (7, 4), remaining food: 6
+2025-03-24 11:34:00,656 - INFO - States explored: 19000, current position: (2, 11), remaining food: 7
+2025-03-24 11:34:00,686 - INFO - States explored: 20000, current position: (12, 6), remaining food: 5
+2025-03-24 11:34:00,716 - INFO - States explored: 21000, current position: (3, 11), remaining food: 5
+2025-03-24 11:34:00,746 - INFO - States explored: 22000, current position: (24, 8), remaining food: 4
+2025-03-24 11:34:00,775 - INFO - States explored: 23000, current position: (16, 13), remaining food: 6
+2025-03-24 11:34:00,840 - INFO - States explored: 24000, current position: (6, 3), remaining food: 6
+2025-03-24 11:34:00,870 - INFO - States explored: 25000, current position: (7, 2), remaining food: 6
+2025-03-24 11:34:00,900 - INFO - States explored: 26000, current position: (23, 5), remaining food: 5
+2025-03-24 11:34:00,930 - INFO - States explored: 27000, current position: (1, 6), remaining food: 6
+2025-03-24 11:34:00,959 - INFO - States explored: 28000, current position: (11, 9), remaining food: 5
+2025-03-24 11:34:00,989 - INFO - States explored: 29000, current position: (27, 10), remaining food: 3
+2025-03-24 11:34:01,019 - INFO - States explored: 30000, current position: (9, 13), remaining food: 3
+2025-03-24 11:34:01,049 - INFO - States explored: 31000, current position: (22, 12), remaining food: 5
+2025-03-24 11:34:01,079 - INFO - States explored: 32000, current position: (10, 2), remaining food: 6
+2025-03-24 11:34:01,108 - INFO - States explored: 33000, current position: (18, 11), remaining food: 6
+2025-03-24 11:34:01,139 - INFO - States explored: 34000, current position: (1, 10), remaining food: 4
+2025-03-24 11:34:01,170 - INFO - States explored: 35000, current position: (3, 16), remaining food: 4
+2025-03-24 11:34:01,199 - INFO - States explored: 36000, current position: (8, 4), remaining food: 6
+2025-03-24 11:34:01,230 - INFO - States explored: 37000, current position: (14, 7), remaining food: 4
+2025-03-24 11:34:01,309 - INFO - States explored: 38000, current position: (23, 15), remaining food: 6
+2025-03-24 11:34:01,341 - INFO - States explored: 39000, current position: (26, 8), remaining food: 3
+2025-03-24 11:34:01,369 - INFO - States explored: 40000, current position: (6, 9), remaining food: 6
+2025-03-24 11:34:01,401 - INFO - States explored: 41000, current position: (21, 8), remaining food: 4
+2025-03-24 11:34:01,430 - INFO - States explored: 42000, current position: (14, 7), remaining food: 5
+2025-03-24 11:34:01,462 - INFO - States explored: 43000, current position: (1, 3), remaining food: 5
+2025-03-24 11:34:01,491 - INFO - States explored: 44000, current position: (16, 1), remaining food: 3
+2025-03-24 11:34:01,521 - INFO - States explored: 45000, current position: (6, 9), remaining food: 7
+2025-03-24 11:34:01,553 - INFO - States explored: 46000, current position: (4, 12), remaining food: 4
+2025-03-24 11:34:01,583 - INFO - States explored: 47000, current position: (6, 5), remaining food: 5
+2025-03-24 11:34:01,611 - INFO - States explored: 48000, current position: (7, 11), remaining food: 3
+2025-03-24 11:34:01,642 - INFO - States explored: 49000, current position: (27, 3), remaining food: 4
+2025-03-24 11:34:01,672 - INFO - States explored: 50000, current position: (32, 10), remaining food: 6
+2025-03-24 11:34:01,704 - INFO - States explored: 51000, current position: (9, 7), remaining food: 6
+2025-03-24 11:34:01,733 - INFO - States explored: 52000, current position: (24, 10), remaining food: 4
+2025-03-24 11:34:01,830 - INFO - States explored: 53000, current position: (32, 13), remaining food: 6
+2025-03-24 11:34:01,860 - INFO - States explored: 54000, current position: (7, 5), remaining food: 6
+2025-03-24 11:34:01,890 - INFO - States explored: 55000, current position: (1, 8), remaining food: 7
+2025-03-24 11:34:01,920 - INFO - States explored: 56000, current position: (1, 13), remaining food: 6
+2025-03-24 11:34:01,951 - INFO - States explored: 57000, current position: (9, 7), remaining food: 6
+2025-03-24 11:34:01,982 - INFO - States explored: 58000, current position: (4, 6), remaining food: 5
+2025-03-24 11:34:02,012 - INFO - States explored: 59000, current position: (16, 1), remaining food: 6
+2025-03-24 11:34:02,042 - INFO - States explored: 60000, current position: (22, 8), remaining food: 3
+2025-03-24 11:34:02,072 - INFO - States explored: 61000, current position: (6, 1), remaining food: 5
+2025-03-24 11:34:02,102 - INFO - States explored: 62000, current position: (30, 14), remaining food: 5
+2025-03-24 11:34:02,133 - INFO - States explored: 63000, current position: (19, 15), remaining food: 5
+2025-03-24 11:34:02,164 - INFO - States explored: 64000, current position: (10, 4), remaining food: 5
+2025-03-24 11:34:02,195 - INFO - States explored: 65000, current position: (1, 5), remaining food: 6
+2025-03-24 11:34:02,225 - INFO - States explored: 66000, current position: (32, 13), remaining food: 7
+2025-03-24 11:34:02,341 - INFO - States explored: 67000, current position: (2, 9), remaining food: 6
+2025-03-24 11:34:02,373 - INFO - States explored: 68000, current position: (12, 4), remaining food: 3
+2025-03-24 11:34:02,401 - INFO - States explored: 69000, current position: (27, 15), remaining food: 6
+2025-03-24 11:34:02,432 - INFO - States explored: 70000, current position: (6, 9), remaining food: 6
+2025-03-24 11:34:02,464 - INFO - States explored: 71000, current position: (8, 6), remaining food: 4
+2025-03-24 11:34:02,493 - INFO - States explored: 72000, current position: (11, 13), remaining food: 4
+2025-03-24 11:34:02,523 - INFO - States explored: 73000, current position: (32, 3), remaining food: 4
+2025-03-24 11:34:02,553 - INFO - States explored: 74000, current position: (8, 9), remaining food: 5
+2025-03-24 11:34:02,586 - INFO - States explored: 75000, current position: (2, 15), remaining food: 4
+2025-03-24 11:34:02,615 - INFO - States explored: 76000, current position: (19, 6), remaining food: 4
+2025-03-24 11:34:02,644 - INFO - States explored: 77000, current position: (4, 4), remaining food: 5
+2025-03-24 11:34:02,676 - INFO - States explored: 78000, current position: (19, 15), remaining food: 4
+2025-03-24 11:34:02,710 - INFO - States explored: 79000, current position: (10, 13), remaining food: 4
+2025-03-24 11:34:02,739 - INFO - States explored: 80000, current position: (17, 15), remaining food: 6
+2025-03-24 11:34:02,769 - INFO - States explored: 81000, current position: (11, 15), remaining food: 5
+2025-03-24 11:34:02,800 - INFO - States explored: 82000, current position: (26, 8), remaining food: 5
+2025-03-24 11:34:02,939 - INFO - States explored: 83000, current position: (2, 16), remaining food: 4
+2025-03-24 11:34:02,968 - INFO - States explored: 84000, current position: (4, 9), remaining food: 4
+2025-03-24 11:34:02,997 - INFO - States explored: 85000, current position: (16, 3), remaining food: 4
+2025-03-24 11:34:03,029 - INFO - States explored: 86000, current position: (28, 13), remaining food: 4
+2025-03-24 11:34:03,058 - INFO - States explored: 87000, current position: (5, 14), remaining food: 3
+2025-03-24 11:34:03,087 - INFO - States explored: 88000, current position: (22, 1), remaining food: 4
+2025-03-24 11:34:03,116 - INFO - States explored: 89000, current position: (11, 15), remaining food: 5
+2025-03-24 11:34:03,146 - INFO - States explored: 90000, current position: (11, 15), remaining food: 5
+2025-03-24 11:34:03,177 - INFO - States explored: 91000, current position: (13, 3), remaining food: 4
+2025-03-24 11:34:03,208 - INFO - States explored: 92000, current position: (1, 4), remaining food: 5
+2025-03-24 11:34:03,238 - INFO - States explored: 93000, current position: (33, 9), remaining food: 5
+2025-03-24 11:34:03,269 - INFO - States explored: 94000, current position: (17, 3), remaining food: 4
+2025-03-24 11:34:03,299 - INFO - States explored: 95000, current position: (9, 3), remaining food: 5
+2025-03-24 11:34:03,330 - INFO - States explored: 96000, current position: (25, 2), remaining food: 5
+2025-03-24 11:34:03,361 - INFO - States explored: 97000, current position: (12, 15), remaining food: 4
+2025-03-24 11:34:03,391 - INFO - States explored: 98000, current position: (8, 5), remaining food: 6
+2025-03-24 11:34:03,422 - INFO - States explored: 99000, current position: (1, 12), remaining food: 3
+2025-03-24 11:34:03,454 - INFO - States explored: 100000, current position: (3, 1), remaining food: 4
+2025-03-24 11:34:03,484 - INFO - States explored: 101000, current position: (5, 1), remaining food: 4
+2025-03-24 11:34:03,514 - INFO - States explored: 102000, current position: (14, 9), remaining food: 3
+2025-03-24 11:34:03,545 - INFO - States explored: 103000, current position: (21, 8), remaining food: 3
+2025-03-24 11:34:03,709 - INFO - States explored: 104000, current position: (23, 8), remaining food: 5
+2025-03-24 11:34:03,739 - INFO - States explored: 105000, current position: (15, 15), remaining food: 4
+2025-03-24 11:34:03,770 - INFO - States explored: 106000, current position: (23, 15), remaining food: 4
+2025-03-24 11:34:03,799 - INFO - States explored: 107000, current position: (12, 7), remaining food: 5
+2025-03-24 11:34:03,832 - INFO - States explored: 108000, current position: (8, 5), remaining food: 6
+2025-03-24 11:34:03,864 - INFO - States explored: 109000, current position: (8, 1), remaining food: 6
+2025-03-24 11:34:03,894 - INFO - States explored: 110000, current position: (5, 1), remaining food: 5
+2025-03-24 11:34:03,923 - INFO - States explored: 111000, current position: (30, 13), remaining food: 4
+2025-03-24 11:34:03,955 - INFO - States explored: 112000, current position: (19, 5), remaining food: 3
+2025-03-24 11:34:03,987 - INFO - States explored: 113000, current position: (6, 10), remaining food: 4
+2025-03-24 11:34:04,018 - INFO - States explored: 114000, current position: (8, 6), remaining food: 5
+2025-03-24 11:34:04,047 - INFO - States explored: 115000, current position: (23, 5), remaining food: 5
+2025-03-24 11:34:04,078 - INFO - States explored: 116000, current position: (22, 8), remaining food: 4
+2025-03-24 11:34:04,109 - INFO - States explored: 117000, current position: (19, 1), remaining food: 4
+2025-03-24 11:34:04,141 - INFO - States explored: 118000, current position: (10, 6), remaining food: 3
+2025-03-24 11:34:04,171 - INFO - States explored: 119000, current position: (1, 7), remaining food: 5
+2025-03-24 11:34:04,201 - INFO - States explored: 120000, current position: (5, 1), remaining food: 6
+2025-03-24 11:34:04,232 - INFO - States explored: 121000, current position: (20, 8), remaining food: 2
+2025-03-24 11:34:04,265 - INFO - States explored: 122000, current position: (8, 16), remaining food: 4
+2025-03-24 11:34:04,295 - INFO - States explored: 123000, current position: (30, 7), remaining food: 3
+2025-03-24 11:34:04,326 - INFO - States explored: 124000, current position: (33, 1), remaining food: 4
+2025-03-24 11:34:04,355 - INFO - States explored: 125000, current position: (21, 12), remaining food: 5
+2025-03-24 11:34:04,385 - INFO - States explored: 126000, current position: (10, 15), remaining food: 5
+2025-03-24 11:34:04,581 - INFO - States explored: 127000, current position: (29, 8), remaining food: 5
+2025-03-24 11:34:04,610 - INFO - States explored: 128000, current position: (6, 4), remaining food: 4
+2025-03-24 11:34:04,643 - INFO - States explored: 129000, current position: (8, 13), remaining food: 2
+2025-03-24 11:34:04,672 - INFO - States explored: 130000, current position: (18, 13), remaining food: 4
+2025-03-24 11:34:04,701 - INFO - States explored: 131000, current position: (11, 10), remaining food: 3
+2025-03-24 11:34:04,734 - INFO - States explored: 132000, current position: (14, 7), remaining food: 6
+2025-03-24 11:34:04,765 - INFO - States explored: 133000, current position: (5, 12), remaining food: 5
+2025-03-24 11:34:04,796 - INFO - States explored: 134000, current position: (12, 6), remaining food: 3
+2025-03-24 11:34:04,826 - INFO - States explored: 135000, current position: (15, 13), remaining food: 3
+2025-03-24 11:34:04,856 - INFO - States explored: 136000, current position: (21, 5), remaining food: 2
+2025-03-24 11:34:04,886 - INFO - States explored: 137000, current position: (12, 9), remaining food: 4
+2025-03-24 11:34:04,917 - INFO - States explored: 138000, current position: (4, 7), remaining food: 4
+2025-03-24 11:34:04,948 - INFO - States explored: 139000, current position: (6, 16), remaining food: 5
+2025-03-24 11:34:04,980 - INFO - States explored: 140000, current position: (24, 8), remaining food: 5
+2025-03-24 11:34:05,009 - INFO - States explored: 141000, current position: (19, 15), remaining food: 3
+2025-03-24 11:34:05,039 - INFO - States explored: 142000, current position: (10, 6), remaining food: 3
+2025-03-24 11:34:05,069 - INFO - States explored: 143000, current position: (17, 3), remaining food: 4
+2025-03-24 11:34:05,101 - INFO - States explored: 144000, current position: (7, 9), remaining food: 5
+2025-03-24 11:34:05,133 - INFO - States explored: 145000, current position: (34, 2), remaining food: 4
+2025-03-24 11:34:05,161 - INFO - States explored: 146000, current position: (5, 13), remaining food: 4
+2025-03-24 11:34:05,191 - INFO - States explored: 147000, current position: (7, 3), remaining food: 4
+2025-03-24 11:34:05,222 - INFO - States explored: 148000, current position: (11, 9), remaining food: 4
+2025-03-24 11:34:05,252 - INFO - States explored: 149000, current position: (14, 9), remaining food: 5
+2025-03-24 11:34:05,264 - INFO - Solution found after exploring 149404 states
+2025-03-24 11:34:05,264 - INFO - Max frontier size: 7042
+2025-03-24 11:34:05,375 - INFO - A* search completed in 5.28 seconds
+2025-03-24 11:34:05,375 - INFO - Solution found with 137 actions and cost 136
+2025-03-24 11:34:05,375 - INFO - Solution actions:
+2025-03-24 11:34:05,375 - INFO -   1: West
+2025-03-24 11:34:05,375 - INFO -   2: West
+2025-03-24 11:34:05,375 - INFO -   3: West
+2025-03-24 11:34:05,375 - INFO -   4: West
+2025-03-24 11:34:05,375 - INFO -   5: West
+2025-03-24 11:34:05,375 - INFO -   6: West
+2025-03-24 11:34:05,375 - INFO -   7: West
+2025-03-24 11:34:05,375 - INFO -   8: West
+2025-03-24 11:34:05,375 - INFO -   9: West
+2025-03-24 11:34:05,375 - INFO -   10: West
+2025-03-24 11:34:05,375 - INFO -   11: West
+2025-03-24 11:34:05,375 - INFO -   12: West
+2025-03-24 11:34:05,375 - INFO -   13: West
+2025-03-24 11:34:05,375 - INFO -   14: West
+2025-03-24 11:34:05,375 - INFO -   15: West
+2025-03-24 11:34:05,375 - INFO -   16: West
+2025-03-24 11:34:05,375 - INFO -   17: North
+2025-03-24 11:34:05,375 - INFO -   18: North
+2025-03-24 11:34:05,375 - INFO -   19: North
+2025-03-24 11:34:05,375 - INFO -   20: West
+2025-03-24 11:34:05,375 - INFO -   21: West
+2025-03-24 11:34:05,375 - INFO -   22: West
+2025-03-24 11:34:05,375 - INFO -   23: West
+2025-03-24 11:34:05,375 - INFO -   24: North
+2025-03-24 11:34:05,375 - INFO -   25: North
+2025-03-24 11:34:05,375 - INFO -   26: West
+2025-03-24 11:34:05,375 - INFO -   27: North
+2025-03-24 11:34:05,375 - INFO -   28: North
+2025-03-24 11:34:05,375 - INFO -   29: North
+2025-03-24 11:34:05,375 - INFO -   30: West
+2025-03-24 11:34:05,375 - INFO -   31: West
+2025-03-24 11:34:05,375 - INFO -   32: West
+2025-03-24 11:34:05,376 - INFO -   33: West
+2025-03-24 11:34:05,376 - INFO -   34: West
+2025-03-24 11:34:05,376 - INFO -   35: West
+2025-03-24 11:34:05,376 - INFO -   36: West
+2025-03-24 11:34:05,376 - INFO -   37: West
+2025-03-24 11:34:05,376 - INFO -   38: West
+2025-03-24 11:34:05,376 - INFO -   39: North
+2025-03-24 11:34:05,376 - INFO -   40: North
+2025-03-24 11:34:05,376 - INFO -   41: North
+2025-03-24 11:34:05,376 - INFO -   42: East
+2025-03-24 11:34:05,376 - INFO -   43: East
+2025-03-24 11:34:05,376 - INFO -   44: East
+2025-03-24 11:34:05,376 - INFO -   45: East
+2025-03-24 11:34:05,376 - INFO -   46: South
+2025-03-24 11:34:05,376 - INFO -   47: East
+2025-03-24 11:34:05,376 - INFO -   48: East
+2025-03-24 11:34:05,376 - INFO -   49: West
+2025-03-24 11:34:05,376 - INFO -   50: West
+2025-03-24 11:34:05,376 - INFO -   51: North
+2025-03-24 11:34:05,376 - INFO -   52: West
+2025-03-24 11:34:05,376 - INFO -   53: West
+2025-03-24 11:34:05,376 - INFO -   54: West
+2025-03-24 11:34:05,376 - INFO -   55: West
+2025-03-24 11:34:05,376 - INFO -   56: West
+2025-03-24 11:34:05,376 - INFO -   57: West
+2025-03-24 11:34:05,376 - INFO -   58: West
+2025-03-24 11:34:05,376 - INFO -   59: West
+2025-03-24 11:34:05,376 - INFO -   60: West
+2025-03-24 11:34:05,376 - INFO -   61: West
+2025-03-24 11:34:05,376 - INFO -   62: West
+2025-03-24 11:34:05,376 - INFO -   63: East
+2025-03-24 11:34:05,376 - INFO -   64: South
+2025-03-24 11:34:05,376 - INFO -   65: South
+2025-03-24 11:34:05,376 - INFO -   66: East
+2025-03-24 11:34:05,376 - INFO -   67: East
+2025-03-24 11:34:05,376 - INFO -   68: East
+2025-03-24 11:34:05,376 - INFO -   69: South
+2025-03-24 11:34:05,376 - INFO -   70: South
+2025-03-24 11:34:05,376 - INFO -   71: West
+2025-03-24 11:34:05,376 - INFO -   72: West
+2025-03-24 11:34:05,376 - INFO -   73: West
+2025-03-24 11:34:05,376 - INFO -   74: West
+2025-03-24 11:34:05,376 - INFO -   75: West
+2025-03-24 11:34:05,376 - INFO -   76: West
+2025-03-24 11:34:05,376 - INFO -   77: South
+2025-03-24 11:34:05,376 - INFO -   78: South
+2025-03-24 11:34:05,376 - INFO -   79: West
+2025-03-24 11:34:05,376 - INFO -   80: West
+2025-03-24 11:34:05,376 - INFO -   81: West
+2025-03-24 11:34:05,376 - INFO -   82: West
+2025-03-24 11:34:05,377 - INFO -   83: West
+2025-03-24 11:34:05,377 - INFO -   84: South
+2025-03-24 11:34:05,377 - INFO -   85: West
+2025-03-24 11:34:05,377 - INFO -   86: West
+2025-03-24 11:34:05,377 - INFO -   87: West
+2025-03-24 11:34:05,377 - INFO -   88: South
+2025-03-24 11:34:05,377 - INFO -   89: South
+2025-03-24 11:34:05,377 - INFO -   90: South
+2025-03-24 11:34:05,377 - INFO -   91: South
+2025-03-24 11:34:05,377 - INFO -   92: West
+2025-03-24 11:34:05,377 - INFO -   93: West
+2025-03-24 11:34:05,377 - INFO -   94: Stop
+2025-03-24 11:34:05,377 - INFO -   95: East
+2025-03-24 11:34:05,377 - INFO -   96: East
+2025-03-24 11:34:05,377 - INFO -   97: East
+2025-03-24 11:34:05,377 - INFO -   98: East
+2025-03-24 11:34:05,377 - INFO -   99: East
+2025-03-24 11:34:05,377 - INFO -   100: East
+2025-03-24 11:34:05,377 - INFO -   101: East
+2025-03-24 11:34:05,377 - INFO -   102: East
+2025-03-24 11:34:05,377 - INFO -   103: East
+2025-03-24 11:34:05,377 - INFO -   104: North
+2025-03-24 11:34:05,377 - INFO -   105: East
+2025-03-24 11:34:05,377 - INFO -   106: East
+2025-03-24 11:34:05,377 - INFO -   107: East
+2025-03-24 11:34:05,377 - INFO -   108: East
+2025-03-24 11:34:05,377 - INFO -   109: East
+2025-03-24 11:34:05,377 - INFO -   110: North
+2025-03-24 11:34:05,377 - INFO -   111: North
+2025-03-24 11:34:05,377 - INFO -   112: East
+2025-03-24 11:34:05,377 - INFO -   113: East
+2025-03-24 11:34:05,377 - INFO -   114: East
+2025-03-24 11:34:05,377 - INFO -   115: East
+2025-03-24 11:34:05,377 - INFO -   116: North
+2025-03-24 11:34:05,377 - INFO -   117: North
+2025-03-24 11:34:05,377 - INFO -   118: North
+2025-03-24 11:34:05,377 - INFO -   119: East
+2025-03-24 11:34:05,377 - INFO -   120: East
+2025-03-24 11:34:05,377 - INFO -   121: East
+2025-03-24 11:34:05,377 - INFO -   122: West
+2025-03-24 11:34:05,377 - INFO -   123: West
+2025-03-24 11:34:05,377 - INFO -   124: West
+2025-03-24 11:34:05,377 - INFO -   125: South
+2025-03-24 11:34:05,377 - INFO -   126: West
+2025-03-24 11:34:05,377 - INFO -   127: West
+2025-03-24 11:34:05,377 - INFO -   128: West
+2025-03-24 11:34:05,377 - INFO -   129: West
+2025-03-24 11:34:05,377 - INFO -   130: West
+2025-03-24 11:34:05,377 - INFO -   131: West
+2025-03-24 11:34:05,377 - INFO -   132: South
+2025-03-24 11:34:05,378 - INFO -   133: South
+2025-03-24 11:34:05,378 - INFO -   134: West
+2025-03-24 11:34:05,378 - INFO -   135: West
+2025-03-24 11:34:05,378 - INFO -   136: West
+2025-03-24 11:34:05,378 - INFO -   137: West
+2025-03-24 11:34:05,378 - INFO - Starting visualization
+2025-03-24 11:34:08,788 - INFO - Visualization ready, waiting for key press to start
+2025-03-24 11:34:10,379 - INFO - Visualization started
+2025-03-24 11:34:10,657 - INFO - Food eaten at (8, 1), 7 remaining
+2025-03-24 11:34:10,858 - INFO - Teleportation from (1, 1) to (34, 16)
+2025-03-24 11:34:10,970 - INFO - Visualization step 20/137, Action: West
+2025-03-24 11:34:11,141 - INFO - Magical pie eaten at (29, 11), walls vanished for 5 steps
+2025-03-24 11:34:11,351 - INFO - Food eaten at (24, 8), 6 remaining
+2025-03-24 11:34:11,521 - INFO - Visualization step 40/137, Action: North
+2025-03-24 11:34:11,747 - INFO - Food eaten at (26, 6), 5 remaining
+2025-03-24 11:34:12,087 - INFO - Visualization step 60/137, Action: West
+2025-03-24 11:34:12,144 - INFO - Food eaten at (13, 5), 4 remaining
+2025-03-24 11:34:12,370 - INFO - Food eaten at (17, 9), 3 remaining
+2025-03-24 11:34:12,653 - INFO - Visualization step 80/137, Action: West
+2025-03-24 11:34:12,851 - INFO - Magical pie eaten at (3, 12), walls vanished for 5 steps
+2025-03-24 11:34:13,002 - INFO - Teleportation from (1, 16) to (34, 1)
+2025-03-24 11:34:13,031 - INFO - Teleportation from (34, 1) to (1, 16)
+2025-03-24 11:34:13,031 - INFO - Food eaten at (1, 16), 2 remaining
+2025-03-24 11:34:13,204 - INFO - Visualization step 100/137, Action: East
+2025-03-24 11:34:13,779 - INFO - Visualization step 120/137, Action: East
+2025-03-24 11:34:13,808 - INFO - Food eaten at (22, 10), 1 remaining
+2025-03-24 11:34:14,260 - INFO - Food eaten at (9, 13), 0 remaining
+2025-03-24 11:34:14,288 - INFO - Solution completed successfully in 137 steps!
+2025-03-24 11:34:14,290 - INFO - Visualization complete, waiting for key press to exit
+2025-03-24 11:34:18,258 - INFO - Visualization closed
+2025-03-24 11:34:18,258 - INFO - Visualization completed
+2025-03-24 11:34:18,259 - INFO - Run completed at 2025-03-24 11:34:18.259176
+2025-03-24 11:34:18,259 - INFO - ----- End of Run -----
+
+2025-03-24 11:34:18,259 - INFO - ----------------------
+2025-03-24 11:34:18,259 - INFO - ----------------------
+2025-03-24 11:34:23,425 - INFO - ------------------------------------
+2025-03-24 11:34:23,425 - INFO - ------------------------------------
+2025-03-24 11:34:23,425 - INFO - ----- New Pacman A* Search Run -----
+2025-03-24 11:34:23,425 - INFO - Start time: 2025-03-24 11:34:23.425366
+2025-03-24 11:34:23,426 - INFO - Arguments: Namespace(layout_file='layouts/example_layout.txt', heuristic='mfd', no_visual=False, cell_size=20, delay=0.1, output=None)
+2025-03-24 11:34:23,426 - INFO - Loading maze from layouts/example_layout.txt
+2025-03-24 11:34:23,426 - INFO - Loading maze from file: layouts/example_layout.txt
+2025-03-24 11:34:23,426 - INFO - Pacman start position found at (17, 1)
+2025-03-24 11:34:23,426 - INFO - Maze loaded, dimensions: 36x18
+2025-03-24 11:34:23,426 - INFO - Total food points: 8
+2025-03-24 11:34:23,426 - INFO - Total magical pies: 4
+2025-03-24 11:34:23,426 - INFO - Maze loaded successfully
+2025-03-24 11:34:23,426 - INFO - Using Minimum Food Distance heuristic
+2025-03-24 11:34:23,426 - INFO - Starting A* search
+2025-03-24 11:34:23,426 - INFO - A* search started from position (17, 1)
+2025-03-24 11:34:23,426 - INFO - Number of food points: 8
+2025-03-24 11:34:23,426 - INFO - Number of magical pies: 4
+2025-03-24 11:34:23,453 - INFO - States explored: 1000, current position: (24, 6), remaining food: 5
+2025-03-24 11:34:23,480 - INFO - States explored: 2000, current position: (14, 6), remaining food: 6
+2025-03-24 11:34:23,508 - INFO - States explored: 3000, current position: (6, 11), remaining food: 5
+2025-03-24 11:34:23,536 - INFO - States explored: 4000, current position: (4, 11), remaining food: 6
+2025-03-24 11:34:23,565 - INFO - States explored: 5000, current position: (10, 2), remaining food: 7
+2025-03-24 11:34:23,593 - INFO - States explored: 6000, current position: (17, 7), remaining food: 6
+2025-03-24 11:34:23,621 - INFO - States explored: 7000, current position: (29, 16), remaining food: 7
+2025-03-24 11:34:23,651 - INFO - States explored: 8000, current position: (24, 10), remaining food: 7
+2025-03-24 11:34:23,692 - INFO - States explored: 9000, current position: (11, 7), remaining food: 6
+2025-03-24 11:34:23,720 - INFO - States explored: 10000, current position: (6, 8), remaining food: 7
+2025-03-24 11:34:23,750 - INFO - States explored: 11000, current position: (17, 8), remaining food: 5
+2025-03-24 11:34:23,778 - INFO - States explored: 12000, current position: (6, 5), remaining food: 7
+2025-03-24 11:34:23,808 - INFO - States explored: 13000, current position: (6, 9), remaining food: 6
+2025-03-24 11:34:23,837 - INFO - States explored: 14000, current position: (6, 9), remaining food: 6
+2025-03-24 11:34:23,867 - INFO - States explored: 15000, current position: (5, 12), remaining food: 4
+2025-03-24 11:34:23,895 - INFO - States explored: 16000, current position: (1, 5), remaining food: 5
+2025-03-24 11:34:23,925 - INFO - States explored: 17000, current position: (5, 7), remaining food: 6
+2025-03-24 11:34:23,954 - INFO - States explored: 18000, current position: (7, 4), remaining food: 6
+2025-03-24 11:34:23,982 - INFO - States explored: 19000, current position: (2, 11), remaining food: 7
+2025-03-24 11:34:24,011 - INFO - States explored: 20000, current position: (12, 6), remaining food: 5
+2025-03-24 11:34:24,041 - INFO - States explored: 21000, current position: (3, 11), remaining food: 5
+2025-03-24 11:34:24,070 - INFO - States explored: 22000, current position: (24, 8), remaining food: 4
+2025-03-24 11:34:24,099 - INFO - States explored: 23000, current position: (16, 13), remaining food: 6
+2025-03-24 11:34:24,161 - INFO - States explored: 24000, current position: (6, 3), remaining food: 6
+2025-03-24 11:34:24,191 - INFO - States explored: 25000, current position: (7, 2), remaining food: 6
+2025-03-24 11:34:24,220 - INFO - States explored: 26000, current position: (23, 5), remaining food: 5
+2025-03-24 11:34:24,249 - INFO - States explored: 27000, current position: (1, 6), remaining food: 6
+2025-03-24 11:34:24,279 - INFO - States explored: 28000, current position: (11, 9), remaining food: 5
+2025-03-24 11:34:24,308 - INFO - States explored: 29000, current position: (27, 10), remaining food: 3
+2025-03-24 11:34:24,338 - INFO - States explored: 30000, current position: (9, 13), remaining food: 3
+2025-03-24 11:34:24,368 - INFO - States explored: 31000, current position: (22, 12), remaining food: 5
+2025-03-24 11:34:24,397 - INFO - States explored: 32000, current position: (10, 2), remaining food: 6
+2025-03-24 11:34:24,426 - INFO - States explored: 33000, current position: (18, 11), remaining food: 6
+2025-03-24 11:34:24,457 - INFO - States explored: 34000, current position: (1, 10), remaining food: 4
+2025-03-24 11:34:24,487 - INFO - States explored: 35000, current position: (3, 16), remaining food: 4
+2025-03-24 11:34:24,516 - INFO - States explored: 36000, current position: (8, 4), remaining food: 6
+2025-03-24 11:34:24,545 - INFO - States explored: 37000, current position: (14, 7), remaining food: 4
+2025-03-24 11:34:24,624 - INFO - States explored: 38000, current position: (23, 15), remaining food: 6
+2025-03-24 11:34:24,655 - INFO - States explored: 39000, current position: (26, 8), remaining food: 3
+2025-03-24 11:34:24,683 - INFO - States explored: 40000, current position: (6, 9), remaining food: 6
+2025-03-24 11:34:24,714 - INFO - States explored: 41000, current position: (21, 8), remaining food: 4
+2025-03-24 11:34:24,744 - INFO - States explored: 42000, current position: (14, 7), remaining food: 5
+2025-03-24 11:34:24,774 - INFO - States explored: 43000, current position: (1, 3), remaining food: 5
+2025-03-24 11:34:24,803 - INFO - States explored: 44000, current position: (16, 1), remaining food: 3
+2025-03-24 11:34:24,833 - INFO - States explored: 45000, current position: (6, 9), remaining food: 7
+2025-03-24 11:34:24,865 - INFO - States explored: 46000, current position: (4, 12), remaining food: 4
+2025-03-24 11:34:24,894 - INFO - States explored: 47000, current position: (6, 5), remaining food: 5
+2025-03-24 11:34:24,922 - INFO - States explored: 48000, current position: (7, 11), remaining food: 3
+2025-03-24 11:34:24,952 - INFO - States explored: 49000, current position: (27, 3), remaining food: 4
+2025-03-24 11:34:24,982 - INFO - States explored: 50000, current position: (32, 10), remaining food: 6
+2025-03-24 11:34:25,013 - INFO - States explored: 51000, current position: (9, 7), remaining food: 6
+2025-03-24 11:34:25,042 - INFO - States explored: 52000, current position: (24, 10), remaining food: 4
+2025-03-24 11:34:25,139 - INFO - States explored: 53000, current position: (32, 13), remaining food: 6
+2025-03-24 11:34:25,170 - INFO - States explored: 54000, current position: (7, 5), remaining food: 6
+2025-03-24 11:34:25,199 - INFO - States explored: 55000, current position: (1, 8), remaining food: 7
+2025-03-24 11:34:25,229 - INFO - States explored: 56000, current position: (1, 13), remaining food: 6
+2025-03-24 11:34:25,260 - INFO - States explored: 57000, current position: (9, 7), remaining food: 6
+2025-03-24 11:34:25,290 - INFO - States explored: 58000, current position: (4, 6), remaining food: 5
+2025-03-24 11:34:25,320 - INFO - States explored: 59000, current position: (16, 1), remaining food: 6
+2025-03-24 11:34:25,349 - INFO - States explored: 60000, current position: (22, 8), remaining food: 3
+2025-03-24 11:34:25,379 - INFO - States explored: 61000, current position: (6, 1), remaining food: 5
+2025-03-24 11:34:25,409 - INFO - States explored: 62000, current position: (30, 14), remaining food: 5
+2025-03-24 11:34:25,440 - INFO - States explored: 63000, current position: (19, 15), remaining food: 5
+2025-03-24 11:34:25,470 - INFO - States explored: 64000, current position: (10, 4), remaining food: 5
+2025-03-24 11:34:25,501 - INFO - States explored: 65000, current position: (1, 5), remaining food: 6
+2025-03-24 11:34:25,530 - INFO - States explored: 66000, current position: (32, 13), remaining food: 7
+2025-03-24 11:34:25,646 - INFO - States explored: 67000, current position: (2, 9), remaining food: 6
+2025-03-24 11:34:25,677 - INFO - States explored: 68000, current position: (12, 4), remaining food: 3
+2025-03-24 11:34:25,705 - INFO - States explored: 69000, current position: (27, 15), remaining food: 6
+2025-03-24 11:34:25,736 - INFO - States explored: 70000, current position: (6, 9), remaining food: 6
+2025-03-24 11:34:25,767 - INFO - States explored: 71000, current position: (8, 6), remaining food: 4
+2025-03-24 11:34:25,797 - INFO - States explored: 72000, current position: (11, 13), remaining food: 4
+2025-03-24 11:34:25,826 - INFO - States explored: 73000, current position: (32, 3), remaining food: 4
+2025-03-24 11:34:25,856 - INFO - States explored: 74000, current position: (8, 9), remaining food: 5
+2025-03-24 11:34:25,888 - INFO - States explored: 75000, current position: (2, 15), remaining food: 4
+2025-03-24 11:34:25,917 - INFO - States explored: 76000, current position: (19, 6), remaining food: 4
+2025-03-24 11:34:25,946 - INFO - States explored: 77000, current position: (4, 4), remaining food: 5
+2025-03-24 11:34:25,977 - INFO - States explored: 78000, current position: (19, 15), remaining food: 4
+2025-03-24 11:34:26,012 - INFO - States explored: 79000, current position: (10, 13), remaining food: 4
+2025-03-24 11:34:26,040 - INFO - States explored: 80000, current position: (17, 15), remaining food: 6
+2025-03-24 11:34:26,071 - INFO - States explored: 81000, current position: (11, 15), remaining food: 5
+2025-03-24 11:34:26,101 - INFO - States explored: 82000, current position: (26, 8), remaining food: 5
+2025-03-24 11:34:26,242 - INFO - States explored: 83000, current position: (2, 16), remaining food: 4
+2025-03-24 11:34:26,271 - INFO - States explored: 84000, current position: (4, 9), remaining food: 4
+2025-03-24 11:34:26,299 - INFO - States explored: 85000, current position: (16, 3), remaining food: 4
+2025-03-24 11:34:26,331 - INFO - States explored: 86000, current position: (28, 13), remaining food: 4
+2025-03-24 11:34:26,361 - INFO - States explored: 87000, current position: (5, 14), remaining food: 3
+2025-03-24 11:34:26,391 - INFO - States explored: 88000, current position: (22, 1), remaining food: 4
+2025-03-24 11:34:26,421 - INFO - States explored: 89000, current position: (11, 15), remaining food: 5
+2025-03-24 11:34:26,451 - INFO - States explored: 90000, current position: (11, 15), remaining food: 5
+2025-03-24 11:34:26,482 - INFO - States explored: 91000, current position: (13, 3), remaining food: 4
+2025-03-24 11:34:26,512 - INFO - States explored: 92000, current position: (1, 4), remaining food: 5
+2025-03-24 11:34:26,542 - INFO - States explored: 93000, current position: (33, 9), remaining food: 5
+2025-03-24 11:34:26,574 - INFO - States explored: 94000, current position: (17, 3), remaining food: 4
+2025-03-24 11:34:26,603 - INFO - States explored: 95000, current position: (9, 3), remaining food: 5
+2025-03-24 11:34:26,634 - INFO - States explored: 96000, current position: (25, 2), remaining food: 5
+2025-03-24 11:34:26,664 - INFO - States explored: 97000, current position: (12, 15), remaining food: 4
+2025-03-24 11:34:26,693 - INFO - States explored: 98000, current position: (8, 5), remaining food: 6
+2025-03-24 11:34:26,723 - INFO - States explored: 99000, current position: (1, 12), remaining food: 3
+2025-03-24 11:34:26,754 - INFO - States explored: 100000, current position: (3, 1), remaining food: 4
+2025-03-24 11:34:26,783 - INFO - States explored: 101000, current position: (5, 1), remaining food: 4
+2025-03-24 11:34:26,813 - INFO - States explored: 102000, current position: (14, 9), remaining food: 3
+2025-03-24 11:34:26,844 - INFO - States explored: 103000, current position: (21, 8), remaining food: 3
+2025-03-24 11:34:27,005 - INFO - States explored: 104000, current position: (23, 8), remaining food: 5
+2025-03-24 11:34:27,035 - INFO - States explored: 105000, current position: (15, 15), remaining food: 4
+2025-03-24 11:34:27,065 - INFO - States explored: 106000, current position: (23, 15), remaining food: 4
+2025-03-24 11:34:27,094 - INFO - States explored: 107000, current position: (12, 7), remaining food: 5
+2025-03-24 11:34:27,125 - INFO - States explored: 108000, current position: (8, 5), remaining food: 6
+2025-03-24 11:34:27,157 - INFO - States explored: 109000, current position: (8, 1), remaining food: 6
+2025-03-24 11:34:27,186 - INFO - States explored: 110000, current position: (5, 1), remaining food: 5
+2025-03-24 11:34:27,215 - INFO - States explored: 111000, current position: (30, 13), remaining food: 4
+2025-03-24 11:34:27,247 - INFO - States explored: 112000, current position: (19, 5), remaining food: 3
+2025-03-24 11:34:27,279 - INFO - States explored: 113000, current position: (6, 10), remaining food: 4
+2025-03-24 11:34:27,310 - INFO - States explored: 114000, current position: (8, 6), remaining food: 5
+2025-03-24 11:34:27,338 - INFO - States explored: 115000, current position: (23, 5), remaining food: 5
+2025-03-24 11:34:27,368 - INFO - States explored: 116000, current position: (22, 8), remaining food: 4
+2025-03-24 11:34:27,398 - INFO - States explored: 117000, current position: (19, 1), remaining food: 4
+2025-03-24 11:34:27,430 - INFO - States explored: 118000, current position: (10, 6), remaining food: 3
+2025-03-24 11:34:27,459 - INFO - States explored: 119000, current position: (1, 7), remaining food: 5
+2025-03-24 11:34:27,488 - INFO - States explored: 120000, current position: (5, 1), remaining food: 6
+2025-03-24 11:34:27,519 - INFO - States explored: 121000, current position: (20, 8), remaining food: 2
+2025-03-24 11:34:27,552 - INFO - States explored: 122000, current position: (8, 16), remaining food: 4
+2025-03-24 11:34:27,582 - INFO - States explored: 123000, current position: (30, 7), remaining food: 3
+2025-03-24 11:34:27,612 - INFO - States explored: 124000, current position: (33, 1), remaining food: 4
+2025-03-24 11:34:27,641 - INFO - States explored: 125000, current position: (21, 12), remaining food: 5
+2025-03-24 11:34:27,671 - INFO - States explored: 126000, current position: (10, 15), remaining food: 5
+2025-03-24 11:34:27,883 - INFO - States explored: 127000, current position: (29, 8), remaining food: 5
+2025-03-24 11:34:27,920 - INFO - States explored: 128000, current position: (6, 4), remaining food: 4
+2025-03-24 11:34:27,958 - INFO - States explored: 129000, current position: (8, 13), remaining food: 2
+2025-03-24 11:34:27,993 - INFO - States explored: 130000, current position: (18, 13), remaining food: 4
+2025-03-24 11:34:28,024 - INFO - States explored: 131000, current position: (11, 10), remaining food: 3
+2025-03-24 11:34:28,061 - INFO - States explored: 132000, current position: (14, 7), remaining food: 6
+2025-03-24 11:34:28,095 - INFO - States explored: 133000, current position: (5, 12), remaining food: 5
+2025-03-24 11:34:28,126 - INFO - States explored: 134000, current position: (12, 6), remaining food: 3
+2025-03-24 11:34:28,155 - INFO - States explored: 135000, current position: (15, 13), remaining food: 3
+2025-03-24 11:34:28,185 - INFO - States explored: 136000, current position: (21, 5), remaining food: 2
+2025-03-24 11:34:28,215 - INFO - States explored: 137000, current position: (12, 9), remaining food: 4
+2025-03-24 11:34:28,246 - INFO - States explored: 138000, current position: (4, 7), remaining food: 4
+2025-03-24 11:34:28,277 - INFO - States explored: 139000, current position: (6, 16), remaining food: 5
+2025-03-24 11:34:28,308 - INFO - States explored: 140000, current position: (24, 8), remaining food: 5
+2025-03-24 11:34:28,337 - INFO - States explored: 141000, current position: (19, 15), remaining food: 3
+2025-03-24 11:34:28,368 - INFO - States explored: 142000, current position: (10, 6), remaining food: 3
+2025-03-24 11:34:28,397 - INFO - States explored: 143000, current position: (17, 3), remaining food: 4
+2025-03-24 11:34:28,429 - INFO - States explored: 144000, current position: (7, 9), remaining food: 5
+2025-03-24 11:34:28,461 - INFO - States explored: 145000, current position: (34, 2), remaining food: 4
+2025-03-24 11:34:28,489 - INFO - States explored: 146000, current position: (5, 13), remaining food: 4
+2025-03-24 11:34:28,519 - INFO - States explored: 147000, current position: (7, 3), remaining food: 4
+2025-03-24 11:34:28,550 - INFO - States explored: 148000, current position: (11, 9), remaining food: 4
+2025-03-24 11:34:28,580 - INFO - States explored: 149000, current position: (14, 9), remaining food: 5
+2025-03-24 11:34:28,592 - INFO - Solution found after exploring 149404 states
+2025-03-24 11:34:28,593 - INFO - Max frontier size: 7042
+2025-03-24 11:34:28,701 - INFO - A* search completed in 5.27 seconds
+2025-03-24 11:34:28,701 - INFO - Solution found with 137 actions and cost 136
+2025-03-24 11:34:28,701 - INFO - Solution actions:
+2025-03-24 11:34:28,701 - INFO -   1: West
+2025-03-24 11:34:28,701 - INFO -   2: West
+2025-03-24 11:34:28,701 - INFO -   3: West
+2025-03-24 11:34:28,701 - INFO -   4: West
+2025-03-24 11:34:28,701 - INFO -   5: West
+2025-03-24 11:34:28,701 - INFO -   6: West
+2025-03-24 11:34:28,701 - INFO -   7: West
+2025-03-24 11:34:28,701 - INFO -   8: West
+2025-03-24 11:34:28,701 - INFO -   9: West
+2025-03-24 11:34:28,701 - INFO -   10: West
+2025-03-24 11:34:28,701 - INFO -   11: West
+2025-03-24 11:34:28,702 - INFO -   12: West
+2025-03-24 11:34:28,702 - INFO -   13: West
+2025-03-24 11:34:28,702 - INFO -   14: West
+2025-03-24 11:34:28,702 - INFO -   15: West
+2025-03-24 11:34:28,702 - INFO -   16: West
+2025-03-24 11:34:28,702 - INFO -   17: North
+2025-03-24 11:34:28,702 - INFO -   18: North
+2025-03-24 11:34:28,702 - INFO -   19: North
+2025-03-24 11:34:28,702 - INFO -   20: West
+2025-03-24 11:34:28,702 - INFO -   21: West
+2025-03-24 11:34:28,702 - INFO -   22: West
+2025-03-24 11:34:28,702 - INFO -   23: West
+2025-03-24 11:34:28,702 - INFO -   24: North
+2025-03-24 11:34:28,702 - INFO -   25: North
+2025-03-24 11:34:28,702 - INFO -   26: West
+2025-03-24 11:34:28,702 - INFO -   27: North
+2025-03-24 11:34:28,702 - INFO -   28: North
+2025-03-24 11:34:28,702 - INFO -   29: North
+2025-03-24 11:34:28,702 - INFO -   30: West
+2025-03-24 11:34:28,702 - INFO -   31: West
+2025-03-24 11:34:28,702 - INFO -   32: West
+2025-03-24 11:34:28,702 - INFO -   33: West
+2025-03-24 11:34:28,702 - INFO -   34: West
+2025-03-24 11:34:28,702 - INFO -   35: West
+2025-03-24 11:34:28,702 - INFO -   36: West
+2025-03-24 11:34:28,702 - INFO -   37: West
+2025-03-24 11:34:28,702 - INFO -   38: West
+2025-03-24 11:34:28,702 - INFO -   39: North
+2025-03-24 11:34:28,702 - INFO -   40: North
+2025-03-24 11:34:28,702 - INFO -   41: North
+2025-03-24 11:34:28,702 - INFO -   42: East
+2025-03-24 11:34:28,702 - INFO -   43: East
+2025-03-24 11:34:28,702 - INFO -   44: East
+2025-03-24 11:34:28,702 - INFO -   45: East
+2025-03-24 11:34:28,702 - INFO -   46: South
+2025-03-24 11:34:28,702 - INFO -   47: East
+2025-03-24 11:34:28,702 - INFO -   48: East
+2025-03-24 11:34:28,702 - INFO -   49: West
+2025-03-24 11:34:28,702 - INFO -   50: West
+2025-03-24 11:34:28,702 - INFO -   51: North
+2025-03-24 11:34:28,702 - INFO -   52: West
+2025-03-24 11:34:28,702 - INFO -   53: West
+2025-03-24 11:34:28,702 - INFO -   54: West
+2025-03-24 11:34:28,702 - INFO -   55: West
+2025-03-24 11:34:28,702 - INFO -   56: West
+2025-03-24 11:34:28,702 - INFO -   57: West
+2025-03-24 11:34:28,702 - INFO -   58: West
+2025-03-24 11:34:28,703 - INFO -   59: West
+2025-03-24 11:34:28,703 - INFO -   60: West
+2025-03-24 11:34:28,703 - INFO -   61: West
+2025-03-24 11:34:28,703 - INFO -   62: West
+2025-03-24 11:34:28,703 - INFO -   63: East
+2025-03-24 11:34:28,703 - INFO -   64: South
+2025-03-24 11:34:28,703 - INFO -   65: South
+2025-03-24 11:34:28,703 - INFO -   66: East
+2025-03-24 11:34:28,703 - INFO -   67: East
+2025-03-24 11:34:28,703 - INFO -   68: East
+2025-03-24 11:34:28,703 - INFO -   69: South
+2025-03-24 11:34:28,703 - INFO -   70: South
+2025-03-24 11:34:28,703 - INFO -   71: West
+2025-03-24 11:34:28,703 - INFO -   72: West
+2025-03-24 11:34:28,703 - INFO -   73: West
+2025-03-24 11:34:28,703 - INFO -   74: West
+2025-03-24 11:34:28,703 - INFO -   75: West
+2025-03-24 11:34:28,703 - INFO -   76: West
+2025-03-24 11:34:28,703 - INFO -   77: South
+2025-03-24 11:34:28,703 - INFO -   78: South
+2025-03-24 11:34:28,703 - INFO -   79: West
+2025-03-24 11:34:28,703 - INFO -   80: West
+2025-03-24 11:34:28,703 - INFO -   81: West
+2025-03-24 11:34:28,703 - INFO -   82: West
+2025-03-24 11:34:28,703 - INFO -   83: West
+2025-03-24 11:34:28,703 - INFO -   84: South
+2025-03-24 11:34:28,703 - INFO -   85: West
+2025-03-24 11:34:28,703 - INFO -   86: West
+2025-03-24 11:34:28,703 - INFO -   87: West
+2025-03-24 11:34:28,703 - INFO -   88: South
+2025-03-24 11:34:28,703 - INFO -   89: South
+2025-03-24 11:34:28,703 - INFO -   90: South
+2025-03-24 11:34:28,703 - INFO -   91: South
+2025-03-24 11:34:28,703 - INFO -   92: West
+2025-03-24 11:34:28,703 - INFO -   93: West
+2025-03-24 11:34:28,703 - INFO -   94: Stop
+2025-03-24 11:34:28,703 - INFO -   95: East
+2025-03-24 11:34:28,703 - INFO -   96: East
+2025-03-24 11:34:28,703 - INFO -   97: East
+2025-03-24 11:34:28,703 - INFO -   98: East
+2025-03-24 11:34:28,703 - INFO -   99: East
+2025-03-24 11:34:28,703 - INFO -   100: East
+2025-03-24 11:34:28,703 - INFO -   101: East
+2025-03-24 11:34:28,703 - INFO -   102: East
+2025-03-24 11:34:28,703 - INFO -   103: East
+2025-03-24 11:34:28,703 - INFO -   104: North
+2025-03-24 11:34:28,703 - INFO -   105: East
+2025-03-24 11:34:28,704 - INFO -   106: East
+2025-03-24 11:34:28,704 - INFO -   107: East
+2025-03-24 11:34:28,704 - INFO -   108: East
+2025-03-24 11:34:28,704 - INFO -   109: East
+2025-03-24 11:34:28,704 - INFO -   110: North
+2025-03-24 11:34:28,704 - INFO -   111: North
+2025-03-24 11:34:28,704 - INFO -   112: East
+2025-03-24 11:34:28,704 - INFO -   113: East
+2025-03-24 11:34:28,704 - INFO -   114: East
+2025-03-24 11:34:28,704 - INFO -   115: East
+2025-03-24 11:34:28,704 - INFO -   116: North
+2025-03-24 11:34:28,704 - INFO -   117: North
+2025-03-24 11:34:28,704 - INFO -   118: North
+2025-03-24 11:34:28,704 - INFO -   119: East
+2025-03-24 11:34:28,704 - INFO -   120: East
+2025-03-24 11:34:28,704 - INFO -   121: East
+2025-03-24 11:34:28,704 - INFO -   122: West
+2025-03-24 11:34:28,704 - INFO -   123: West
+2025-03-24 11:34:28,704 - INFO -   124: West
+2025-03-24 11:34:28,704 - INFO -   125: South
+2025-03-24 11:34:28,704 - INFO -   126: West
+2025-03-24 11:34:28,704 - INFO -   127: West
+2025-03-24 11:34:28,704 - INFO -   128: West
+2025-03-24 11:34:28,704 - INFO -   129: West
+2025-03-24 11:34:28,704 - INFO -   130: West
+2025-03-24 11:34:28,704 - INFO -   131: West
+2025-03-24 11:34:28,704 - INFO -   132: South
+2025-03-24 11:34:28,704 - INFO -   133: South
+2025-03-24 11:34:28,704 - INFO -   134: West
+2025-03-24 11:34:28,704 - INFO -   135: West
+2025-03-24 11:34:28,704 - INFO -   136: West
+2025-03-24 11:34:28,704 - INFO -   137: West
+2025-03-24 11:34:28,705 - INFO - Starting visualization
+2025-03-24 11:34:29,446 - INFO - Visualization ready, waiting for key press to start
+2025-03-24 11:34:30,793 - INFO - Visualization started
+2025-03-24 11:34:32,409 - INFO - Food eaten at (8, 1), 7 remaining
+2025-03-24 11:34:33,825 - INFO - Teleportation from (1, 1) to (34, 16)
+2025-03-24 11:34:34,633 - INFO - Visualization step 20/137, Action: West
+2025-03-24 11:34:35,846 - INFO - Magical pie eaten at (29, 11), walls vanished for 5 steps
+2025-03-24 11:34:37,471 - INFO - Food eaten at (24, 8), 6 remaining
+2025-03-24 11:34:38,683 - INFO - Visualization step 40/137, Action: North
+2025-03-24 11:34:40,300 - INFO - Food eaten at (26, 6), 5 remaining
+2025-03-24 11:34:42,726 - INFO - Visualization step 60/137, Action: West
+2025-03-24 11:34:43,131 - INFO - Food eaten at (13, 5), 4 remaining
+2025-03-24 11:34:44,748 - INFO - Food eaten at (17, 9), 3 remaining
+2025-03-24 11:34:46,770 - INFO - Visualization step 80/137, Action: West
+2025-03-24 11:34:48,184 - INFO - Magical pie eaten at (3, 12), walls vanished for 5 steps
+2025-03-24 11:34:49,397 - INFO - Teleportation from (1, 16) to (34, 1)
+2025-03-24 11:34:49,600 - INFO - Teleportation from (34, 1) to (1, 16)
+2025-03-24 11:34:49,600 - INFO - Food eaten at (1, 16), 2 remaining
+2025-03-24 11:34:50,712 - INFO - Visualization step 100/137, Action: East
+2025-03-24 11:34:54,754 - INFO - Visualization step 120/137, Action: East
+2025-03-24 11:34:54,957 - INFO - Food eaten at (22, 10), 1 remaining
+2025-03-24 11:34:58,191 - INFO - Food eaten at (9, 13), 0 remaining
+2025-03-24 11:34:58,396 - INFO - Solution completed successfully in 137 steps!
+2025-03-24 11:34:58,401 - INFO - Visualization complete, waiting for key press to exit
+2025-03-24 11:35:00,642 - INFO - Visualization closed
+2025-03-24 11:35:00,642 - INFO - Visualization completed
+2025-03-24 11:35:00,642 - INFO - Run completed at 2025-03-24 11:35:00.642959
+2025-03-24 11:35:00,643 - INFO - ----- End of Run -----
+
+2025-03-24 11:35:00,643 - INFO - ----------------------
+2025-03-24 11:35:00,643 - INFO - ----------------------
