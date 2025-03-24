@@ -6,7 +6,6 @@ class PacmanState:
 
     def __init__(self, position: tuple, remaining_food: set, remaining_magical_pies: set,
                  walls_vanished_steps: int = 0, actions: list = None, cost: int = 0):
-        """Initialize a state with position, collectibles, and path data"""
         self.position = position  # (x, y) coordinates
         self.remaining_food = set(remaining_food)
         self.remaining_magical_pies = set(remaining_magical_pies)
@@ -42,7 +41,7 @@ class PacmanState:
         Applies movement rules, teleportation at corners, food collection,
         and magical pie effects.
 
-        Args:
+        Params:
             maze: Maze object containing layout and movement rules
 
         Returns:

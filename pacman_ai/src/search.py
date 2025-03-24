@@ -81,7 +81,7 @@ def a_star_search(maze, heuristic_func: Callable = min_food_distance_heuristic, 
     """
     A* search for optimal path to collect all food in maze.
 
-    Args:
+    Params:
         maze: Maze object with layout and game mechanics
         heuristic_func: Heuristic for A* search (mfd or mst)
         logger: Optional logger for search progress

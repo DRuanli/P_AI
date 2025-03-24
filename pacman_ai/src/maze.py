@@ -6,13 +6,6 @@ class Maze:
     """
 
     def __init__(self, file_path: str, logger=None):
-        """
-        Initialize maze from file and set up internal data structures.
-
-        Args:
-            file_path: Path to maze layout file
-            logger: Optional logger for tracking operations
-        """
         self.grid, self.width, self.height = [], 0, 0
         self.pacman_start, self.food_points, self.magical_pies = None, [], []
         self.logger = logger
@@ -22,7 +15,7 @@ class Maze:
         """
         Load and parse maze layout file.
 
-        Args:
+        Params:
             file_path: Path to maze text file where '%'=walls, 'P'=Pacman start,
                       '.'=food points, 'O'=magical pies
         """
@@ -94,7 +87,7 @@ class Maze:
         """
         Get valid moves from current position.
 
-        Args:
+        Params:
             x, y: Current position coordinates
             walls_vanished: Whether walls are currently passable
 
