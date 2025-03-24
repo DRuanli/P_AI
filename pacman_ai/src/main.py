@@ -42,13 +42,13 @@ def parse_args():
     parser.add_argument('layout_file', type=str, help='Path to the layout file')
 
     # Optional arguments
-    parser.add_argument('--heuristic', type=str, choices=['mfd', 'mst'], default='mfd',
+    parser.add_argument('--heuristic', type=str, choices=['mfd', 'mst'], default='mst',
                         help='Heuristic to use: min_food_distance (mfd) or minimum_spanning_tree (mst)')
 
     parser.add_argument('--no-visual', action='store_true', default=False,
                         help='Skip visualization and only print the solution')
 
-    parser.add_argument('--cell-size', type=int, default=20,
+    parser.add_argument('--cell-size', type=int, default=30,
                         help='Cell size for visualization (default: 20 pixels)')
 
     parser.add_argument('--delay', type=float, default=0.3,

@@ -192,8 +192,8 @@ class LayoutGenerator:
         return '\n'.join([''.join(row) for row in self.layout])
 
 
-def generate_random_layout(width=30, height=15, food_density=0.15,
-                           magical_pie_density=0.05, filename=None):
+def generate_random_layout(width=50, height=50, food_density=0.01,
+                           magical_pie_density=0.2, filename=None):
     """
     Generate a random playable layout and optionally save to file.
 
