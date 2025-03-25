@@ -517,7 +517,6 @@ class Visualizer:
             progress = effect['elapsed'] / effect['lifetime']
             radius = effect['max_radius'] * progress
             alpha = int(180 * (1 - progress))
-
             # Draw ripple effect
             s = pygame.Surface((int(radius * 2), int(radius * 2)), pygame.SRCALPHA)
             pygame.draw.circle(s, (*effect['color'], alpha), (int(radius), int(radius)), int(radius), 2)
