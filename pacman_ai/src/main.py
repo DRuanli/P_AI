@@ -53,6 +53,9 @@ def parse_args():
     parser.add_argument('--output', type=str, default=None,
                         help='Output file to write the solution (optional)')
 
+    parser.add_argument('--user-mode', action='store_true', default=False,
+                        help='Enable user-controlled gameplay mode instead of A* solution')
+
     return parser.parse_args()
 
 
@@ -87,7 +90,32 @@ def main():
     print(f"Starting position: {maze.pacman_start}")
     print(f"Food points: {len(maze.food_points)}")
     print(f"Magical pies: {len(maze.magical_pies)}")
+    print(f"Ghosts: {len(maze.ghost_starts)}")
+    print(f"Teleport pads: {len(maze.teleport_pads) // 2}")
+    print(f"Slow pills: {len(maze.slow_pills)}")
+    print(f"Speed boosts: {len(maze.speed_boosts)}")
+    print(f"Moving walls: {len(maze.moving_walls)}")
 
+    # Check if user mode is enabled
+    if args.user_mode:
+        print("\nStarting user-controlled gameplay mode...")
+        logger.info("Starting user-controlled gameplay mode")
+
+        # Initialize visualizer with user mode enabled
+        visualizer = Visualizer(maze, cell_size=args.cell_size, step_delay=args.delay,
+                                logger=logger, user_mode=True)
+
+        # Start the user-controlled game
+        visualizer.user_play_game()
+
+        logger.info("User-controlled game session completed")
+        logger.info(f"Run completed at {datetime.now()}")
+        logger.info("----- End of Run -----\n")
+        logger.info("----------------------")
+        logger.info("----------------------")
+        return
+
+    # If not in user mode, run A* search
     heuristic = mst_heuristic
     print("\nRunning A* search with Minimum Spanning Tree heuristic...")
     logger.info("Using Minimum Spanning Tree heuristic")

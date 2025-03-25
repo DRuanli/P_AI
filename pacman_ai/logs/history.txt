@@ -20545,3 +20545,180 @@
 
 2025-03-25 17:36:12,912 - INFO - ----------------------
 2025-03-25 17:36:12,912 - INFO - ----------------------
+2025-03-25 20:21:44,542 - INFO - ------------------------------------
+2025-03-25 20:21:44,542 - INFO - ------------------------------------
+2025-03-25 20:21:44,542 - INFO - ----- New Pacman A* Search Run -----
+2025-03-25 20:21:44,542 - INFO - Start time: 2025-03-25 20:21:44.542720
+2025-03-25 20:21:44,543 - INFO - Arguments: Namespace(layout_file='pacman_ai/layouts/example_layout.txt', no_visual=False, cell_size=30, delay=0.3, output=None, user_mode=True)
+2025-03-25 20:21:44,543 - INFO - Loading maze from pacman_ai/layouts/example_layout.txt
+2025-03-25 20:21:44,543 - INFO - Loading maze from file: pacman_ai/layouts/example_layout.txt
+2025-03-25 20:21:44,543 - INFO - Pacman start position found at (16, 9)
+2025-03-25 20:21:44,543 - INFO - Default ghost position added at (1, 1)
+2025-03-25 20:21:44,543 - INFO - Default ghost position added at (1, 2)
+2025-03-25 20:21:44,543 - INFO - Default teleport pad added at (2, 1)
+2025-03-25 20:21:44,544 - INFO - Default teleport pad added at (3, 1)
+2025-03-25 20:21:44,544 - INFO - Default slow pill added at (2, 1)
+2025-03-25 20:21:44,544 - INFO - Default speed boost added at (3, 1)
+2025-03-25 20:21:44,544 - INFO - Maze loaded, dimensions: 36x18
+2025-03-25 20:21:44,544 - INFO - Total food points: 8
+2025-03-25 20:21:44,544 - INFO - Total magical pies: 38
+2025-03-25 20:21:44,544 - INFO - Total ghosts: 2
+2025-03-25 20:21:44,544 - INFO - Total teleport pads: 1
+2025-03-25 20:21:44,544 - INFO - Total slow pills: 1
+2025-03-25 20:21:44,544 - INFO - Total speed boosts: 1
+2025-03-25 20:21:44,544 - INFO - Total fruit spawn points: 0
+2025-03-25 20:21:44,544 - INFO - Total moving walls: 0
+2025-03-25 20:21:44,544 - INFO - Maze loaded successfully
+2025-03-25 20:21:44,544 - INFO - Starting user-controlled gameplay mode
+2025-03-25 20:21:46,515 - INFO - Starting user-controlled game
+2025-03-25 20:21:46,531 - INFO - User game started
+2025-03-25 20:21:51,083 - INFO - Food eaten at (17, 9)
+2025-03-25 20:21:51,692 - INFO - Magical pie eaten at (17, 8)
+2025-03-25 20:21:53,014 - INFO - Food eaten at (14, 7)
+2025-03-25 20:21:53,323 - INFO - Magical pie eaten at (13, 7)
+2025-03-25 20:21:55,190 - INFO - Magical pie eaten at (8, 7)
+2025-03-25 20:21:55,964 - INFO - Magical pie eaten at (8, 9)
+2025-03-25 20:21:56,712 - INFO - Magical pie eaten at (8, 11)
+2025-03-25 20:21:57,292 - INFO - Magical pie eaten at (8, 13)
+2025-03-25 20:21:57,561 - INFO - Magical pie eaten at (8, 14)
+2025-03-25 20:21:59,466 - INFO - Magical pie eaten at (6, 16)
+2025-03-25 20:22:00,382 - INFO - Magical pie eaten at (2, 16)
+2025-03-25 20:22:00,660 - INFO - Teleportation from (1, 16) to (34, 1)
+2025-03-25 20:22:01,233 - INFO - Food eaten at (32, 1)
+2025-03-25 20:22:01,509 - INFO - Magical pie eaten at (31, 1)
+2025-03-25 20:22:03,543 - INFO - Magical pie eaten at (34, 5)
+2025-03-25 20:22:04,055 - INFO - Magical pie eaten at (34, 7)
+2025-03-25 20:22:04,604 - INFO - Magical pie eaten at (34, 9)
+2025-03-25 20:22:05,106 - INFO - Food eaten at (32, 9)
+2025-03-25 20:22:09,156 - INFO - Magical pie eaten at (32, 11)
+2025-03-25 20:22:09,760 - INFO - Magical pie eaten at (29, 11)
+2025-03-25 20:22:10,171 - INFO - Magical pie eaten at (27, 11)
+2025-03-25 20:22:10,990 - INFO - Food eaten at (27, 9)
+2025-03-25 20:22:12,860 - INFO - Magical pie eaten at (24, 8)
+2025-03-25 20:22:14,291 - INFO - Magical pie eaten at (21, 10)
+2025-03-25 20:22:14,828 - INFO - Magical pie eaten at (19, 10)
+2025-03-25 20:22:17,649 - INFO - Magical pie eaten at (14, 5)
+2025-03-25 20:22:19,414 - INFO - Magical pie eaten at (8, 5)
+2025-03-25 20:22:20,876 - INFO - Magical pie eaten at (6, 7)
+2025-03-25 20:22:21,357 - INFO - Magical pie eaten at (4, 7)
+2025-03-25 20:22:22,608 - INFO - Food eaten at (1, 8)
+2025-03-25 20:22:27,863 - INFO - Magical pie eaten at (3, 10)
+2025-03-25 20:22:30,510 - INFO - Magical pie eaten at (7, 3)
+2025-03-25 20:22:32,245 - INFO - Food eaten at (2, 1)
+2025-03-25 20:22:33,613 - INFO - Teleportation from (1, 1) to (34, 16)
+2025-03-25 20:22:33,823 - INFO - Magical pie eaten at (33, 16)
+2025-03-25 20:22:34,326 - INFO - Food eaten at (31, 16)
+2025-03-25 20:22:34,326 - INFO - Player won - all food collected
+2025-03-25 20:22:36,635 - INFO - User game ended
+2025-03-25 20:22:36,804 - INFO - User-controlled game session completed
+2025-03-25 20:22:36,805 - INFO - Run completed at 2025-03-25 20:22:36.805638
+2025-03-25 20:22:36,805 - INFO - ----- End of Run -----
+
+2025-03-25 20:22:36,806 - INFO - ----------------------
+2025-03-25 20:22:36,806 - INFO - ----------------------
+2025-03-25 20:30:55,706 - INFO - ------------------------------------
+2025-03-25 20:30:55,707 - INFO - ------------------------------------
+2025-03-25 20:30:55,707 - INFO - ----- New Pacman A* Search Run -----
+2025-03-25 20:30:55,707 - INFO - Start time: 2025-03-25 20:30:55.707611
+2025-03-25 20:30:55,708 - INFO - Arguments: Namespace(layout_file='pacman_ai/layouts/example_layout.txt', no_visual=False, cell_size=30, delay=0.3, output=None, user_mode=True)
+2025-03-25 20:30:55,708 - INFO - Loading maze from pacman_ai/layouts/example_layout.txt
+2025-03-25 20:30:55,708 - INFO - Loading maze from file: pacman_ai/layouts/example_layout.txt
+2025-03-25 20:30:55,709 - INFO - Pacman start position found at (16, 9)
+2025-03-25 20:30:55,709 - INFO - Default ghost position added at (1, 1)
+2025-03-25 20:30:55,709 - INFO - Default ghost position added at (1, 2)
+2025-03-25 20:30:55,710 - INFO - Default teleport pad added at (2, 1)
+2025-03-25 20:30:55,710 - INFO - Default teleport pad added at (3, 1)
+2025-03-25 20:30:55,710 - INFO - Default slow pill added at (2, 1)
+2025-03-25 20:30:55,710 - INFO - Default speed boost added at (3, 1)
+2025-03-25 20:30:55,710 - INFO - Maze loaded, dimensions: 36x18
+2025-03-25 20:30:55,710 - INFO - Total food points: 8
+2025-03-25 20:30:55,710 - INFO - Total magical pies: 38
+2025-03-25 20:30:55,710 - INFO - Total ghosts: 2
+2025-03-25 20:30:55,710 - INFO - Total teleport pads: 1
+2025-03-25 20:30:55,710 - INFO - Total slow pills: 1
+2025-03-25 20:30:55,710 - INFO - Total speed boosts: 1
+2025-03-25 20:30:55,710 - INFO - Total fruit spawn points: 0
+2025-03-25 20:30:55,710 - INFO - Total moving walls: 0
+2025-03-25 20:30:55,710 - INFO - Maze loaded successfully
+2025-03-25 20:30:55,710 - INFO - Starting user-controlled gameplay mode
+2025-03-25 20:30:57,975 - INFO - Starting user-controlled game
+2025-03-25 20:30:58,014 - INFO - User game started
+2025-03-25 20:31:05,971 - INFO - Food eaten at (17, 9)
+2025-03-25 20:31:07,044 - INFO - Magical pie eaten at (17, 8)
+2025-03-25 20:31:10,004 - INFO - Magical pie eaten at (24, 8)
+2025-03-25 20:31:11,500 - INFO - Food eaten at (27, 9)
+2025-03-25 20:31:11,976 - INFO - Magical pie eaten at (27, 11)
+2025-03-25 20:31:13,031 - INFO - Fruit spawned at (15, 13)
+2025-03-25 20:31:14,289 - INFO - Magical pie eaten at (28, 16)
+2025-03-25 20:31:14,695 - INFO - Magical pie eaten at (30, 16)
+2025-03-25 20:31:14,897 - INFO - Food eaten at (31, 16)
+2025-03-25 20:31:16,732 - INFO - Magical pie eaten at (33, 16)
+2025-03-25 20:31:17,655 - INFO - Teleportation from (34, 16) to (1, 1)
+2025-03-25 20:31:17,655 - INFO - Ghost 1 eaten
+2025-03-25 20:31:17,922 - INFO - Teleported from (2, 1) to (3, 1)
+2025-03-25 20:31:17,923 - INFO - Speed boost eaten at (3, 1)
+2025-03-25 20:31:17,923 - INFO - Ghost 0 eaten
+2025-03-25 20:31:22,293 - INFO - Magical pie eaten at (7, 3)
+2025-03-25 20:31:23,992 - INFO - Magical pie eaten at (4, 7)
+2025-03-25 20:31:24,842 - INFO - Magical pie eaten at (3, 10)
+2025-03-25 20:31:25,995 - INFO - Food eaten at (1, 8)
+2025-03-25 20:31:27,456 - INFO - Teleportation from (1, 1) to (34, 16)
+2025-03-25 20:31:28,035 - INFO - Fruit spawned at (1, 3)
+2025-03-25 20:31:29,357 - INFO - Teleportation from (34, 16) to (1, 1)
+2025-03-25 20:31:29,935 - INFO - Teleported from (2, 1) to (3, 1)
+2025-03-25 20:31:31,020 - INFO - Teleported from (2, 1) to (3, 1)
+2025-03-25 20:31:31,734 - INFO - Teleported from (2, 1) to (3, 1)
+2025-03-25 20:31:32,208 - INFO - Teleported from (2, 1) to (3, 1)
+2025-03-25 20:31:32,413 - INFO - Teleported from (2, 1) to (3, 1)
+2025-03-25 20:31:32,651 - INFO - Teleported from (2, 1) to (3, 1)
+2025-03-25 20:31:34,007 - INFO - Teleported from (3, 1) to (2, 1)
+2025-03-25 20:31:34,007 - INFO - Food eaten at (2, 1)
+2025-03-25 20:31:34,007 - INFO - Slow pill eaten at (2, 1)
+2025-03-25 20:31:35,162 - INFO - Teleportation from (1, 1) to (34, 16)
+2025-03-25 20:31:40,252 - INFO - Magical pie eaten at (21, 15)
+2025-03-25 20:31:42,017 - INFO - Magical pie eaten at (15, 15)
+2025-03-25 20:31:42,561 - INFO - Fruit eaten at (15, 13)
+2025-03-25 20:31:43,036 - INFO - Fruit spawned at (31, 16)
+2025-03-25 20:31:43,613 - INFO - Magical pie eaten at (18, 13)
+2025-03-25 20:31:49,481 - INFO - Fruit eaten at (31, 16)
+2025-03-25 20:31:51,418 - INFO - Teleportation from (34, 16) to (1, 1)
+2025-03-25 20:31:51,860 - INFO - Teleported from (2, 1) to (3, 1)
+2025-03-25 20:31:52,574 - INFO - Teleported from (2, 1) to (3, 1)
+2025-03-25 20:31:53,117 - INFO - Teleported from (2, 1) to (3, 1)
+2025-03-25 20:31:54,031 - INFO - Teleported from (3, 1) to (2, 1)
+2025-03-25 20:31:54,745 - INFO - Teleported from (3, 1) to (2, 1)
+2025-03-25 20:31:55,526 - INFO - Teleportation from (1, 1) to (34, 16)
+2025-03-25 20:31:57,968 - INFO - Teleportation from (34, 16) to (1, 1)
+2025-03-25 20:31:58,070 - INFO - Fruit spawned at (34, 14)
+2025-03-25 20:31:58,410 - INFO - Teleported from (2, 1) to (3, 1)
+2025-03-25 20:32:00,239 - INFO - Teleported from (3, 1) to (2, 1)
+2025-03-25 20:32:00,951 - INFO - Teleportation from (1, 1) to (34, 16)
+2025-03-25 20:32:03,427 - INFO - Teleportation from (34, 16) to (1, 1)
+2025-03-25 20:32:04,069 - INFO - Teleported from (2, 1) to (3, 1)
+2025-03-25 20:32:04,376 - INFO - Teleported from (2, 1) to (3, 1)
+2025-03-25 20:32:05,260 - INFO - Teleported from (3, 1) to (2, 1)
+2025-03-25 20:32:05,872 - INFO - Teleportation from (1, 1) to (34, 16)
+2025-03-25 20:32:06,720 - INFO - Fruit eaten at (34, 14)
+2025-03-25 20:32:08,349 - INFO - Magical pie eaten at (31, 13)
+2025-03-25 20:32:09,636 - INFO - Magical pie eaten at (29, 11)
+2025-03-25 20:32:12,483 - INFO - Magical pie eaten at (21, 10)
+2025-03-25 20:32:12,957 - INFO - Magical pie eaten at (19, 10)
+2025-03-25 20:32:13,093 - INFO - Fruit spawned at (19, 15)
+2025-03-25 20:32:14,928 - INFO - Food eaten at (14, 7)
+2025-03-25 20:32:15,709 - INFO - Magical pie eaten at (14, 5)
+2025-03-25 20:32:19,548 - INFO - Teleported from (3, 1) to (2, 1)
+2025-03-25 20:32:19,851 - INFO - Teleportation from (1, 1) to (34, 16)
+2025-03-25 20:32:23,590 - INFO - Magical pie eaten at (32, 11)
+2025-03-25 20:32:24,162 - INFO - Food eaten at (32, 9)
+2025-03-25 20:32:27,855 - INFO - Magical pie eaten at (34, 7)
+2025-03-25 20:32:28,432 - INFO - Magical pie eaten at (34, 5)
+2025-03-25 20:32:29,382 - INFO - Magical pie eaten at (33, 3)
+2025-03-25 20:32:30,299 - INFO - Food eaten at (32, 1)
+2025-03-25 20:32:30,299 - INFO - Player won - all food collected
+2025-03-25 20:32:36,132 - INFO - User game ended
+2025-03-25 20:32:36,372 - INFO - User-controlled game session completed
+2025-03-25 20:32:36,390 - INFO - Run completed at 2025-03-25 20:32:36.389030
+2025-03-25 20:32:36,390 - INFO - ----- End of Run -----
+
+2025-03-25 20:32:36,390 - INFO - ----------------------
+2025-03-25 20:32:36,390 - INFO - ----------------------
