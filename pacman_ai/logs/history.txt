@@ -20722,3 +20722,265 @@
 
 2025-03-25 20:32:36,390 - INFO - ----------------------
 2025-03-25 20:32:36,390 - INFO - ----------------------
+2025-03-25 20:49:21,498 - INFO - ------------------------------------
+2025-03-25 20:49:21,499 - INFO - ------------------------------------
+2025-03-25 20:49:21,499 - INFO - ----- New Pacman A* Search Run -----
+2025-03-25 20:49:21,499 - INFO - Start time: 2025-03-25 20:49:21.499217
+2025-03-25 20:49:21,499 - INFO - Arguments: Namespace(layout_file='pacman_ai/layouts/example_layout.txt', no_visual=False, cell_size=30, delay=0.1, output=None, user_mode=False)
+2025-03-25 20:49:21,499 - INFO - Loading maze from pacman_ai/layouts/example_layout.txt
+2025-03-25 20:49:21,499 - INFO - Loading maze from file: pacman_ai/layouts/example_layout.txt
+2025-03-25 20:49:21,500 - INFO - Pacman start position found at (16, 9)
+2025-03-25 20:49:21,500 - INFO - Default ghost position added at (1, 1)
+2025-03-25 20:49:21,500 - INFO - Default ghost position added at (1, 2)
+2025-03-25 20:49:21,500 - INFO - Default teleport pad added at (2, 1)
+2025-03-25 20:49:21,500 - INFO - Default teleport pad added at (3, 1)
+2025-03-25 20:49:21,500 - INFO - Default slow pill added at (2, 1)
+2025-03-25 20:49:21,500 - INFO - Default speed boost added at (3, 1)
+2025-03-25 20:49:21,500 - INFO - Maze loaded, dimensions: 36x18
+2025-03-25 20:49:21,500 - INFO - Total food points: 8
+2025-03-25 20:49:21,500 - INFO - Total magical pies: 38
+2025-03-25 20:49:21,500 - INFO - Total ghosts: 2
+2025-03-25 20:49:21,500 - INFO - Total teleport pads: 1
+2025-03-25 20:49:21,500 - INFO - Total slow pills: 1
+2025-03-25 20:49:21,500 - INFO - Total speed boosts: 1
+2025-03-25 20:49:21,500 - INFO - Total fruit spawn points: 0
+2025-03-25 20:49:21,500 - INFO - Total moving walls: 0
+2025-03-25 20:49:21,500 - INFO - Maze loaded successfully
+2025-03-25 20:49:21,500 - INFO - Using Minimum Spanning Tree heuristic
+2025-03-25 20:49:21,500 - INFO - Starting A* search
+2025-03-25 20:49:21,500 - INFO - A* search started from position (16, 9)
+2025-03-25 20:49:21,501 - INFO - Number of food points: 8
+2025-03-25 20:49:21,501 - INFO - Number of magical pies: 38
+2025-03-25 20:49:21,618 - INFO - States explored: 1000, current position: (24, 10), remaining food: 7
+2025-03-25 20:49:21,731 - INFO - States explored: 2000, current position: (10, 6), remaining food: 7
+2025-03-25 20:49:21,844 - INFO - States explored: 3000, current position: (7, 8), remaining food: 7
+2025-03-25 20:49:21,977 - INFO - States explored: 4000, current position: (19, 11), remaining food: 6
+2025-03-25 20:49:22,109 - INFO - States explored: 5000, current position: (18, 13), remaining food: 7
+2025-03-25 20:49:22,224 - INFO - States explored: 6000, current position: (5, 8), remaining food: 6
+2025-03-25 20:49:22,348 - INFO - States explored: 7000, current position: (7, 9), remaining food: 7
+2025-03-25 20:49:22,471 - INFO - States explored: 8000, current position: (9, 9), remaining food: 6
+2025-03-25 20:49:22,602 - INFO - States explored: 9000, current position: (16, 7), remaining food: 6
+2025-03-25 20:49:22,746 - INFO - States explored: 10000, current position: (16, 13), remaining food: 7
+2025-03-25 20:49:22,864 - INFO - States explored: 11000, current position: (19, 10), remaining food: 6
+2025-03-25 20:49:22,998 - INFO - States explored: 12000, current position: (15, 5), remaining food: 7
+2025-03-25 20:49:23,094 - INFO - States explored: 13000, current position: (32, 16), remaining food: 4
+2025-03-25 20:49:23,184 - INFO - States explored: 14000, current position: (27, 8), remaining food: 3
+2025-03-25 20:49:23,329 - INFO - States explored: 15000, current position: (30, 8), remaining food: 4
+2025-03-25 20:49:23,422 - INFO - States explored: 16000, current position: (4, 10), remaining food: 6
+2025-03-25 20:49:23,512 - INFO - States explored: 17000, current position: (27, 11), remaining food: 3
+2025-03-25 20:49:23,583 - INFO - States explored: 18000, current position: (27, 10), remaining food: 2
+2025-03-25 20:49:23,630 - INFO - Solution found after exploring 18667 states
+2025-03-25 20:49:23,630 - INFO - Max frontier size: 11708
+2025-03-25 20:49:23,650 - INFO - A* search completed in 2.15 seconds
+2025-03-25 20:49:23,651 - INFO - Solution found with 62 actions and cost 60
+2025-03-25 20:49:23,651 - INFO - Solution actions:
+2025-03-25 20:49:23,651 - INFO -   1: East
+2025-03-25 20:49:23,651 - INFO -   2: North
+2025-03-25 20:49:23,651 - INFO -   3: West
+2025-03-25 20:49:23,651 - INFO -   4: West
+2025-03-25 20:49:23,651 - INFO -   5: West
+2025-03-25 20:49:23,651 - INFO -   6: North
+2025-03-25 20:49:23,651 - INFO -   7: West
+2025-03-25 20:49:23,651 - INFO -   8: West
+2025-03-25 20:49:23,651 - INFO -   9: West
+2025-03-25 20:49:23,651 - INFO -   10: West
+2025-03-25 20:49:23,651 - INFO -   11: West
+2025-03-25 20:49:23,651 - INFO -   12: West
+2025-03-25 20:49:23,651 - INFO -   13: South
+2025-03-25 20:49:23,651 - INFO -   14: West
+2025-03-25 20:49:23,651 - INFO -   15: West
+2025-03-25 20:49:23,651 - INFO -   16: West
+2025-03-25 20:49:23,651 - INFO -   17: West
+2025-03-25 20:49:23,651 - INFO -   18: West
+2025-03-25 20:49:23,651 - INFO -   19: West
+2025-03-25 20:49:23,651 - INFO -   20: West
+2025-03-25 20:49:23,651 - INFO -   21: North
+2025-03-25 20:49:23,651 - INFO -   22: North
+2025-03-25 20:49:23,651 - INFO -   23: North
+2025-03-25 20:49:23,651 - INFO -   24: North
+2025-03-25 20:49:23,651 - INFO -   25: North
+2025-03-25 20:49:23,651 - INFO -   26: North
+2025-03-25 20:49:23,651 - INFO -   27: North
+2025-03-25 20:49:23,651 - INFO -   28: Stop
+2025-03-25 20:49:23,651 - INFO -   29: East
+2025-03-25 20:49:23,651 - INFO -   30: Stop
+2025-03-25 20:49:23,651 - INFO -   31: West
+2025-03-25 20:49:23,651 - INFO -   32: West
+2025-03-25 20:49:23,651 - INFO -   33: West
+2025-03-25 20:49:23,651 - INFO -   34: West
+2025-03-25 20:49:23,651 - INFO -   35: North
+2025-03-25 20:49:23,651 - INFO -   36: North
+2025-03-25 20:49:23,651 - INFO -   37: North
+2025-03-25 20:49:23,651 - INFO -   38: North
+2025-03-25 20:49:23,651 - INFO -   39: North
+2025-03-25 20:49:23,651 - INFO -   40: West
+2025-03-25 20:49:23,651 - INFO -   41: West
+2025-03-25 20:49:23,651 - INFO -   42: West
+2025-03-25 20:49:23,651 - INFO -   43: West
+2025-03-25 20:49:23,651 - INFO -   44: North
+2025-03-25 20:49:23,652 - INFO -   45: North
+2025-03-25 20:49:23,652 - INFO -   46: East
+2025-03-25 20:49:23,652 - INFO -   47: East
+2025-03-25 20:49:23,652 - INFO -   48: East
+2025-03-25 20:49:23,652 - INFO -   49: East
+2025-03-25 20:49:23,652 - INFO -   50: East
+2025-03-25 20:49:23,652 - INFO -   51: East
+2025-03-25 20:49:23,652 - INFO -   52: East
+2025-03-25 20:49:23,652 - INFO -   53: North
+2025-03-25 20:49:23,652 - INFO -   54: North
+2025-03-25 20:49:23,652 - INFO -   55: North
+2025-03-25 20:49:23,652 - INFO -   56: North
+2025-03-25 20:49:23,652 - INFO -   57: North
+2025-03-25 20:49:23,652 - INFO -   58: North
+2025-03-25 20:49:23,652 - INFO -   59: North
+2025-03-25 20:49:23,652 - INFO -   60: West
+2025-03-25 20:49:23,652 - INFO -   61: North
+2025-03-25 20:49:23,652 - INFO -   62: West
+2025-03-25 20:49:23,652 - INFO - Starting visualization
+2025-03-25 20:49:24,357 - INFO - Visualization ready, waiting for key press to start
+2025-03-25 20:49:25,193 - INFO - Visualization started
+2025-03-25 20:49:25,193 - INFO - Food eaten at (17, 9), 7 remaining
+2025-03-25 20:49:25,395 - INFO - Magical pie eaten at (17, 8), walls vanished for 5 steps
+2025-03-25 20:49:26,204 - INFO - Food eaten at (14, 7), 6 remaining
+2025-03-25 20:49:26,406 - INFO - Magical pie eaten at (13, 7), walls vanished for 5 steps
+2025-03-25 20:49:27,418 - INFO - Magical pie eaten at (8, 7), walls vanished for 5 steps
+2025-03-25 20:49:28,053 - INFO - Visualization interrupted at step 13/62
+2025-03-25 20:49:28,053 - INFO - Visualization completed
+2025-03-25 20:49:28,053 - INFO - Run completed at 2025-03-25 20:49:28.053414
+2025-03-25 20:49:28,053 - INFO - ----- End of Run -----
+
+2025-03-25 20:49:28,053 - INFO - ----------------------
+2025-03-25 20:49:28,053 - INFO - ----------------------
+2025-03-25 20:50:20,861 - INFO - ------------------------------------
+2025-03-25 20:50:20,861 - INFO - ------------------------------------
+2025-03-25 20:50:20,861 - INFO - ----- New Pacman A* Search Run -----
+2025-03-25 20:50:20,861 - INFO - Start time: 2025-03-25 20:50:20.861565
+2025-03-25 20:50:20,862 - INFO - Arguments: Namespace(layout_file='pacman_ai/layouts/example_layout.txt', no_visual=False, cell_size=30, delay=0.1, output=None)
+2025-03-25 20:50:20,862 - INFO - Loading maze from pacman_ai/layouts/example_layout.txt
+2025-03-25 20:50:20,862 - INFO - Loading maze from file: pacman_ai/layouts/example_layout.txt
+2025-03-25 20:50:20,862 - INFO - Pacman start position found at (16, 9)
+2025-03-25 20:50:20,862 - INFO - Maze loaded, dimensions: 36x18
+2025-03-25 20:50:20,862 - INFO - Total food points: 8
+2025-03-25 20:50:20,862 - INFO - Total magical pies: 38
+2025-03-25 20:50:20,862 - INFO - Maze loaded successfully
+2025-03-25 20:50:20,862 - INFO - Using Minimum Spanning Tree heuristic
+2025-03-25 20:50:20,862 - INFO - Starting A* search
+2025-03-25 20:50:20,862 - INFO - A* search started from position (16, 9)
+2025-03-25 20:50:20,862 - INFO - Number of food points: 8
+2025-03-25 20:50:20,862 - INFO - Number of magical pies: 38
+2025-03-25 20:50:20,957 - INFO - States explored: 1000, current position: (16, 6), remaining food: 6
+2025-03-25 20:50:21,050 - INFO - States explored: 2000, current position: (20, 10), remaining food: 7
+2025-03-25 20:50:21,139 - INFO - States explored: 3000, current position: (6, 6), remaining food: 7
+2025-03-25 20:50:21,231 - INFO - States explored: 4000, current position: (18, 11), remaining food: 7
+2025-03-25 20:50:21,331 - INFO - States explored: 5000, current position: (6, 6), remaining food: 6
+2025-03-25 20:50:21,424 - INFO - States explored: 6000, current position: (6, 8), remaining food: 6
+2025-03-25 20:50:21,540 - INFO - States explored: 7000, current position: (4, 7), remaining food: 6
+2025-03-25 20:50:21,637 - INFO - States explored: 8000, current position: (9, 8), remaining food: 7
+2025-03-25 20:50:21,748 - INFO - States explored: 9000, current position: (30, 12), remaining food: 4
+2025-03-25 20:50:21,820 - INFO - States explored: 10000, current position: (29, 10), remaining food: 4
+2025-03-25 20:50:21,883 - INFO - States explored: 11000, current position: (27, 5), remaining food: 7
+2025-03-25 20:50:21,951 - INFO - States explored: 12000, current position: (26, 11), remaining food: 3
+2025-03-25 20:50:21,998 - INFO - States explored: 13000, current position: (30, 8), remaining food: 2
+2025-03-25 20:50:22,020 - INFO - Solution found after exploring 13461 states
+2025-03-25 20:50:22,020 - INFO - Max frontier size: 8426
+2025-03-25 20:50:22,035 - INFO - A* search completed in 1.17 seconds
+2025-03-25 20:50:22,035 - INFO - Solution found with 61 actions and cost 60
+2025-03-25 20:50:22,035 - INFO - Solution actions:
+2025-03-25 20:50:22,035 - INFO -   1: East
+2025-03-25 20:50:22,035 - INFO -   2: North
+2025-03-25 20:50:22,035 - INFO -   3: West
+2025-03-25 20:50:22,035 - INFO -   4: West
+2025-03-25 20:50:22,035 - INFO -   5: West
+2025-03-25 20:50:22,035 - INFO -   6: North
+2025-03-25 20:50:22,035 - INFO -   7: West
+2025-03-25 20:50:22,035 - INFO -   8: West
+2025-03-25 20:50:22,035 - INFO -   9: West
+2025-03-25 20:50:22,035 - INFO -   10: West
+2025-03-25 20:50:22,035 - INFO -   11: West
+2025-03-25 20:50:22,035 - INFO -   12: West
+2025-03-25 20:50:22,035 - INFO -   13: South
+2025-03-25 20:50:22,035 - INFO -   14: West
+2025-03-25 20:50:22,035 - INFO -   15: West
+2025-03-25 20:50:22,035 - INFO -   16: West
+2025-03-25 20:50:22,035 - INFO -   17: West
+2025-03-25 20:50:22,035 - INFO -   18: West
+2025-03-25 20:50:22,035 - INFO -   19: West
+2025-03-25 20:50:22,035 - INFO -   20: West
+2025-03-25 20:50:22,035 - INFO -   21: North
+2025-03-25 20:50:22,035 - INFO -   22: North
+2025-03-25 20:50:22,035 - INFO -   23: North
+2025-03-25 20:50:22,035 - INFO -   24: North
+2025-03-25 20:50:22,035 - INFO -   25: North
+2025-03-25 20:50:22,035 - INFO -   26: North
+2025-03-25 20:50:22,035 - INFO -   27: North
+2025-03-25 20:50:22,035 - INFO -   28: Stop
+2025-03-25 20:50:22,035 - INFO -   29: East
+2025-03-25 20:50:22,035 - INFO -   30: West
+2025-03-25 20:50:22,035 - INFO -   31: West
+2025-03-25 20:50:22,036 - INFO -   32: West
+2025-03-25 20:50:22,036 - INFO -   33: West
+2025-03-25 20:50:22,036 - INFO -   34: North
+2025-03-25 20:50:22,036 - INFO -   35: North
+2025-03-25 20:50:22,036 - INFO -   36: North
+2025-03-25 20:50:22,036 - INFO -   37: North
+2025-03-25 20:50:22,036 - INFO -   38: North
+2025-03-25 20:50:22,036 - INFO -   39: West
+2025-03-25 20:50:22,036 - INFO -   40: West
+2025-03-25 20:50:22,036 - INFO -   41: West
+2025-03-25 20:50:22,036 - INFO -   42: West
+2025-03-25 20:50:22,036 - INFO -   43: North
+2025-03-25 20:50:22,036 - INFO -   44: North
+2025-03-25 20:50:22,036 - INFO -   45: East
+2025-03-25 20:50:22,036 - INFO -   46: East
+2025-03-25 20:50:22,036 - INFO -   47: East
+2025-03-25 20:50:22,036 - INFO -   48: East
+2025-03-25 20:50:22,036 - INFO -   49: East
+2025-03-25 20:50:22,036 - INFO -   50: East
+2025-03-25 20:50:22,036 - INFO -   51: East
+2025-03-25 20:50:22,036 - INFO -   52: North
+2025-03-25 20:50:22,036 - INFO -   53: North
+2025-03-25 20:50:22,036 - INFO -   54: North
+2025-03-25 20:50:22,036 - INFO -   55: North
+2025-03-25 20:50:22,036 - INFO -   56: North
+2025-03-25 20:50:22,036 - INFO -   57: North
+2025-03-25 20:50:22,036 - INFO -   58: North
+2025-03-25 20:50:22,036 - INFO -   59: West
+2025-03-25 20:50:22,036 - INFO -   60: North
+2025-03-25 20:50:22,036 - INFO -   61: West
+2025-03-25 20:50:22,036 - INFO - Starting visualization
+2025-03-25 20:50:22,712 - INFO - Visualization ready, waiting for key press to start
+2025-03-25 20:50:24,238 - INFO - Visualization started
+2025-03-25 20:50:24,238 - INFO - Food eaten at (17, 9), 7 remaining
+2025-03-25 20:50:24,440 - INFO - Magical pie eaten at (17, 8), walls vanished for 5 steps
+2025-03-25 20:50:25,248 - INFO - Food eaten at (14, 7), 6 remaining
+2025-03-25 20:50:25,450 - INFO - Magical pie eaten at (13, 7), walls vanished for 5 steps
+2025-03-25 20:50:26,462 - INFO - Magical pie eaten at (8, 7), walls vanished for 5 steps
+2025-03-25 20:50:27,069 - INFO - Magical pie eaten at (6, 8), walls vanished for 5 steps
+2025-03-25 20:50:28,080 - INFO - Visualization step 20/61, Action: West
+2025-03-25 20:50:28,080 - INFO - Food eaten at (1, 8), 5 remaining
+2025-03-25 20:50:29,495 - INFO - Teleportation from (1, 1) to (34, 16)
+2025-03-25 20:50:29,699 - INFO - Teleportation from (34, 16) to (1, 1)
+2025-03-25 20:50:29,800 - INFO - Food eaten at (2, 1), 4 remaining
+2025-03-25 20:50:30,002 - INFO - Teleportation from (1, 1) to (34, 16)
+2025-03-25 20:50:30,207 - INFO - Magical pie eaten at (33, 16), walls vanished for 5 steps
+2025-03-25 20:50:30,611 - INFO - Food eaten at (31, 16), 3 remaining
+2025-03-25 20:50:31,217 - INFO - Magical pie eaten at (31, 13), walls vanished for 5 steps
+2025-03-25 20:50:32,026 - INFO - Visualization step 40/61, Action: West
+2025-03-25 20:50:32,027 - INFO - Magical pie eaten at (29, 11), walls vanished for 5 steps
+2025-03-25 20:50:32,431 - INFO - Magical pie eaten at (27, 11), walls vanished for 5 steps
+2025-03-25 20:50:32,836 - INFO - Food eaten at (27, 9), 2 remaining
+2025-03-25 20:50:33,847 - INFO - Food eaten at (32, 9), 1 remaining
+2025-03-25 20:50:34,252 - INFO - Magical pie eaten at (34, 9), walls vanished for 5 steps
+2025-03-25 20:50:34,657 - INFO - Magical pie eaten at (34, 7), walls vanished for 5 steps
+2025-03-25 20:50:35,062 - INFO - Magical pie eaten at (34, 5), walls vanished for 5 steps
+2025-03-25 20:50:36,073 - INFO - Visualization step 60/61, Action: North
+2025-03-25 20:50:36,276 - INFO - Food eaten at (32, 1), 0 remaining
+2025-03-25 20:50:36,478 - INFO - Solution completed successfully in 61 steps!
+2025-03-25 20:50:36,482 - INFO - Visualization complete, waiting for key press to exit
+2025-03-25 20:50:37,585 - INFO - Visualization closed
+2025-03-25 20:50:37,585 - INFO - Visualization completed
+2025-03-25 20:50:37,585 - INFO - Run completed at 2025-03-25 20:50:37.585931
+2025-03-25 20:50:37,585 - INFO - ----- End of Run -----
+
+2025-03-25 20:50:37,586 - INFO - ----------------------
+2025-03-25 20:50:37,586 - INFO - ----------------------
