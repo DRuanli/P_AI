@@ -51,7 +51,7 @@ def parse_args():
                         help='Delay between steps in visualization (default: 0.3 seconds)')
 
     parser.add_argument('--output', type=str, default=None,
-                        help='Output file to write the solution (optional)')
+                        help='Output file to write the solution')
 
     return parser.parse_args()
 
